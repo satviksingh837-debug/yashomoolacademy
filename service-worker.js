@@ -1,8 +1,40 @@
+const CACHE_NAME = "yashomool-v1";
+
+const urlsToCache = [
+  "/yashomoolacademy/",
+  "/yashomoolacademy/index.html",
+  "/yashomoolacademy/manifest.json",
+  "/yashomoolacademy/icon-192.png",
+  "/yashomoolacademy/icon-512.png"
+];
+
+// Install
 self.addEventListener("install", event => {
-  console.log("Service Worker Installed");
-  self.skipWaiting();
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+  );
 });
 
+// Fetch
+self.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => response || fetch(event.request))
+  );
+});
+
+// Activate
 self.addEventListener("activate", event => {
-  console.log("Service Worker Activated");
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.map(key => {
+          if (key !== CACHE_NAME) {
+            return caches.delete(key);
+          }
+        })
+      );
+    })
+  );
 });
