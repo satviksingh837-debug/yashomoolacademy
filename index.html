@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YashoMool Academy</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="/yashomoolacademy/manifest.json">
 <meta name="theme-color" content="#0f172a">
 <p style="
 position: fixed;
@@ -961,11 +961,15 @@ location.reload();
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('/yashomoolacademy/service-worker.js')
       .then(reg => console.log("✅ SW Registered", reg))
       .catch(err => console.log("❌ SW Error", err));
   });
 }
+navigator.serviceWorker.register('/yashomoolacademy/service-worker.js', {
+  scope: '/yashomoolacademy/'
+});
+
 window.onpopstate = function(event){
 
 // सभी hide
