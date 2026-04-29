@@ -6,6 +6,8 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0f172a",
+  "description": "YashoMool Academy is an educational platform for SSC and competitive exam preparation with quizzes, topics, and practice tests.",
+  "Privacy Policy": "https://yashomoolacademy.netlify.app/privacy.html",
   "icons": [
     {
       "src": "/yashomoolacademy/icon-192.png",
