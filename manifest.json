@@ -4,6 +4,7 @@
   "short_name": "YashoMool",
   "start_url": "/yashomoolacademy/",
   "display": "standalone",
+  "display_override": ["standalone", "fullscreen"],
   "background_color": "#ffffff",
   "theme_color": "#0f172a",
   "description": "YashoMool Academy is an educational platform for SSC and competitive exam preparation with quizzes, topics, and practice tests.",
