@@ -4,9 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YashoMool Academy</title>
+<!-- 🔥 PWA के लिए ये ADD करो (line 6 के बाद) -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="YashoMool Academy">
+<meta name="msapplication-TileColor" content="#0f172a">
+<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="manifest" href="/yashomoolacademy/manifest.json">
+<link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#0f172a">
+<!-- 🔥 PWA META TAGS -->
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="YashoMool Academy">
 <p style="
 position: fixed;
 bottom: 10px;
@@ -17,6 +28,7 @@ border-radius: 10px;
 font-weight: bold;
 font-size: 7px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+z-index: 1000; /* ADD ये */
 ">
 👑 Designed & Developed by – Satvik Singh
 </p>
@@ -30,6 +42,7 @@ border-radius: 10px;
 font-weight: bold;
 font-size: 7px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+z-index: 1000; /* ADD ये */
 ">
 Contact Us 📞 : 9454282968
 </p>
@@ -44,6 +57,9 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
+        /* 🔥 PWA Fullscreen के लिए */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .container{
@@ -993,6 +1009,16 @@ else if(event.state.page==="test"){
 document.getElementById('testContainer').style.display='block';
 }
 };
+</script>
+<!-- 🔥 Service Worker Register (body के अंत में, पहले script से पहले) -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('✅ PWA Ready'))
+      .catch(err => console.log('❌ SW Error'));
+  });
+}
 </script>
 </body>
 </html>
