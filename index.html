@@ -1,84 +1,408 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R4P0Y9RPT1"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){
+  dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+
+gtag('config', 'G-R4P0Y9RPT1');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>YashoMool Academy</title>
-<!-- 🔥 PWA के लिए ये ADD करो (line 6 के बाद) -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="YashoMool Academy">
-<meta name="msapplication-TileColor" content="#0f172a">
-<link rel="apple-touch-icon" href="icon-192.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0f172a">
-<!-- 🔥 PWA META TAGS -->
-<meta name="theme-color" content="#0f172a">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="YashoMool Academy">
-<p style="
+<!-- <p style="
 position: fixed;
-bottom: 10px;
+top: 10px;
 right: 15px;
-background: linear-gradient(45deg,#ff9a9e,#fad0c4);
-padding: 8px 12px;
-border-radius: 10px;
-font-weight: bold;
-font-size: 7px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-z-index: 1000; /* ADD ये */
+
+background:
+linear-gradient(135deg,
+#0f172a 0%,
+#1e3a8a 25%,
+#2563eb 50%,
+#06b6d4 75%,
+#14b8a6 100%);
+G-R4P0Y9RPT1
+color:white;
+
+padding: 10px 16px;
+border-radius: 14px;
+
+font-weight: 800;
+font-size: 10px;
+letter-spacing: 0.5px;
+
+box-shadow:
+0 0 15px rgba(37,99,235,0.5),
+0 0 30px rgba(6,182,212,0.35);
+
+border: 1px solid rgba(255,255,255,0.15);
+
+backdrop-filter: blur(6px);
+
+">
+👑 Designed & Developed by – Satvik Singh
+</p> -->
+<div class="academy-header">
+
+    <div class="academy-name">
+        YashoMool Academy
+    </div>
+
+    <div class="academy-tagline">
+        SSC • Railway • UPSI • Police • Teaching • Competitive Exams
+    </div>
+
+</div>
+<p style="
+
+position:fixed;
+
+bottom:5px;
+right:12px;
+
+background:
+linear-gradient(
+135deg,
+rgba(15,23,42,0.88),
+rgba(37,99,235,0.88),
+rgba(20,184,166,0.88)
+);
+
+color:white;
+
+padding:5px 10px;
+
+border-radius:10px;
+
+font-weight:700;
+
+font-size:8px;
+
+letter-spacing:0.4px;
+
+box-shadow:
+0 3px 10px rgba(37,99,235,0.25);
+
+border:1px solid rgba(255,255,255,0.12);
+
+backdrop-filter:blur(5px);
+
+z-index:999;
+
+max-width:160px;
+
+text-align:center;
+
 ">
 👑 Designed & Developed by – Satvik Singh
 </p>
-<p style="
+<!-- <p style="
 position: fixed;
 top: 10px;
+color: black;
 left: 15px;
 background: linear-gradient(45deg,#f38e3b,#35cac3);
 padding: 8px 12px;
 border-radius: 10px;
 font-weight: bold;
-font-size: 7px;
+font-size: 9px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-z-index: 1000; /* ADD ये */
 ">
 Contact Us 📞 : 9454282968
-</p>
+</p> -->
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
     font-family: Arial;
-    background: linear-gradient(135deg,#a6ff5e,#4135e6);
+
+    /* background:
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
+    linear-gradient(135deg, #0c0c1a 0%, #1a1a3a 30%, #2a1a4a 60%, #0f0f2a 100%); */
+    /* background:
+linear-gradient(
+135deg,
+#f0fdf4 0%,
+#bbf7d0 30%,
+#22c55e 65%,
+#14532d 100%
+);  */
+background:
+linear-gradient(
+135deg,
+#f5f3ff 0%,
+#c4b5fd 30%,
+#7c3aed 65%,
+#111827 100%
+);
+/* background:
+linear-gradient(
+135deg,
+#e0f2fe 0%,
+#7dd3fc 35%,
+#2563eb 70%,
+#0f172a 100%
+); */
+
+/* background:
+linear-gradient(
+135deg,
+#ecfeff 0%,
+#a5f3fc 25%,
+#22d3ee 60%,
+#164e63 100%
+); */
+
+    min-height:100vh;
+
+    padding:20px;
+}
+/* body{
+    font-family: Arial;
+    background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%), radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%), linear-gradient(135deg, #0c0c1a 0%, #1a1a3a 30%, #2a1a4a 60%, #0f0f2a 100%);
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-        /* 🔥 PWA Fullscreen के लिए */
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
+    
+background:
+linear-gradient(
+135deg,
+#f0fdf4 0%,
+#bbf7d0 30%,
+#22c55e 65%,
+#14532d 100%
+); 
+} */
+
+/* 🔥 LIGHTWEIGHT CONTAINER */
+.container {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 25px;
+    width: 98%;
+    padding: 25px 20px;
+    max-width: 520px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    margin:auto;
+    margin-top:40px;
+    /* padding-bottom:60px; */
 }
 
-.container{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    width:90%;
-    max-width:500px;
+
+
+/* 🔥 CLUBS - HIDDEN BY DEFAULT */
+.clubs-grid{
+    display:grid;
+    gap:10px;
+    margin-top:20px;
+    transition: all 0.3s ease;
+}
+.folder-btn {
+    padding: 22px 18px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+    transform-style: preserve-3d;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.folder-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.academy-header{
+
     text-align:center;
+
+    margin-top:10px;
+    margin-bottom:12px;
+
+    padding:12px;
+
+    border-radius:22px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e293b 25%,
+    #2563eb 55%,
+    #38bdf8 80%,
+    #e0f2fe 100%
+    );
+
+    box-shadow:
+    0 0 25px rgba(37,99,235,0.45),
+    0 0 55px rgba(56,189,248,0.25),
+    inset 0 0 12px rgba(255,255,255,0.15);
+
+    border:1px solid rgba(255,255,255,0.12);
 }
 
-.folder-btn{
-    padding:20px;
-    font-size:22px;
-    border:none;
-    border-radius:10px;
-    background:#6bbcff;
+.academy-name{
+
     color:white;
-    cursor:pointer;
+
+    font-size:20px;
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,0.35);
+
+    margin-bottom:8px;
+}
+
+.academy-tagline{
+
+    color:#dbeafe;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    line-height:1.6;
+}
+
+/* 🔥 CLUB COLORS */
+.gs-club {
+    background: 
+        linear-gradient(135deg, #ff6b6b 0%, #feca57 25%, #ff9ff3 50%, #54a0ff 75%, #5f27cd 100%),
+        linear-gradient(45deg, #ff6b6b, #feca57);
+    box-shadow: 
+        0 0 30px rgba(255,107,107,0.6),
+        0 0 60px rgba(254,202,87,0.4);
+}
+
+.math-club {
+    background: 
+        linear-gradient(135deg, #4ecdc4 0%, #44a08d 25%, #00d2d3 50%, #7b68ee 75%, #4834d4 100%),
+        linear-gradient(45deg, #4ecdc4, #44a08d);
+    box-shadow: 
+        0 0 30px rgba(78,205,196,0.6),
+        0 0 60px rgba(120,119,198,0.4);
+}
+
+.english-club {
+    background: 
+        linear-gradient(135deg, #a8edea 0%, #fed6e3 25%, #ffecd2 50%, #fcb69f 75%, #ff8a80 100%),
+        linear-gradient(45deg, #a8edea, #fed6e3);
+    box-shadow: 
+        0 0 30px rgba(168,237,234,0.6),
+        0 0 60px rgba(254,214,227,0.4);
+}
+
+.hindi-club {
+    background: 
+        linear-gradient(135deg, 
+            #3c49d6 0%,      /* Deep Blue */
+            #6d81f3 25%,     /* Indigo */
+            #f17f5c 50%,     /* Deep Orange */
+            #ff6d40 75%,     /* Light Coral */
+            #a2e429 100%     /* Pink */
+        ),
+        linear-gradient(45deg, #1a237e, #ff5722);
+    box-shadow: 
+        /* 0 0 30px rgba(26, 35, 126, 0.8),
+        0 0 60px rgba(255, 87, 34, 0.6); */
+        0 0 30px rgba(14, 165, 233, 0.7),
+        0 0 60px rgba(34, 197, 94, 0.5);
+}
+.physics-club{
+    background:
+        linear-gradient(
+        135deg,
+        #dbeafe 0%,
+        #93c5fd 25%,
+        #3b82f6 50%,
+        #1d4ed8 75%,
+        #1e3a8a 100%
+        ),
+        linear-gradient(45deg,#60a5fa,#2563eb);
+
+    box-shadow:
+        0 0 25px rgba(59,130,246,0.6),
+        0 0 55px rgba(37,99,235,0.4);
+
+    color:white;
+}
+
+
+.paper-club{
+    background:
+        linear-gradient(
+        135deg,
+        #dcfce7 0%,
+        #86efac 25%,
+        #22c55e 50%,
+        #15803d 75%,
+        #14532d 100%
+        ),
+        linear-gradient(45deg,#4ade80,#16a34a);
+
+    box-shadow:
+        0 0 25px rgba(34,197,94,0.6),
+        0 0 55px rgba(22,163,74,0.4);
+
+    color:white;
+}
+.gsq-club{
+background: 
+    linear-gradient(135deg, 
+        #0f172a 0%,      /* Midnight Navy */
+        #1e3a8a 20%,     /* Royal Blue */
+        #06b6d4 45%,     /* Cyan */
+        #14b8a6 70%,     /* Teal */
+        #22c55e 100%     /* Neon Green */
+    ),
+    linear-gradient(45deg, #111827, #0ea5e9);
+
+box-shadow: 
+    0 0 30px rgba(14, 165, 233, 0.7),
+    0 0 60px rgba(34, 197, 94, 0.5);
+}
+/* 🔥 HIDE CLUBS EFFECT */
+.clubs-grid.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 /* 🔥 TOPICS */
@@ -87,22 +411,27 @@ body{
     grid-template-columns:repeat(2,1fr);
     gap:10px;
     margin-top:20px;
+    animation: slideIn 0.5s ease;
 }
 
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 .topic-box{
     padding:15px;
     background:#f7a1a1;
     border-radius:10px;
     cursor:pointer;
+    transition: all 0.3s ease;
 }
 
+.topic-box:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
 /* TEST */
 .test-container{display:none;}
-
-.question-container{
-    transition: all 0.3s ease;
-    margin-bottom: 15px;
-}
 
 .question{
     background:#f1f1f1;
@@ -117,56 +446,72 @@ body{
     margin-top:10px;
     border-radius:8px;
     cursor:pointer;
-    border:2px solid #ddd;
-    transition: all 0.3s ease;
+    border:1px solid #ccc;
+    transition: all 0.2s ease;
 }
 
 .option:hover{
-    background: #f0f8ff;
-    border-color: #667eea;
-}
-
-/* 🔥 GREEN CORRECT ✅ */
-.option.correct{
-    background: linear-gradient(45deg, #4ade80, #22c55e) !important;
-    color: white !important;
-    border-color: #16a34a !important;
-    animation: correctAnim 0.5s ease;
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
-}
-
-/* 🔥 RED WRONG ❌ */
-.option.wrong{
-    background: linear-gradient(45deg, #f87171, #ef4444) !important;
-    color: white !important;
-    border-color: #dc2626 !important;
-    animation: wrongAnim 0.5s ease;
-    box-shadow: 0 4px 12px rgba(248, 113, 113, 0.4);
-}
-
-/* 🔥 Animations */
-@keyframes correctAnim {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
-@keyframes wrongAnim {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.95); }
-    100% { transform: scale(1); }
+    background: #e8f4f8;
+    transform: translateX(5px);
 }
 
 .option.selected{
     background:#667eea;
     color:white;
-    border-color: #5a67d8;
 }
+
+/* 🔥 JAWAB DEKHNE BUTTON */
+.show-answer-btn{
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.4);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+/* 🔥 WRONG ANSWER - RED */
+.option.wrong-answer {
+    background: #ef4444 !important;
+    color: white !important;
+    border: 2px solid #dc2626 !important;
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+.show-answer-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.6);
+}
+
+.answer-revealed{
+    background: #10b981 !important;
+    color: white !important;
+    border: 2px solid #059669 !important;
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
 
 .nav-buttons{
     margin-top:15px;
     display:flex;
     justify-content:space-between;
+    gap: 10px;
 }
 
 .btn{
@@ -174,10 +519,12 @@ body{
     border:none;
     border-radius:8px;
     cursor:pointer;
+    flex: 1;
 }
 
 .btn-primary{background:#667eea;color:white;}
 .btn-danger{background:red;color:white;}
+.btn-success{background:#10b981;color:white;}
 
 .result{
     display:none;
@@ -185,6 +532,52 @@ body{
     color:white;
     padding:20px;
     border-radius:10px;
+}
+.footer-links{
+
+    width:fit-content;
+
+    margin:18px auto 8px auto;
+
+    padding:6px 14px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(8px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,0.18);
+
+    display:flex;
+
+    gap:10px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#dbeafe;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:white;
 }
 </style>
 </head>
@@ -207,7 +600,6 @@ body{
     
     background: linear-gradient(45deg,#00c6ff,#00ff9d);
     
-    /* 🔥 3D effect */
     box-shadow: 
         0 5px 0 #009e7a,
         0 10px 20px rgba(0,0,0,0.3),
@@ -222,17 +614,11 @@ body{
     animation: float3D 2s infinite ease-in-out alternate;
 }
 
-/* 🔥 floating 3D animation */
 @keyframes float3D {
-    from {
-        transform: perspective(500px) rotateX(5deg) translateY(0);
-    }
-    to {
-        transform: perspective(500px) rotateX(5deg) translateY(-5px);
-    }
+    from { transform: perspective(500px) rotateX(5deg) translateY(0); }
+    to { transform: perspective(500px) rotateX(5deg) translateY(-5px); }
 }
 
-/* 🔥 shine effect */
 .founder-3d::before{
     content:"";
     position:absolute;
@@ -244,31 +630,74 @@ body{
     animation: shineMove 2.5s infinite;
 }
 
-@keyframes shineMove{
-    0%{ left:-100%; }
-    100%{ left:100%; }
-}
+@keyframes shineMove{ 0%{ left:-100%; } 100%{ left:100%; } }
 </style>
-<!-- GS BUTTON -->
-<button class="folder-btn" onclick="showTopics()">📁 GS Club</button>
 
-<!-- SUBJECTS -->
+<!-- 🔥 ALL CLUBS BUTTONS -->
+<div class="clubs-grid" id="clubsGrid">
+    <button class="folder-btn gs-club" onclick="showGSTopics()">📚 GS Club</button>
+    <button class="folder-btn math-club" onclick="showMathTopics()">🔢Math Club</button>
+    <button class="folder-btn english-club" onclick="showEnglishTopics()">📝English Club</button>
+    <button class="folder-btn hindi-club" onclick="showHindiTopics()">📖Hindi Club</button>
+    <button class="folder-btn gsq-club" onclick="window.location.href='gsquestions.html'">📘 GS Questions Club</button>
+    <button class="folder-btn physics-club" onclick="window.location.href='physics.html'">⚡ Physics Club</button>
+    <button class="folder-btn paper-club" onclick="window.location.href='previouspapers.html'">📄 Previous Paper Sets</button>
+</div>
+
+<!-- GS TOPICS -->
 <div id="topicsContainer" style="display:none;">
 <div class="topics-grid">
     <div class="topic-box" onclick="loadSubject('Ancient')">Ancient History</div>
     <div class="topic-box" onclick="loadSubject('Medieval')">Medieval History</div>
-<div class="topic-box" onclick="loadSubject('Modern')">Modern History</div>
-<div class="topic-box" onclick="loadSubject('world')">World History</div>
-<div class="topic-box" onclick="loadSubject('geography')">Geography</div>
-<div class="topic-box" onclick="loadSubject('polity')">Polity</div>
-<div class="topic-box" onclick="loadSubject('economics')">Economics</div>
-<div class="topic-box" onclick="loadSubject('gk')">Static GK</div>
-<div class="topic-box" onclick="loadSubject('science')">Science</div>
-<div class="topic-box" onclick="loadSubject('Math')">Math</div>
+    <div class="topic-box" onclick="loadSubject('Modern')">Modern History</div>
+    <div class="topic-box" onclick="loadSubject('world')">World History</div>
+    <div class="topic-box" onclick="loadSubject('geography')">Geography</div>
+    <div class="topic-box" onclick="loadSubject('polity')">Polity</div>
+    <div class="topic-box" onclick="loadSubject('economics')">Economics</div>
+    <div class="topic-box" onclick="loadSubject('gk')">Static GK</div>
+    <div class="topic-box" onclick="loadSubject('science')">Science</div>
+    <div class="topic-box" onclick="loadSubject('current')">Current Affairs</div>
+    <div class="topic-box" onclick="loadSubject('Mocktest')">Mock Test</div>
 </div>
 </div>
+
+<!-- MATH TOPICS -->
+<div id="mathTopicsContainer" style="display:none;">
+<div class="topics-grid">
+    <div class="topic-box" onclick="loadMathChapter('algebra')">Algebra</div>
+    <div class="topic-box" onclick="loadMathChapter('geometry')">Geometry</div>
+    <div class="topic-box" onclick="loadMathChapter('trigonometry')">Trigonometry</div>
+    <div class="topic-box" onclick="loadMathChapter('calculus')">Calculus</div>
+    <div class="topic-box" onclick="loadMathChapter('statistics')">Statistics</div>
+</div>
+</div>
+
+<!-- ENGLISH TOPICS -->
+<div id="englishTopicsContainer" style="display:none;">
+<div class="topics-grid">
+    <div class="topic-box" onclick="loadEnglishChapter('grammar')">Grammar</div>
+    <div class="topic-box" onclick="loadEnglishChapter('vocabulary')">Vocabulary</div>
+    <div class="topic-box" onclick="loadEnglishChapter('comprehension')">Comprehension</div>
+    <div class="topic-box" onclick="loadEnglishChapter('literature')">Literature</div>
+</div>
+</div>
+
+<!-- HINDI TOPICS -->
+<div id="hindiTopicsContainer" style="display:none;">
+<div class="topics-grid">
+    <div class="topic-box" onclick="loadHindiChapter('vyakaran')">व्याकरण</div>
+    <div class="topic-box" onclick="loadHindiChapter('sahitya')">साहित्य</div>
+    <div class="topic-box" onclick="loadHindiChapter('nibandh')">निबंध</div>
+    <div class="topic-box" onclick="loadHindiChapter('kavita')">कविता</div>
+</div>
+</div>
+
 <!-- CHAPTERS -->
 <div id="chapterContainer" style="display:none;"></div>
+<!-- 🔥 YE 3 LINES ADD KARO (hindiTopicsContainer के बाद) -->
+<div id="mathChapterContainer" style="display:none;"></div>
+<div id="englishChapterContainer" style="display:none;"></div>
+<div id="hindiChapterContainer" style="display:none;"></div>
 
 <!-- TEST -->
 <div id="testContainer" class="test-container">
@@ -277,23 +706,22 @@ body{
 <div class="nav-buttons">
 <button class="btn btn-danger" onclick="previousQuestion()" id="prevBtn" style="display:none;">पीछे</button>
 <button class="btn btn-primary" onclick="nextQuestion()">आगे</button>
-<button class="btn btn-primary" onclick="showAnswer()" id="showAnswerBtn" style="display:none;">जवाब देखें</button>
+<button class="btn btn-success" onclick="toggleAnswer()" id="answerBtn">🔍 जवाब देखें</button>
 <button class="btn btn-primary" onclick="finishTest()" id="finishBtn" style="display:none;">समाप्त</button>
 </div>
 </div>
 
 <!-- RESULT -->
 <div id="resultContainer" class="result">
-<h2>Result</h2>
+<h2>🎉 Result</h2>
 <h1 id="finalScore"></h1>
-<p>Skipped: <span id="skippedCount"></span></p>
-<button class="btn btn-primary" onclick="restartTest()">Restart</button>
+<p>✅ सही: <span id="correctCount"></span> | ❌ गलत: <span id="wrongCount"></span> | ⏭️ Skip: <span id="skippedCount"></span></p>
+<button class="btn btn-primary" onclick="restartTest()">🔄 फिर से शुरू</button>
 </div>
 
 </div>
+
 <script>
-
-/* 🔥 SUBJECT → CHAPTER → QUESTIONS */
 let allQuestions = {
 Modern:{
 "कांग्रेस अधिवेशन":[//= 20 प्रश्न//
@@ -529,35 +957,6 @@ gk:{
             {question: "पेना नामक पारम्परिक वाद्य यंत्र निम्लिखित में से किस राज्य से सम्बंधित है?", options:["सिक्क्किम", "मणिपुर", "गोवा", "केरल"], answer:1},
 ]
 },
-Math:{
-"HCF & LCM":[
-            {question:"दो संख्याओं का HCF = 12 और LCM = 180 है, यदि एक संख्या 36 है तो दूसरी संख्या क्या होगी?",options:["45","50","60","40"],answer:2},
-            {question:"24, 36 और 60 का HCF क्या है?",options:["6","12","18","24"],answer:1},
-            {question:"8, 12 और 20 का LCM क्या है?",options:["120","60","80","240"],answer:0},
-            {question:"दो संख्याओं का गुणनफल 540 है और उनका HCF 6 है, तो LCM क्या होगा?",options:["60","72","90","108"],answer:2},
-            {question:"दो संख्याओं का LCM 120 और HCF 10 है, यदि एक संख्या 40 है तो दूसरी संख्या क्या होगी?",options:["20","30","25","35"],answer:1},
-            {question:"16 और 24 का HCF क्या है?",options:["4","6","8","12"],answer:2},
-            {question:"15, 25 और 35 का LCM क्या है?",options:["105","175","225","75"],answer:1},
-            {question:"दो संख्याओं का HCF 8 और LCM 96 है, यदि एक संख्या 24 है तो दूसरी संख्या क्या होगी?",options:["32","48","16","64"],answer:0},
-            {question:"18, 27 और 45 का HCF क्या है?",options:["3","6","9","12"],answer:2},
-            {question:"यदि दो संख्याओं का अनुपात 3:5 है और उनका HCF 4 है, तो संख्याएँ क्या होंगी?",options:["12,20","8,20","6,10","9,15"],answer:0},
-            {question:"दो संख्याओं का LCM 180 और HCF 6 है, उनका योग न्यूनतम क्या होगा?",options:["30","36","48","60"],answer:1},
-            {question:"20, 30 और 50 का HCF क्या है?",options:["5","10","15","20"],answer:1},
-            {question:"21, 28 और 35 का LCM क्या है?",options:["420","210","140","280"],answer:0},
-            {question:"दो संख्याओं का गुणनफल 1440 और HCF 12 है, तो LCM क्या होगा?",options:["100","110","120","130"],answer:2},
-            {question:"यदि दो संख्याओं का HCF 5 और LCM 75 है, तो संभावित संख्याएँ कौन सी हैं?",options:["5,75","15,25","10,15","25,30"],answer:1},
-            {question:"36, 48 और 72 का HCF क्या है?",options:["6","12","18","24"],answer:1},
-            {question:"12, 18 और 30 का LCM क्या है?",options:["180","90","60","120"],answer:0},
-            {question:"दो संख्याओं का HCF 7 और LCM 84 है, यदि एक संख्या 21 है तो दूसरी संख्या क्या होगी?",options:["14","28","42","56"],answer:1},
-            {question:"45, 60 और 75 का HCF क्या है?",options:["5","10","15","20"],answer:2},
-            {question:"यदि दो संख्याओं का अनुपात 4:7 और LCM 140 है, तो संख्याएँ क्या होंगी?",options:["20,35","28,49","40,70","24,42"],answer:0},
-            {question:"18 और 24 का LCM क्या है?",options:["48","72","36","96"],answer:1},
-            {question:"दो संख्याओं का HCF 9 और उनका गुणनफल 405 है, तो LCM क्या होगा?",options:["35","40","45","50"],answer:2},
-            {question:"8, 16 और 32 का HCF क्या है?",options:["2","4","8","16"],answer:2},
-            {question:"9, 15 और 21 का LCM क्या है?",options:["315","105","45","210"],answer:1},
-            {question:"यदि दो संख्याओं का HCF 4 और LCM 224 है, तो एक संख्या 28 होने पर दूसरी संख्या क्या होगी?",options:["16","32","56","64"],answer:1}
-]
-},
 world:{
 "पुर्नजागरण":[//= 30 प्रश्न//
             {question:"पुनर्जागरण की शुरुआत किस देश में हुई?",options:["फ्रांस","इटली","इंग्लैंड","जर्मनी"],answer:1},
@@ -789,6 +1188,38 @@ Ancient:{
             {question: "लेखन कला की उचित प्रणाली विकसित करने वाली सर्वप्रथम प्राचीन सभ्यता थी?", options:["सिंधु", "मिस्र", "सुमेरिया", "चीन"], answer:2},
             {question: "किस पशु के अवशेष सिंधु घाटी सभ्यता में प्राप्त नहीं हुए है?", options:["शेर", "घोडा", "गाय", "हाथी"], answer:0},
 ],
+"महाजनपदों का उदय":[
+            {question:"महाजनपदों का उदय किस काल में हुआ?",options:["वैदिक काल","उत्तर वैदिक काल","महाजनपद काल","मौर्य काल"],answer:2},
+            {question:"महाजनपदों की कुल संख्या कितनी थी?",options:["14","15","16","17"],answer:2},
+            {question:"महाजनपदों का उल्लेख किस ग्रंथ में मिलता है?",options:["वेद","अंगुत्तर निकाय","महाभारत","पुराण"],answer:1},
+            {question:"मगध महाजनपद की राजधानी क्या थी?",options:["वैशाली","राजगृह","कुशीनगर","पाटलिपुत्र"],answer:1},
+            {question:"कौन सा महाजनपद गणतंत्र था?",options:["मगध","वज्जि","कोशल","अवंति"],answer:1},
+            {question:"वज्जि संघ की राजधानी क्या थी?",options:["पाटलिपुत्र","वैशाली","कुशीनगर","राजगृह"],answer:1},
+            {question:"कौन सा महाजनपद उत्तर-पश्चिम में स्थित था?",options:["अवंति","गांधार","कोशल","काशी"],answer:1},
+            {question:"अवंति महाजनपद की राजधानी क्या थी?",options:["उज्जैन","तक्षशिला","वैशाली","राजगृह"],answer:0},
+            {question:"कौन सा महाजनपद सबसे शक्तिशाली था?",options:["काशी","कोशल","अवंति","मगध"],answer:3},
+            {question:"कौन सा महाजनपद वर्तमान पंजाब क्षेत्र में था?",options:["गांधार","काशी","अंग","मगध"],answer:0},
+            {question:"महाजनपद काल में शासन के कितने प्रकार थे?",options:["1","2","3","4"],answer:1},
+            {question:"राजतंत्र में सत्ता किसके पास होती थी?",options:["जनता","राजा","सभा","समिति"],answer:1},
+            {question:"गणतंत्र में सत्ता किसके पास होती थी?",options:["राजा","जनता/सभा","सेना","पुरोहित"],answer:1},
+            {question:"कौन सा महाजनपद गंगा के किनारे स्थित था?",options:["मगध","गांधार","अवंति","कंबोज"],answer:0},
+            {question:"कौन सा महाजनपद व्यापार के लिए प्रसिद्ध था?",options:["गांधार","मगध","कोशल","काशी"],answer:0},
+            {question:"अंग महाजनपद की राजधानी क्या थी?",options:["चंपा","राजगृह","वैशाली","कुशीनगर"],answer:0},
+            {question:"कौन सा महाजनपद पूर्वी भारत में था?",options:["गांधार","अवंति","अंग","कंबोज"],answer:2},
+            {question:"कौन सा महाजनपद दक्षिण भारत में था?",options:["अवंति","अश्मक","मगध","गांधार"],answer:1},
+            {question:"अश्मक महाजनपद किस नदी के किनारे था?",options:["गंगा","गोदावरी","नर्मदा","कावेरी"],answer:1},
+            {question:"महाजनपद काल में कौन सा धातु उपयोग में आया?",options:["सोना","चाँदी","लोहा","तांबा"],answer:2},
+            {question:"कौन सा महाजनपद बौद्ध धर्म से संबंधित था?",options:["मगध","गांधार","कंबोज","अश्मक"],answer:0},
+            {question:"महाजनपद काल में कौन सा नगर शिक्षा के लिए प्रसिद्ध था?",options:["तक्षशिला","उज्जैन","राजगृह","वैशाली"],answer:0},
+            {question:"कौन सा महाजनपद पश्चिम भारत में था?",options:["अवंति","अंग","मगध","कोशल"],answer:0},
+            {question:"कौन सा महाजनपद हिमालय क्षेत्र में था?",options:["कंबोज","मगध","अंग","काशी"],answer:0},
+            {question:"कौन सा महाजनपद कोशल के निकट था?",options:["काशी","गांधार","अंग","कंबोज"],answer:0},
+            {question:"महाजनपद काल में किस प्रकार की मुद्रा प्रचलित थी?",options:["स्वर्ण","रजत","पंचमार्क","कागजी"],answer:2},
+            {question:"महाजनपद काल में समाज का आधार क्या था?",options:["जाति","वर्ण","धर्म","व्यापार"],answer:1},
+            {question:"महाजनपद काल में प्रमुख धर्म कौन से थे?",options:["हिंदू","जैन","बौद्ध","सभी"],answer:3},
+            {question:"कौन सा महाजनपद वर्तमान बिहार में था?",options:["मगध","गांधार","अवंति","कंबोज"],answer:0},
+            {question:"कौन सा महाजनपद वर्तमान उत्तर प्रदेश में था?",options:["काशी","गांधार","अंग","अश्मक"],answer:0}
+],
 "वैदिक काल":[//= 20 प्रश्न//
             {question: "सबसे पुराना वेद और नया वेद क्रमशः है?", options:["यजुर्वेद-सामवेद", "ऋग्वेद-यजुर्वेद", "ऋग्वेद-अथर्ववेद", "अथर्ववेद-ऋग्वेद"], answer:2},
             {question: "त्रयी नाम है?", options:["तीन वेदों का", "धर्म,संघ,युद्ध का", "हिन्दू धर्म के तीन देवताओ का", "तीन मौसमो का"], answer:0},
@@ -836,189 +1267,1301 @@ Ancient:{
             {question: "भागवत संप्रदाय में भक्ति के रूपों की संख्या है?", options:["7", "8", "9", "10"], answer:2},
             {question: "भारतीय संस्कृति में निम्न में से किसे अनंग कहा गया है?", options:["शिव", "कृष्ण", "काम", "लक्ष्मण"], answer:2},
             {question: "शैव धर्म के पाशुपत सम्प्रदाय के संस्थापक कोन माने जाते है?", options:["अभिनवगुप्त", "लकुलीश", "वासव", "शंकराचार्य"], answer:1},
+],
+"इस्लाम धर्म":[//= 30 प्रश्न//
+            {question:"इस्लाम धर्म के संस्थापक कौन थे?",options:["ईसा मसीह","मोहम्मद साहब","बुद्ध","महावीर"],answer:1},
+            {question:"इस्लाम धर्म का पवित्र ग्रंथ क्या है?",options:["वेद","गीता","कुरान","बाइबिल"],answer:2},
+            {question:"मोहम्मद साहब का जन्म कब हुआ था?",options:["570 ई.","571 ई.","572 ई.","573 ई."],answer:0},
+            {question:"मोहम्मद साहब का जन्म कहाँ हुआ था?",options:["मदीना","मक्का","यरुशलम","काबुल"],answer:1},
+            {question:"इस्लाम धर्म में ईश्वर को क्या कहा जाता है?",options:["भगवान","अल्लाह","ईश्वर","प्रभु"],answer:1},
+            {question:"इस्लाम धर्म में पैगंबर किसे कहा जाता है?",options:["राजा","संत","ईश्वर का दूत","गुरु"],answer:2},
+            {question:"हिजरत (Hijrat) का क्या अर्थ है?",options:["युद्ध","प्रार्थना","स्थान परिवर्तन","उपवास"],answer:2},
+            {question:"हिजरत की घटना कब हुई थी?",options:["620 ई.","621 ई.","622 ई.","623 ई."],answer:2},
+            {question:"इस्लाम धर्म के पाँच स्तंभों में कौन शामिल नहीं है?",options:["नमाज","जकात","हवन","रोजा"],answer:2},
+            {question:"इस्लाम में नमाज कितनी बार पढ़ी जाती है?",options:["3","4","5","6"],answer:2},
+            {question:"जकात का क्या अर्थ है?",options:["प्रार्थना","दान","युद्ध","उपवास"],answer:1},
+            {question:"रोजा किस महीने में रखा जाता है?",options:["शाबान","रमजान","जिलहिज्जा","मुहर्रम"],answer:1},
+            {question:"हज यात्रा कहाँ की जाती है?",options:["मदीना","मक्का","यरुशलम","काबुल"],answer:1},
+            {question:"काबा किस शहर में स्थित है?",options:["मदीना","मक्का","दमिश्क","काहिरा"],answer:1},
+            {question:"इस्लाम धर्म का प्रमुख त्योहार कौन सा है?",options:["दीवाली","ईद","होली","क्रिसमस"],answer:1},
+            {question:"मोहम्मद साहब को पहली वह़ी (ज्ञान) कहाँ प्राप्त हुई?",options:["मदीना","हिरा गुफा","काबा","दमिश्क"],answer:1},
+            {question:"इस्लाम धर्म में 'कलीमा' का क्या अर्थ है?",options:["प्रार्थना","विश्वास की घोषणा","दान","उपवास"],answer:1},
+            {question:"इस्लाम में 'सुन्नी' और 'शिया' क्या हैं?",options:["त्योहार","पंथ","ग्रंथ","स्थान"],answer:1},
+            {question:"इस्लाम धर्म में 'जिहाद' का अर्थ क्या है?",options:["युद्ध","संघर्ष","दान","प्रार्थना"],answer:1},
+            {question:"मोहम्मद साहब का निधन कब हुआ?",options:["630 ई.","631 ई.","632 ई.","633 ई."],answer:2},
+            {question:"मदीना का पुराना नाम क्या था?",options:["यसरिब","दमिश्क","काहिरा","बगदाद"],answer:0},
+            {question:"इस्लाम धर्म में 'मक्का' का क्या महत्व है?",options:["राजधानी","पवित्र स्थान","व्यापार केंद्र","शिक्षा केंद्र"],answer:1},
+            {question:"इस्लाम धर्म में 'मुहर्रम' किससे संबंधित है?",options:["त्योहार","नया साल","शोक","यात्रा"],answer:2},
+            {question:"इस्लाम धर्म में 'ईद-उल-फितर' कब मनाई जाती है?",options:["रोजा शुरू","रोजा समाप्त","हज के समय","मुहर्रम"],answer:1},
+            {question:"इस्लाम धर्म में 'ईद-उल-अजहा' किससे संबंधित है?",options:["बलिदान","उपवास","दान","प्रार्थना"],answer:0},
+            {question:"इस्लाम धर्म में 'नमाज' का क्या अर्थ है?",options:["दान","प्रार्थना","यात्रा","त्योहार"],answer:1},
+            {question:"इस्लाम धर्म में 'काबा' की दिशा को क्या कहते हैं?",options:["हज","किबला","जकात","रोजा"],answer:1},
+            {question:"इस्लाम धर्म में 'फरिश्ते' क्या होते हैं?",options:["देवता","दूत","मनुष्य","राजा"],answer:1},
+            {question:"इस्लाम धर्म में 'कुरान' किस भाषा में है?",options:["अरबी","फारसी","उर्दू","हिंदी"],answer:0},
+            {question:"इस्लाम धर्म में 'हदीस' क्या है?",options:["कुरान","मोहम्मद के कथन","त्योहार","प्रार्थना"],answer:1}
+],
+"ईसाई धर्म":[//= 30 प्रश्न//
+            {question:"ईसाई धर्म के संस्थापक कौन माने जाते हैं?",options:["मोहम्मद साहब","ईसा मसीह","बुद्ध","महावीर"],answer:1},
+            {question:"ईसाई धर्म का पवित्र ग्रंथ क्या है?",options:["वेद","कुरान","बाइबिल","गीता"],answer:2},
+            {question:"ईसा मसीह का जन्म कहाँ हुआ था?",options:["यरुशलम","रोम","बेथलेहम","एथेंस"],answer:2},
+            {question:"ईसा मसीह की माता का नाम क्या था?",options:["मरियम","फातिमा","सीता","राधा"],answer:0},
+            {question:"ईसा मसीह के पिता का नाम क्या था?",options:["यूसुफ","इब्राहिम","डेविड","जॉन"],answer:0},
+            {question:"ईसाई धर्म का प्रमुख त्योहार कौन सा है?",options:["ईद","क्रिसमस","दीवाली","होली"],answer:1},
+            {question:"क्रिसमस कब मनाया जाता है?",options:["24 दिसम्बर","25 दिसम्बर","26 दिसम्बर","1 जनवरी"],answer:1},
+            {question:"ईसा मसीह को किसने सूली पर चढ़ाया?",options:["रोमन शासक","यहूदी","ग्रीक","मिस्री"],answer:0},
+            {question:"ईसा मसीह के उपदेशों का मुख्य विषय क्या था?",options:["अहिंसा","प्रेम और क्षमा","युद्ध","धन"],answer:1},
+            {question:"ईसाई धर्म का प्रतीक क्या है?",options:["त्रिशूल","चक्र","क्रॉस","शंख"],answer:2},
+            {question:"बाइबिल के कितने भाग होते हैं?",options:["1","2","3","4"],answer:1},
+            {question:"बाइबिल के दो भाग कौन से हैं?",options:["वेद और उपनिषद","पुराना और नया नियम","कुरान और हदीस","त्रिपिटक और आगम"],answer:1},
+            {question:"ईसा मसीह का जन्म किस युग में हुआ?",options:["ईसा पूर्व","ईस्वी","मध्यकाल","आधुनिक"],answer:1},
+            {question:"ईसा मसीह का जन्मदिन किस रूप में मनाया जाता है?",options:["ईस्टर","क्रिसमस","गुड फ्राइडे","नव वर्ष"],answer:1},
+            {question:"गुड फ्राइडे किससे संबंधित है?",options:["जन्म","सूली पर चढ़ना","पुनरुत्थान","उपदेश"],answer:1},
+            {question:"ईस्टर किससे संबंधित है?",options:["जन्म","सूली","पुनरुत्थान","यात्रा"],answer:2},
+            {question:"ईसाई धर्म का प्रमुख स्थान कौन सा है?",options:["मक्का","वेटिकन सिटी","काशी","अयोध्या"],answer:1},
+            {question:"वेटिकन सिटी कहाँ स्थित है?",options:["फ्रांस","इटली","जर्मनी","स्पेन"],answer:1},
+            {question:"ईसाई धर्म के प्रचारक को क्या कहा जाता है?",options:["पंडित","मौलवी","पादरी","भिक्षु"],answer:2},
+            {question:"ईसा मसीह को किस रूप में माना जाता है?",options:["राजा","भगवान का पुत्र","गुरु","संत"],answer:1},
+            {question:"ईसा मसीह ने अपने उपदेश किस भाषा में दिए?",options:["संस्कृत","अरबी","अरामी","हिंदी"],answer:2},
+            {question:"ईसा मसीह के कितने शिष्य थे?",options:["10","11","12","13"],answer:2},
+            {question:"ईसा मसीह के प्रमुख शिष्य कौन थे?",options:["पतरस","अशोक","चंद्रगुप्त","महावीर"],answer:0},
+            {question:"बाइबिल का पुराना नियम किससे संबंधित है?",options:["ईसा मसीह","यहूदी धर्म","इस्लाम","हिंदू धर्म"],answer:1},
+            {question:"बाइबिल का नया नियम किससे संबंधित है?",options:["यहूदी धर्म","ईसा मसीह","इस्लाम","बौद्ध धर्म"],answer:1},
+            {question:"ईसा मसीह का क्रूस किससे बना था?",options:["लकड़ी","लोहा","सोना","चांदी"],answer:0},
+            {question:"ईसाई धर्म का प्रसार किसके द्वारा हुआ?",options:["राजा","शिष्य","व्यापारी","सैनिक"],answer:1},
+            {question:"ईसा मसीह का जीवनकाल लगभग कितने वर्ष था?",options:["30","33","35","40"],answer:1},
+            {question:"ईसाई धर्म में 'पोप' कौन होता है?",options:["राजा","धर्मगुरु","सैनिक","व्यापारी"],answer:1},
+            {question:"ईसा मसीह को किसने धोखा दिया था?",options:["पतरस","जूडस","जॉन","मैथ्यू"],answer:1}
+],
+"पारसी धर्म":[//= 30 प्रश्न//
+            {question:"पारसी धर्म के संस्थापक कौन थे?",options:["जरथुस्त्र","ईसा मसीह","मोहम्मद साहब","बुद्ध"],answer:0},
+            {question:"पारसी धर्म का प्रमुख ग्रंथ क्या है?",options:["कुरान","बाइबिल","अवेस्ता","वेद"],answer:2},
+            {question:"पारसी धर्म में ईश्वर को क्या कहा जाता है?",options:["अहुरा मज्दा","अल्लाह","भगवान","यहोवा"],answer:0},
+            {question:"जरथुस्त्र का जन्म कहाँ माना जाता है?",options:["ईरान","भारत","अरब","मिस्र"],answer:0},
+            {question:"पारसी धर्म किस देश में उत्पन्न हुआ?",options:["भारत","ईरान","इराक","तुर्की"],answer:1},
+            {question:"पारसी धर्म का प्रमुख सिद्धांत क्या है?",options:["अहिंसा","सत्य विचार, सत्य वचन, सत्य कर्म","मोक्ष","निर्वाण"],answer:1},
+            {question:"पारसी धर्म में अग्नि का क्या महत्व है?",options:["ऊर्जा","पूजा का केंद्र","प्रकाश","युद्ध"],answer:1},
+            {question:"पारसी लोग अपने उपासना स्थल को क्या कहते हैं?",options:["मंदिर","मस्जिद","अग्नि मंदिर","चर्च"],answer:2},
+            {question:"अवेस्ता किस भाषा में लिखा गया है?",options:["संस्कृत","अरबी","अवेस्तन","फारसी"],answer:2},
+            {question:"पारसी धर्म में मृत्यु के बाद शव का क्या किया जाता है?",options:["दफन","जलाया","टॉवर ऑफ साइलेंस में रखा","समुद्र में डाला"],answer:2},
+            {question:"'टॉवर ऑफ साइलेंस' को क्या कहा जाता है?",options:["दखमा","काबा","मंदिर","चर्च"],answer:0},
+            {question:"पारसी धर्म का प्रमुख त्योहार कौन सा है?",options:["ईद","क्रिसमस","नवरोज","दीवाली"],answer:2},
+            {question:"नवरोज क्या दर्शाता है?",options:["नया साल","युद्ध","धर्म","त्योहार"],answer:0},
+            {question:"पारसी धर्म में अच्छाई और बुराई के बीच संघर्ष को क्या कहा जाता है?",options:["धर्म","द्वैतवाद","मोक्ष","निर्वाण"],answer:1},
+            {question:"पारसी धर्म में बुराई का प्रतीक कौन है?",options:["अहुरा मज्दा","अंग्रा मैन्यु","देवता","मानव"],answer:1},
+            {question:"पारसी धर्म में अच्छाई का प्रतीक कौन है?",options:["अहुरा मज्दा","अंग्रा मैन्यु","शैतान","राक्षस"],answer:0},
+            {question:"भारत में पारसी समुदाय कहाँ से आया?",options:["अरब","ईरान","मिस्र","तुर्की"],answer:1},
+            {question:"पारसी धर्म के अनुयायी भारत में मुख्यतः कहाँ बसे?",options:["दिल्ली","मुंबई","कोलकाता","चेन्नई"],answer:1},
+            {question:"पारसी धर्म में 'अग्नि' किसका प्रतीक है?",options:["अंधकार","शुद्धता","युद्ध","भय"],answer:1},
+            {question:"जरथुस्त्र के उपदेशों का मुख्य आधार क्या है?",options:["धन","सत्य और नैतिकता","युद्ध","राजनीति"],answer:1},
+            {question:"पारसी धर्म में कितने मूल सिद्धांत हैं?",options:["2","3","4","5"],answer:1},
+            {question:"पारसी धर्म का दूसरा नाम क्या है?",options:["हिंदू धर्म","जोरास्ट्रियन धर्म","इस्लाम","ईसाई"],answer:1},
+            {question:"अवेस्ता का कौन सा भाग धार्मिक मंत्रों से संबंधित है?",options:["यजुर्वेद","गाथा","त्रिपिटक","आगम"],answer:1},
+            {question:"पारसी धर्म में 'गाथा' किससे संबंधित है?",options:["गीत","युद्ध","धर्म","विज्ञान"],answer:0},
+            {question:"पारसी धर्म में अग्नि को कहाँ रखा जाता है?",options:["घर","अग्नि मंदिर","चर्च","मस्जिद"],answer:1},
+            {question:"पारसी धर्म में जीवन का उद्देश्य क्या है?",options:["धन","सत्य का पालन","युद्ध","राजनीति"],answer:1},
+            {question:"जरथुस्त्र ने किसके विरुद्ध उपदेश दिए?",options:["सत्य","असत्य","धर्म","राजनीति"],answer:1},
+            {question:"पारसी धर्म में 'दखमा' का उपयोग किस लिए होता है?",options:["पूजा","शव रखने","त्योहार","युद्ध"],answer:1},
+            {question:"पारसी धर्म में 'अहुरा मज्दा' किसका प्रतीक है?",options:["बुराई","अंधकार","प्रकाश और अच्छाई","युद्ध"],answer:2},
+            {question:"पारसी धर्म में मुख्य संघर्ष किसके बीच माना जाता है?",options:["देव-दानव","अच्छाई-बुराई","राजा-प्रजा","धर्म-अधर्म"],answer:1}
+],
+"मगध राज्य का उत्कर्ष":[//= 30 प्रश्न//
+            {question:"मगध राज्य का उत्कर्ष किस काल में हुआ?",options:["वैदिक काल","महाजनपद काल","मौर्य काल","गुप्त काल"],answer:1},
+            {question:"मगध की पहली राजधानी क्या थी?",options:["पाटलिपुत्र","राजगृह","वैशाली","कुशीनगर"],answer:1},
+            {question:"मगध का पहला प्रसिद्ध शासक कौन था?",options:["बिंबिसार","अजातशत्रु","चंद्रगुप्त","महापद्म नंद"],answer:0},
+            {question:"बिंबिसार किस वंश से संबंधित था?",options:["नंद","हर्यक","मौर्य","गुप्त"],answer:1},
+            {question:"अजातशत्रु किसका पुत्र था?",options:["महापद्म नंद","बिंबिसार","चंद्रगुप्त","अशोक"],answer:1},
+            {question:"अजातशत्रु ने किसे हराकर वैशाली पर अधिकार किया?",options:["लिच्छवि","मल्ल","काशी","कोशल"],answer:0},
+            {question:"मगध की राजधानी पाटलिपुत्र किसने बनाई?",options:["बिंबिसार","अजातशत्रु","उदयिन","नंद"],answer:2},
+            {question:"मगध साम्राज्य का विस्तार किसने किया?",options:["बिंबिसार","अजातशत्रु","महापद्म नंद","उदयिन"],answer:2},
+            {question:"नंद वंश का संस्थापक कौन था?",options:["घनानंद","महापद्म नंद","चंद्रगुप्त","अशोक"],answer:1},
+            {question:"नंद वंश का अंतिम शासक कौन था?",options:["महापद्म नंद","घनानंद","चंद्रगुप्त","अजातशत्रु"],answer:1},
+            {question:"चंद्रगुप्त मौर्य ने किसे हराकर मगध पर अधिकार किया?",options:["घनानंद","बिंबिसार","अजातशत्रु","उदयिन"],answer:0},
+            {question:"चंद्रगुप्त मौर्य का गुरु कौन था?",options:["पाणिनि","चाणक्य","कौटिल्य","पतंजलि"],answer:1},
+            {question:"मगध साम्राज्य की शक्ति का मुख्य आधार क्या था?",options:["धर्म","भौगोलिक स्थिति","संस्कृति","कला"],answer:1},
+            {question:"मगध क्षेत्र में कौन सी नदी बहती थी?",options:["गंगा","यमुना","सरस्वती","नर्मदा"],answer:0},
+            {question:"मगध के उत्कर्ष में लोहे का क्या योगदान था?",options:["युद्ध","कृषि","उद्योग","सभी"],answer:3},
+            {question:"अजातशत्रु ने कौन सा युद्ध यंत्र बनाया?",options:["रथ","महाशिलकंटक","धनुष","तलवार"],answer:1},
+            {question:"मगध की उन्नति का एक कारण क्या था?",options:["राजनीति","व्यापार","प्राकृतिक संसाधन","सभी"],answer:3},
+            {question:"मगध के उत्कर्ष के समय कौन सा धर्म प्रमुख था?",options:["हिंदू","जैन","बौद्ध","सभी"],answer:3},
+            {question:"मगध का क्षेत्र वर्तमान में कहाँ स्थित है?",options:["बिहार","उत्तर प्रदेश","मध्य प्रदेश","राजस्थान"],answer:0},
+            {question:"मौर्य वंश का संस्थापक कौन था?",options:["अशोक","चंद्रगुप्त मौर्य","बिंदुसार","महापद्म नंद"],answer:1},
+            {question:"चाणक्य का अन्य नाम क्या था?",options:["विष्णु शर्मा","कौटिल्य","कालिदास","आर्यभट्ट"],answer:1},
+            {question:"पाटलिपुत्र किस नदी के किनारे स्थित था?",options:["गंगा","यमुना","सरयू","नर्मदा"],answer:0},
+            {question:"नंद वंश की सेना कैसी थी?",options:["कमजोर","छोटी","शक्तिशाली","सामान्य"],answer:2},
+            {question:"मगध के उत्कर्ष का एक कारण क्या था?",options:["राजनीतिक स्थिरता","कमजोरी","युद्ध","गरीबी"],answer:0},
+            {question:"मगध में कौन सा धातु प्रचुर मात्रा में पाया जाता था?",options:["सोना","लोहा","चाँदी","तांबा"],answer:1},
+            {question:"अजातशत्रु ने किस नगर को राजधानी बनाया?",options:["पाटलिपुत्र","राजगृह","वैशाली","कुशीनगर"],answer:1},
+            {question:"मगध साम्राज्य का विस्तार किस दिशा में अधिक हुआ?",options:["उत्तर","दक्षिण","पूर्व","पश्चिम"],answer:2},
+            {question:"मगध की उन्नति में कौन सी भूमि सहायक थी?",options:["पठारी","उपजाऊ","रेगिस्तानी","पहाड़ी"],answer:1},
+            {question:"मगध के उत्कर्ष में हाथियों का क्या महत्व था?",options:["युद्ध","कृषि","व्यापार","धर्म"],answer:0},
+            {question:"मगध साम्राज्य की राजधानी अंततः क्या बनी?",options:["राजगृह","पाटलिपुत्र","वैशाली","कुशीनगर"],answer:1}
+            ],
+},
+Mocktest: {
+        'mock test-1(Half Ancient History)[10Q-Easy]':[
+            {question:"प्राचीन भारतीय इतिहास के स्रोत कितने प्रकार के होते हैं?",options:["2","3","4","5"],answer:1},
+            {question:"सिंधु सभ्यता का प्रमुख नगर कौन सा था?",options:["पाटलिपुत्र","हड़प्पा","काशी","उज्जैन"],answer:1},
+            {question:"वैदिक काल में समाज का आधार क्या था?",options:["जाति","वर्ण","धर्म","कुल"],answer:1},
+            {question:"महाजनपदों की संख्या कितनी थी?",options:["14","15","16","17"],answer:2},
+            {question:"जैन धर्म के संस्थापक कौन थे?",options:["महावीर","बुद्ध","कपिल","शंकर"],answer:0},
+            {question:"बौद्ध धर्म के संस्थापक कौन थे?",options:["महावीर","गौतम बुद्ध","कपिल","राम"],answer:1},
+            {question:"ऋग्वेद किस भाषा में लिखा गया है?",options:["संस्कृत","पाली","प्राकृत","हिंदी"],answer:0},
+            {question:"हड़प्पा सभ्यता की लिपि कैसी थी?",options:["पठनीय","अपठनीय","संस्कृत","पाली"],answer:1},
+            {question:"बौद्ध धर्म का पवित्र ग्रंथ क्या है?",options:["त्रिपिटक","वेद","उपनिषद","गीता"],answer:0},
+            {question:"जैन धर्म का पवित्र ग्रंथ क्या है?",options:["वेद","आगम","त्रिपिटक","गीता"],answer:1}
+        ],
+        'mock test-2(Half Ancient History)[10Q-Easy]':[
+            {question:"सिंधु सभ्यता का सबसे बड़ा नगर कौन सा था?",options:["मोहनजोदड़ो","हड़प्पा","लोथल","कालीबंगन"],answer:0},
+            {question:"आर्य किस दिशा से भारत आए?",options:["पूर्व","पश्चिम","उत्तर","दक्षिण"],answer:2},
+            {question:"वैदिक काल में राजा को क्या कहा जाता था?",options:["सम्राट","राजन","नरेश","भूप"],answer:1},
+            {question:"बौद्ध धर्म का प्रथम उपदेश कहाँ दिया गया?",options:["बोधगया","सारनाथ","कुशीनगर","राजगृह"],answer:1},
+            {question:"महावीर का जन्म कहाँ हुआ?",options:["वैशाली","कुंडग्राम","राजगृह","पाटलिपुत्र"],answer:1},
+            {question:"सिंधु सभ्यता का मुख्य व्यवसाय क्या था?",options:["कृषि","व्यापार","शिकार","मछली पालन"],answer:0},
+            {question:"शैव धर्म में किसकी पूजा होती है?",options:["विष्णु","शिव","ब्रह्मा","इंद्र"],answer:1},
+            {question:"वैष्णव धर्म में किसकी पूजा होती है?",options:["शिव","विष्णु","ब्रह्मा","अग्नि"],answer:1},
+            {question:"इस्लाम धर्म के संस्थापक कौन हैं?",options:["ईसा मसीह","मोहम्मद साहब","महावीर","बुद्ध"],answer:1},
+            {question:"ईसाई धर्म का पवित्र ग्रंथ क्या है?",options:["कुरान","बाइबिल","गीता","वेद"],answer:1}
+        ],
+        'mock test-3(Half Ancient History)[10Q-Easy]':[
+            {question:"सिंधु सभ्यता किस नदी के किनारे विकसित हुई?",options:["गंगा","सिंधु","यमुना","सरस्वती"],answer:1},
+            {question:"ऋग्वेद में कितने मंडल हैं?",options:["8","9","10","11"],answer:2},
+            {question:"बौद्ध धर्म का प्रतीक क्या है?",options:["चक्र","त्रिशूल","शंख","कमल"],answer:0},
+            {question:"जैन धर्म में कितने तीर्थंकर हुए?",options:["22","23","24","25"],answer:2},
+            {question:"पारसी धर्म के संस्थापक कौन थे?",options:["जरथुस्त्र","ईसा","मोहम्मद","बुद्ध"],answer:0},
+            {question:"मगध का पहला शक्तिशाली शासक कौन था?",options:["बिंबिसार","अजातशत्रु","नंद","चंद्रगुप्त"],answer:0},
+            {question:"प्रागैतिहासिक काल का अध्ययन किससे किया जाता है?",options:["लिखित स्रोत","पुरातत्व","काव्य","इतिहास"],answer:1},
+            {question:"सिंधु सभ्यता का बंदरगाह कौन सा था?",options:["लोथल","हड़प्पा","मोहनजोदड़ो","कालीबंगन"],answer:0},
+            {question:"बुद्ध को ज्ञान कहाँ प्राप्त हुआ?",options:["सारनाथ","बोधगया","कुशीनगर","राजगृह"],answer:1},
+            {question:"इस्लाम धर्म का पवित्र ग्रंथ क्या है?",options:["बाइबिल","गीता","कुरान","वेद"],answer:2}
+        ],
+        'mock test-4(Half Ancient History)[10Q-hard]':[
+            {question:"हड़प्पा सभ्यता का काल क्या माना जाता है?",options:["2500-1500 BCE","2600-1900 BCE","3000-2000 BCE","2000-1000 BCE"],answer:1},
+            {question:"ऋग्वेद में सबसे अधिक किस देवता का उल्लेख है?",options:["इंद्र","अग्नि","वरुण","सोम"],answer:0},
+            {question:"बौद्ध धर्म का मूल सिद्धांत क्या है?",options:["अहिंसा","चार आर्य सत्य","कर्म","मोक्ष"],answer:1},
+            {question:"जैन धर्म का प्रमुख सिद्धांत क्या है?",options:["अहिंसा","सत्य","धर्म","कर्म"],answer:0},
+            {question:"मगध साम्राज्य की राजधानी क्या थी?",options:["पाटलिपुत्र","राजगृह","वैशाली","कुशीनगर"],answer:1},
+            {question:"सिंधु सभ्यता की लिपि क्यों महत्वपूर्ण है?",options:["पठनीय","धार्मिक","अपठनीय","संस्कृत"],answer:2},
+            {question:"महाजनपदों में सबसे शक्तिशाली कौन था?",options:["अवंति","मगध","काशी","कोशल"],answer:1},
+            {question:"इस्लाम धर्म में एकेश्वरवाद को क्या कहते हैं?",options:["तौहीद","जिहाद","नमाज","रोजा"],answer:0},
+            {question:"बुद्ध का निर्वाण कहाँ हुआ?",options:["सारनाथ","बोधगया","कुशीनगर","राजगृह"],answer:2},
+            {question:"जरथुस्त्र किस धर्म से संबंधित हैं?",options:["हिंदू","पारसी","इस्लाम","ईसाई"],answer:1}
+        ],
+        'mock test-5(Half Ancient History)[10Q-hard]':[
+            {question:"हड़प्पा सभ्यता में किस धातु का उपयोग नहीं होता था?",options:["तांबा","कांसा","लोहा","सोना"],answer:2},
+            {question:"ऋग्वेद में 'सप्तसिंधु' का उल्लेख किसके लिए है?",options:["भारत","पंजाब","गंगा","यमुना"],answer:1},
+            {question:"बौद्ध धर्म में 'संघ' का अर्थ क्या है?",options:["समूह","धर्म","ज्ञान","मोक्ष"],answer:0},
+            {question:"जैन धर्म में मोक्ष प्राप्ति का मार्ग क्या है?",options:["त्रिरत्न","अष्टांगिक मार्ग","भक्ति","कर्म"],answer:0},
+            {question:"मगध के उत्कर्ष का मुख्य कारण क्या था?",options:["राजनीति","भौगोलिक स्थिति","धर्म","संस्कृति"],answer:1},
+            {question:"सिंधु सभ्यता में जल निकासी व्यवस्था कैसी थी?",options:["साधारण","उन्नत","कमजोर","नहीं थी"],answer:1},
+            {question:"वैदिक काल में सभा और समिति क्या थीं?",options:["धार्मिक संस्था","राजनीतिक संस्था","आर्थिक संस्था","सांस्कृतिक संस्था"],answer:1},
+            {question:"इसाई धर्म के संस्थापक कौन हैं?",options:["मोहम्मद","ईसा मसीह","बुद्ध","महावीर"],answer:1},
+            {question:"इस्लाम धर्म का पवित्र स्थान कौन सा है?",options:["मक्का","मदीना","जेरूसलम","काबुल"],answer:0},
+            {question:"पारसी धर्म का पवित्र ग्रंथ क्या है?",options:["कुरान","बाइबिल","अवेस्ता","वेद"],answer:2}
+],
+        'mock test-6(Half Ancient History)[15Q-Super hard]':[
+            {question:"हड़प्पा सभ्यता में 'ग्रेट बाथ' का प्रमुख उद्देश्य क्या माना जाता है?",options:["राजनीतिक सभा","धार्मिक स्नान","जल संग्रह","मनोरंजन"],answer:1},
+            {question:"ऋग्वैदिक काल में 'गो' शब्द का प्रयोग मुख्यतः किसके लिए होता था?",options:["पशु","धन","भूमि","अनाज"],answer:1},
+            {question:"वैदिक काल में 'निष्क' क्या था?",options:["कर","सिक्का/आभूषण","भूमि माप","अन्न"],answer:1},
+            {question:"महाजनपद काल में 'गणराज्य' का प्रमुख उदाहरण कौन था?",options:["मगध","अवंति","वज्जि संघ","काशी"],answer:2},
+            {question:"जैन धर्म में 'सल्लेखना' का अर्थ क्या है?",options:["ध्यान","उपवास द्वारा मृत्यु","यज्ञ","संन्यास"],answer:1},
+            {question:"बौद्ध धर्म में 'प्रतीत्यसमुत्पाद' का संबंध किससे है?",options:["कर्म","कारण-कार्य सिद्धांत","मोक्ष","ध्यान"],answer:1},
+            {question:"सिंधु सभ्यता के किस स्थल से 'अग्निकुंड' के प्रमाण मिले हैं?",options:["लोथल","कालीबंगन","हड़प्पा","मोहनजोदड़ो"],answer:1},
+            {question:"ऋग्वेद में 'सभा' और 'समिति' में क्या अंतर था?",options:["धार्मिक-राजनीतिक","दोनों समान","समिति बड़ी संस्था","सभा बड़ी संस्था"],answer:2},
+            {question:"बुद्ध के 'महाभिनिष्क्रमण' का अर्थ क्या है?",options:["जन्म","ज्ञान प्राप्ति","गृह त्याग","मृत्यु"],answer:2},
+            {question:"मगध के उत्कर्ष में 'लोहे' की भूमिका क्या थी?",options:["कृषि विकास","युद्ध","उद्योग","सभी"],answer:3},
+            {question:"सिंधु सभ्यता में 'मानकीकृत ईंटें' किसका संकेत देती हैं?",options:["राजनीति","केंद्रीकरण","धर्म","व्यापार"],answer:1},
+            {question:"वैदिक काल में 'दस्यु' किसे कहा जाता था?",options:["विदेशी","शत्रु/अनार्य","व्यापारी","पुरोहित"],answer:1},
+            {question:"जैन धर्म में 'अनेकांतवाद' का अर्थ क्या है?",options:["एक सत्य","बहु सत्य","असत्य","धर्म"],answer:1},
+            {question:"बौद्ध धर्म में 'संघ' की स्थापना किसने की?",options:["महावीर","बुद्ध","अशोक","आनंद"],answer:1},
+            {question:"इस्लाम में 'हिजरत' का क्या अर्थ है?",options:["प्रार्थना","यात्रा","स्थान परिवर्तन","युद्ध"],answer:2}
+],
+        'mock test-7(Half Ancient History)[15Q-Super hard]':[
+            {question:"हड़प्पा सभ्यता में 'लिपि' का अपठनीय होना किसका संकेत है?",options:["अज्ञान","गुप्त शासन","अपरिचित भाषा","अधूरा विकास"],answer:2},
+            {question:"ऋग्वेद में 'पुरोहित' का मुख्य कार्य क्या था?",options:["युद्ध","व्यापार","यज्ञ संचालन","शासन"],answer:2},
+            {question:"वैदिक काल में 'गोत्र' का संबंध किससे था?",options:["भूमि","वंश","धर्म","राज्य"],answer:1},
+            {question:"महाजनपद काल में 'अजातशत्रु' किस वंश से था?",options:["नंद","हर्यक","शिशुनाग","मौर्य"],answer:1},
+            {question:"जैन धर्म के अनुसार 'कर्म बंधन' कैसे होता है?",options:["ज्ञान से","कर्म से","अज्ञान से","संसार से"],answer:1},
+            {question:"बौद्ध धर्म में 'निर्वाण' का अर्थ क्या है?",options:["मृत्यु","मोक्ष","ज्ञान","ध्यान"],answer:1},
+            {question:"सिंधु सभ्यता में 'सील' (मुद्राएँ) का उपयोग किस लिए होता था?",options:["धर्म","व्यापार","राजनीति","कला"],answer:1},
+            {question:"वैदिक काल में 'अश्वमेध यज्ञ' का उद्देश्य क्या था?",options:["धर्म","राजसत्ता विस्तार","ज्ञान","कृषि"],answer:1},
+            {question:"बुद्ध के 'चार आर्य सत्य' में पहला क्या है?",options:["दुःख","समुदय","निरोध","मार्ग"],answer:0},
+            {question:"मगध साम्राज्य की शक्ति का मुख्य आधार क्या था?",options:["धर्म","भौगोलिक स्थिति","कला","शिक्षा"],answer:1},
+            {question:"सिंधु सभ्यता में 'धातु उपयोग' में कौन प्रमुख था?",options:["लोहा","तांबा-कांसा","सोना","चाँदी"],answer:1},
+            {question:"वैदिक काल में 'राजसूय यज्ञ' किसके लिए होता था?",options:["ज्ञान","राज्याभिषेक","युद्ध","धर्म"],answer:1},
+            {question:"इस्लाम में 'जकात' क्या है?",options:["कर","दान","प्रार्थना","उपवास"],answer:1},
+            {question:"ईसाई धर्म में 'क्रॉस' क्या दर्शाता है?",options:["धर्म","बलिदान","प्रेम","शांति"],answer:1},
+            {question:"पारसी धर्म में 'अग्नि' का क्या महत्व है?",options:["पूजा का केंद्र","ऊर्जा","धर्म","प्रकाश"],answer:0}
+],
+        'mock test-8(Half Ancient History)[15Q-Super hard]':[
+            {question:"निम्न में से कौन सा कथन सिंधु सभ्यता के बारे में सही है?",options:["राजशाही स्पष्ट थी","लिपि पढ़ी जा चुकी है","नियोजित नगर व्यवस्था थी","लोहे का व्यापक उपयोग"],answer:2},
+            {question:"ऋग्वैदिक काल में अर्थव्यवस्था का मुख्य आधार क्या था?",options:["व्यापार","कृषि","पशुपालन","उद्योग"],answer:2},
+            {question:"उत्तर वैदिक काल में वर्ण व्यवस्था का स्वरूप कैसा हो गया था?",options:["लचीला","कठोर","समाप्त","अपरिभाषित"],answer:1},
+            {question:"महाजनपद काल में 'वज्जि संघ' की शासन प्रणाली कैसी थी?",options:["राजतंत्र","गणतंत्र","तानाशाही","धर्मतंत्र"],answer:1},
+            {question:"जैन धर्म में 'त्रिरत्न' में कौन शामिल नहीं है?",options:["सम्यक दर्शन","सम्यक ज्ञान","सम्यक कर्म","सम्यक चरित्र"],answer:2},
+            {question:"बौद्ध धर्म में 'अष्टांगिक मार्ग' का संबंध किससे है?",options:["धर्म","मोक्ष का मार्ग","ज्ञान","संघ"],answer:1},
+            {question:"सिंधु सभ्यता के किस स्थल से 'घोड़े' के साक्ष्य विवादित माने जाते हैं?",options:["लोथल","कालीबंगन","सुरकोटदा","हड़प्पा"],answer:2},
+            {question:"ऋग्वेद में 'इंद्र' को किस रूप में वर्णित किया गया है?",options:["वर्षा देवता","युद्ध देवता","अग्नि देवता","वायु देवता"],answer:1},
+            {question:"बुद्ध का 'धर्मचक्र प्रवर्तन' किस घटना से संबंधित है?",options:["जन्म","ज्ञान","प्रथम उपदेश","निर्वाण"],answer:2},
+            {question:"मगध साम्राज्य के उत्कर्ष में गंगा नदी का क्या योगदान था?",options:["धार्मिक","आर्थिक व व्यापारिक","सांस्कृतिक","राजनीतिक"],answer:1},
+            {question:"सिंधु सभ्यता में 'माप-तौल' की एकरूपता किसका संकेत है?",options:["धर्म","केंद्रीय नियंत्रण","अज्ञान","कला"],answer:1},
+            {question:"वैदिक काल में 'समिति' का मुख्य कार्य क्या था?",options:["युद्ध","राजा का चुनाव","धर्म","व्यापार"],answer:1},
+            {question:"इस्लाम धर्म में 'रोजा' का क्या महत्व है?",options:["दान","उपवास","प्रार्थना","यात्रा"],answer:1},
+            {question:"ईसाई धर्म में 'ईसा मसीह' को किस रूप में माना जाता है?",options:["राजा","भगवान का पुत्र","संत","गुरु"],answer:1},
+            {question:"पारसी धर्म में 'अहुरा मज्दा' किसे दर्शाता है?",options:["अंधकार","प्रकाश/ईश्वर","अग्नि","धर्म"],answer:1}
+],
+        'mock test-9(Half Ancient History)[1-50Q]':[
+            {question:"प्राचीन भारतीय इतिहास के स्रोत कितने प्रकार के होते हैं?",options:["2","3","4","5"],answer:1},
+            {question:"प्रागैतिहासिक काल का मुख्य आधार क्या है?",options:["लिखित प्रमाण","पुरातात्विक साक्ष्य","काव्य","इतिहास"],answer:1},
+            {question:"मानव का सबसे पुराना युग कौन सा है?",options:["पाषाण युग","धातु युग","लौह युग","कांस्य युग"],answer:0},
+            {question:"सिंधु सभ्यता का काल क्या माना जाता है?",options:["2500-1500 BCE","2600-1900 BCE","3000-2000 BCE","2000-1000 BCE"],answer:1},
+            {question:"हड़प्पा सभ्यता की खोज किसने की?",options:["राखलदास बनर्जी","दयाराम साहनी","जॉन मार्शल","कनिंघम"],answer:1},
+            {question:"मोहनजोदड़ो का अर्थ क्या है?",options:["मृतकों का टीला","जीवित नगर","धन का स्थान","राजधानी"],answer:0},
+            {question:"सिंधु सभ्यता में प्रमुख धातु कौन सी थी?",options:["लोहा","तांबा","चाँदी","सोना"],answer:1},
+            {question:"सिंधु सभ्यता का प्रमुख बंदरगाह कौन सा था?",options:["लोथल","हड़प्पा","कालीबंगन","मोहनजोदड़ो"],answer:0},
+            {question:"वैदिक काल का मुख्य ग्रंथ कौन सा है?",options:["उपनिषद","वेद","रामायण","महाभारत"],answer:1},
+            {question:"ऋग्वेद में कितने मंडल हैं?",options:["8","9","10","11"],answer:2},
+            {question:"आर्य किस दिशा से भारत आए?",options:["पूर्व","पश्चिम","उत्तर","दक्षिण"],answer:2},
+            {question:"वैदिक काल में समाज का आधार क्या था?",options:["जाति","वर्ण","धर्म","कुल"],answer:1},
+            {question:"महाजनपदों की संख्या कितनी थी?",options:["14","15","16","17"],answer:2},
+            {question:"मगध महाजनपद की राजधानी क्या थी?",options:["राजगृह","वैशाली","कुशीनगर","पाटलिपुत्र"],answer:0},
+            {question:"जैन धर्म के संस्थापक कौन थे?",options:["महावीर","बुद्ध","कपिल","शंकर"],answer:0},
+            {question:"महावीर का जन्म कहाँ हुआ?",options:["वैशाली","कुंडग्राम","राजगृह","पाटलिपुत्र"],answer:1},
+            {question:"बौद्ध धर्म के संस्थापक कौन थे?",options:["महावीर","बुद्ध","कपिल","शंकर"],answer:1},
+            {question:"बुद्ध को ज्ञान कहाँ प्राप्त हुआ?",options:["सारनाथ","बोधगया","कुशीनगर","राजगृह"],answer:1},
+            {question:"बौद्ध धर्म का प्रथम उपदेश कहाँ हुआ?",options:["सारनाथ","बोधगया","राजगृह","कुशीनगर"],answer:0},
+            {question:"अशोक किस वंश से संबंधित था?",options:["गुप्त","मौर्य","नंद","शुंग"],answer:1},
+            {question:"इस्लाम में 'जकात' क्या है?",options:["कर","दान","प्रार्थना","उपवास"],answer:1},
+            {question:"मौर्य वंश का संस्थापक कौन था?",options:["अशोक","चंद्रगुप्त मौर्य","बिंदुसार","महापद्म नंद"],answer:1},
+            {question:"चंद्रगुप्त मौर्य का गुरु कौन था?",options:["पाणिनि","कौटिल्य","कालिदास","आर्यभट्ट"],answer:1},
+            {question:"अर्थशास्त्र किसने लिखा?",options:["कालिदास","कौटिल्य","आर्यभट्ट","पाणिनि"],answer:1},
+            {question:"अशोक का धर्म क्या था?",options:["हिंदू","जैन","बौद्ध","इस्लाम"],answer:2},
+            {question:"कलिंग युद्ध कब हुआ?",options:["261 BCE","262 BCE","263 BCE","264 BCE"],answer:0},
+            {question:"गुप्त वंश का संस्थापक कौन था?",options:["चंद्रगुप्त I","समुद्रगुप्त","स्कंदगुप्त","कुमारगुप्त"],answer:0},
+            {question:"समुद्रगुप्त को किस नाम से जाना जाता है?",options:["भारत का नेपोलियन","भारत का अशोक","भारत का चाणक्य","भारत का सिकंदर"],answer:0},
+            {question:"कालिदास किस काल के थे?",options:["मौर्य","गुप्त","नंद","शुंग"],answer:1},
+            {question:"आर्यभट्ट किस क्षेत्र से संबंधित थे?",options:["गणित","राजनीति","कला","धर्म"],answer:0},
+            {question:"फाह्यान किस देश से आया था?",options:["चीन","यूनान","रोम","अरब"],answer:0},
+            {question:"ह्वेनसांग किसके समय भारत आया?",options:["चंद्रगुप्त","हर्षवर्धन","अशोक","समुद्रगुप्त"],answer:1},
+            {question:"हर्षवर्धन की राजधानी क्या थी?",options:["कन्नौज","पाटलिपुत्र","उज्जैन","दिल्ली"],answer:0},
+            {question:"सातवाहन वंश का संस्थापक कौन था?",options:["सिमुक","गौतमीपुत्र","शातकर्णी","नागार्जुन"],answer:0},
+            {question:"कुषाण वंश का महान शासक कौन था?",options:["कनिष्क","हर्ष","अशोक","समुद्रगुप्त"],answer:0},
+            {question:"कनिष्क किस धर्म का अनुयायी था?",options:["हिंदू","जैन","बौद्ध","इस्लाम"],answer:2},
+            {question:"संगम काल किस क्षेत्र से संबंधित है?",options:["उत्तर भारत","दक्षिण भारत","पूर्व भारत","पश्चिम भारत"],answer:1},
+            {question:"चोल वंश किस क्षेत्र में था?",options:["उत्तर","दक्षिण","पूर्व","पश्चिम"],answer:1},
+            {question:"पल्लव वंश की राजधानी क्या थी?",options:["कांची","उज्जैन","कन्नौज","पाटलिपुत्र"],answer:0},
+            {question:"गुप्त काल को किस नाम से जाना जाता है?",options:["स्वर्ण युग","काला युग","मध्य युग","आधुनिक युग"],answer:0},
+            {question:"भारत में लोहे का उपयोग कब शुरू हुआ?",options:["वैदिक काल","महाजनपद काल","गुप्त काल","मौर्य काल"],answer:1},
+            {question:"सिंधु सभ्यता की लिपि कैसी थी?",options:["पठनीय","अपठनीय","संस्कृत","पाली"],answer:1},
+            {question:"ऋग्वेद किस भाषा में है?",options:["संस्कृत","पाली","प्राकृत","हिंदी"],answer:0},
+            {question:"जैन धर्म में कितने तीर्थंकर हुए?",options:["22","23","24","25"],answer:2},
+            {question:"बौद्ध धर्म का पवित्र ग्रंथ क्या है?",options:["त्रिपिटक","वेद","उपनिषद","गीता"],answer:0},
+            {question:"मगध का उत्कर्ष किस कारण हुआ?",options:["भूगोल","धर्म","कला","सभी"],answer:3},
+            {question:"नंद वंश का संस्थापक कौन था?",options:["घनानंद","महापद्म नंद","चंद्रगुप्त","अजातशत्रु"],answer:1},
+            {question:"पाटलिपुत्र किस नदी के किनारे था?",options:["गंगा","यमुना","सरस्वती","नर्मदा"],answer:0},
+            {question:"वैदिक काल में सभा और समिति क्या थीं?",options:["राजनीतिक संस्था","धार्मिक","आर्थिक","सांस्कृतिक"],answer:0},
+            {question:"महाजनपद काल में मुद्रा कौन सी थी?",options:["स्वर्ण","रजत","पंचमार्क","कागजी"],answer:2}
+],
+    }// Add more subjects...
+};
+
+let mathQuestions = {
+    algebra: {
+        'Linear Equations': [{question: "x+5=10?", options:["5","3","4"], answer:0}],
+        'Quadratic': [{question: "x²=16?", options:["4","16","2"], answer:0}]
+    },
+    geometry: {
+        'Triangles': [{question: "कोण योग?", options:["180°","360°"], answer:0}],
+        'Circles': [{question: "त्रिज्या?", options:["परिधि","व्यास"], answer:0}]
+    }
+};
+
+let englishQuestions = {
+grammar: {
+"subject-verb-agreement(Easy)":[
+            {question:"Neither Ram nor his friends ___ present there.",options:["was","were","is","be"],answer:1},
+            {question:"Each of the boys ___ rewarded.",options:["were","have","was","are"],answer:2},
+            {question:"The news ___ true.",options:["are","were","is","have"],answer:2},
+            {question:"Mathematics ___ my favorite subject.",options:["are","were","is","have"],answer:2},
+            {question:"A number of students ___ absent today.",options:["is","was","are","has"],answer:2},
+            {question:"The number of students ___ increasing.",options:["are","have","is","were"],answer:2},
+            {question:"Neither the teacher nor the students ___ ready.",options:["was","is","are","has"],answer:2},
+            {question:"Either Ram or Shyam ___ done this work.",options:["have","has","are","were"],answer:1},
+            {question:"One of the players ___ selected.",options:["have","were","was","are"],answer:2},
+            {question:"Bread and butter ___ my favorite breakfast.",options:["are","were","is","have"],answer:2},
+            {question:"The police ___ investigating the case.",options:["is","was","are","has"],answer:2},
+            {question:"Each boy and each girl ___ given a prize.",options:["were","have","was","are"],answer:2},
+            {question:"Ten kilometers ___ a long distance.",options:["are","have","is","were"],answer:2},
+            {question:"The committee ___ divided in their opinion.",options:["is","was","are","has"],answer:2},
+            {question:"My family ___ going on a trip.",options:["are","were","is","have"],answer:2},
+            {question:"Neither of the answers ___ correct.",options:["are","were","is","have"],answer:2},
+            {question:"Physics ___ an interesting subject.",options:["are","have","is","were"],answer:2},
+            {question:"The rich ___ not always happy.",options:["is","was","are","has"],answer:2},
+            {question:"No sooner ___ he entered than it started raining.",options:["had","has","have","was"],answer:0},
+            {question:"The quality of the apples ___ good.",options:["are","were","is","have"],answer:2}
+],
+"subject-verb-agreement(Hard)":[
+            {question:"Either the boys or the teacher ___ responsible.",options:["are","were","is","have"],answer:2},
+            {question:"Neither the players nor the coach ___ present.",options:["was","is","are","has"],answer:2},
+            {question:"Every student and every teacher ___ informed.",options:["were","have","was","are"],answer:2},
+            {question:"Rice and curry ___ my favorite food.",options:["are","were","is","have"],answer:2},
+            {question:"The furniture ___ very costly.",options:["are","were","is","have"],answer:2},
+            {question:"A pair of shoes ___ lying outside.",options:["are","were","is","have"],answer:2},
+            {question:"Many a man ___ failed in life.",options:["have","were","has","are"],answer:2},
+            {question:"The audience ___ enjoying the show.",options:["is","was","are","has"],answer:2},
+            {question:"One of my friends ___ coming today.",options:["are","have","is","were"],answer:2},
+            {question:"Neither of the books ___ useful.",options:["are","were","is","have"],answer:2},
+            {question:"The cattle ___ grazing in the field.",options:["is","was","are","has"],answer:2},
+            {question:"Measles ___ a dangerous disease.",options:["are","have","is","were"],answer:2},
+            {question:"The poet and writer ___ dead.",options:["are","were","is","have"],answer:2},
+            {question:"The poet and the writer ___ present.",options:["is","was","are","has"],answer:2},
+            {question:"Every one of the boys ___ present.",options:["are","were","is","have"],answer:2},
+            {question:"None of the milk ___ wasted.",options:["were","are","is","have"],answer:2},
+            {question:"Two thirds of the work ___ completed.",options:["have","are","is","were"],answer:2},
+            {question:"The United States ___ a powerful country.",options:["are","have","is","were"],answer:2},
+            {question:"Either you or he ___ mistaken.",options:["are","were","is","have"],answer:2},
+            {question:"Slow and steady ___ the race.",options:["win","wins","have won","were winning"],answer:1}
+],
+"subject-verb-agreement(Super Hard-1)":[
+            {question:"Not only the students but also the teacher ___ absent.",options:["are","were","is","have"],answer:2},
+            {question:"One of the boys who ___ absent has returned.",options:["were","was","are","is"],answer:0},
+            {question:"Neither he nor I ___ willing to go.",options:["am","is","are","was"],answer:0},
+            {question:"Each of the workers ___ given a bonus.",options:["were","have","was","are"],answer:2},
+            {question:"The jury ___ divided in opinion.",options:["is","was","are","has"],answer:2},
+            {question:"A bouquet of flowers ___ on the table.",options:["are","were","is","have"],answer:2},
+            {question:"The Arabian Nights ___ an interesting book.",options:["are","have","is","were"],answer:2},
+            {question:"More than one person ___ involved.",options:["are","were","is","have"],answer:2},
+            {question:"Neither the manager nor the employees ___ satisfied.",options:["was","is","are","has"],answer:2},
+            {question:"All the furniture ___ been sold.",options:["have","were","has","are"],answer:2}
+],
+"subject-verb-agreement(Super Hard-2)":[
+            {question:"Scarcely ___ he reached the station when the train left.",options:["had","has","have","was"],answer:0},
+            {question:"No less than fifty students ___ selected.",options:["was","has","were","is"],answer:2},
+            {question:"The majority of the members ___ in favor of the proposal.",options:["is","was","are","has"],answer:2},
+            {question:"Neither of the two boys ___ qualified.",options:["are","were","is","have"],answer:2},
+            {question:"The scissors ___ missing.",options:["is","was","are","has"],answer:2},
+            {question:"A series of lectures ___ being organized.",options:["are","were","is","have"],answer:2},
+            {question:"None but the brave ___ deserve the fair.",options:["do","does","has","is"],answer:0},
+            {question:"The wages of sin ___ death.",options:["is","was","are","has"],answer:2},
+            {question:"Much of the work ___ unfinished.",options:["are","were","is","have"],answer:2},
+            {question:"Many a student ___ failed to answer this question.",options:["have","are","has","were"],answer:2}
+],
+"Tense(Easy)":[
+            {question:"She ___ to school every day.",options:["go","goes","gone","going"],answer:1},
+            {question:"They ___ cricket since morning.",options:["played","play","have been playing","are playing"],answer:2},
+            {question:"I ___ my homework yesterday.",options:["do","did","done","doing"],answer:1},
+            {question:"He ___ dinner before I arrived.",options:["had eaten","has eaten","ate","eats"],answer:0},
+            {question:"We ___ a movie tomorrow.",options:["watch","watched","will watch","have watched"],answer:2},
+            {question:"The train ___ before we reached the station.",options:["left","has left","had left","leaves"],answer:2},
+            {question:"She ___ in Delhi for five years.",options:["lives","lived","has lived","living"],answer:2},
+            {question:"By next year, I ___ this course.",options:["complete","completed","will complete","will have completed"],answer:3},
+            {question:"He usually ___ tea in the morning.",options:["drink","drinks","drank","drinking"],answer:1},
+            {question:"They ___ football when it started raining.",options:["played","were playing","have played","play"],answer:1},
+            {question:"I ___ him since childhood.",options:["know","knew","have known","knowing"],answer:2},
+            {question:"She ___ when I called her.",options:["slept","was sleeping","has slept","sleep"],answer:1},
+            {question:"The sun ___ in the east.",options:["rise","rises","rose","rising"],answer:1},
+            {question:"He ___ the letter yet.",options:["did not receive","has not received","had not received","not receive"],answer:1},
+            {question:"We ___ lunch before the guests arrived.",options:["had","have had","had had","having"],answer:2},
+            {question:"They ___ to Jaipur next week.",options:["go","went","will go","gone"],answer:2},
+            {question:"She ___ English for two hours.",options:["studied","studies","has been studying","study"],answer:2},
+            {question:"When I reached home, my father ___ TV.",options:["watched","was watching","has watched","watch"],answer:1},
+            {question:"I ___ this book many times.",options:["read","have read","had read","reading"],answer:1},
+            {question:"He ___ the work by evening.",options:["finished","finishes","will finish","will have finished"],answer:3}
+],
+"Tense(Hard)":[
+            {question:"She ___ her friend tomorrow.",options:["meets","met","will meet","meeting"],answer:2},
+            {question:"They ___ for the exam since January.",options:["prepare","prepared","have been preparing","preparing"],answer:2},
+            {question:"I ___ him at the market yesterday.",options:["see","saw","seen","seeing"],answer:1},
+            {question:"He ___ before the teacher entered.",options:["left","has left","had left","leaves"],answer:2},
+            {question:"We ___ our project next month.",options:["submit","submitted","will submit","submitting"],answer:2},
+            {question:"The baby ___ when the lights went out.",options:["slept","was sleeping","sleeps","has slept"],answer:1},
+            {question:"She ___ here since 2020.",options:["lives","lived","has lived","living"],answer:2},
+            {question:"By tomorrow, they ___ the work.",options:["complete","completed","will complete","will have completed"],answer:3},
+            {question:"He ___ coffee every morning.",options:["drink","drinks","drank","drinking"],answer:1},
+            {question:"I ___ my keys last night.",options:["lose","lost","have lost","losing"],answer:1},
+            {question:"The students ___ when the bell rang.",options:["study","studied","were studying","have studied"],answer:2},
+            {question:"She ___ the movie already.",options:["saw","has seen","had seen","seeing"],answer:1},
+            {question:"The earth ___ around the sun.",options:["move","moves","moved","moving"],answer:1},
+            {question:"He ___ his work yet.",options:["did not finish","has not finished","had not finished","not finish"],answer:1},
+            {question:"We ___ dinner before they arrived.",options:["had","have had","had had","having"],answer:2},
+            {question:"I ___ him tomorrow.",options:["meet","met","will meet","meeting"],answer:2},
+            {question:"They ___ in the garden for an hour.",options:["worked","work","have been working","working"],answer:2},
+            {question:"When I entered the room, she ___ a song.",options:["sang","was singing","has sung","sing"],answer:1},
+            {question:"He ___ this story before.",options:["heard","has heard","had heard","hearing"],answer:1},
+            {question:"By next month, she ___ her training.",options:["finishes","finished","will finish","will have finished"],answer:3}
+],
+"Tense(Super Hard-1)":[
+            {question:"Hardly ___ the train left when he arrived.",options:["had","has","have","was"],answer:0},
+            {question:"No sooner ___ I entered than the phone rang.",options:["had","has","have","was"],answer:0},
+            {question:"He ___ in this company for ten years next month.",options:["works","worked","will have worked","working"],answer:2},
+            {question:"By the time we reached, the movie ___.",options:["started","has started","had started","starts"],answer:2},
+            {question:"She ___ continuously for three hours before she rested.",options:["worked","has worked","had been working","working"],answer:2},
+            {question:"I ___ him only once before.",options:["met","have met","had met","meeting"],answer:1},
+            {question:"The children ___ outside since morning.",options:["played","play","have been playing","playing"],answer:2},
+            {question:"When he came, I ___ my assignment.",options:["completed","was completing","had completed","completing"],answer:2},
+            {question:"By 2030, scientists ___ a cure for this disease.",options:["discover","discovered","will discover","will have discovered"],answer:3},
+            {question:"She ___ dinner when the guests arrived.",options:["cooked","was cooking","has cooked","cook"],answer:1}
+],
+"Tense(Super Hard-2)":[
+            {question:"Scarcely ___ we reached the station when the train departed.",options:["had","has","have","was"],answer:0},
+            {question:"He ___ all the money before he realized his mistake.",options:["spent","has spent","had spent","spends"],answer:2},
+            {question:"They ___ for two hours when the rain started.",options:["played","have played","had been playing","playing"],answer:2},
+            {question:"By this time tomorrow, I ___ to Mumbai.",options:["travel","travelled","will travel","will have travelled"],answer:3},
+            {question:"She ___ the letter before I asked her about it.",options:["posted","has posted","had posted","posts"],answer:2},
+            {question:"The boys ___ football when the teacher entered.",options:["played","were playing","have played","play"],answer:1},
+            {question:"I ___ him for many years before he moved abroad.",options:["knew","have known","had known","knowing"],answer:2},
+            {question:"The patient ___ before the doctor arrived.",options:["died","has died","had died","dies"],answer:2},
+            {question:"We ___ this problem several times already.",options:["discussed","have discussed","had discussed","discuss"],answer:1},
+            {question:"She ___ by the time you come back.",options:["slept","sleeps","will sleep","will have slept"],answer:3}
+],
+"Mood & Conditional(Easy)":[
+            {question:"If I ___ rich, I would buy a car.",options:["am","was","were","be"],answer:2},
+            {question:"If she works hard, she ___ the exam.",options:["passes","will pass","would pass","passed"],answer:1},
+            {question:"Had he studied well, he ___ the test.",options:["will pass","would pass","would have passed","passes"],answer:2},
+            {question:"If you heat water, it ___.",options:["boils","boiled","will boil","would boil"],answer:0},
+            {question:"I wish I ___ taller.",options:["am","was","were","be"],answer:2},
+            {question:"If they had invited me, I ___ there.",options:["will go","would go","would have gone","go"],answer:2},
+            {question:"Unless you work hard, you ___ fail.",options:["will","would","shall","should"],answer:0},
+            {question:"If I were you, I ___ this job.",options:["accept","will accept","would accept","accepted"],answer:2},
+            {question:"She talks as if she ___ everything.",options:["know","knows","knew","known"],answer:2},
+            {question:"If it rains, we ___ at home.",options:["stay","stayed","will stay","would stay"],answer:2},
+            {question:"I wish I ___ the answer.",options:["know","knew","known","knows"],answer:1},
+            {question:"Had I seen him, I ___ him.",options:["helped","would help","would have helped","will help"],answer:2},
+            {question:"If you mix red and blue, you ___ purple.",options:["get","got","will get","would get"],answer:0},
+            {question:"If he had money, he ___ a house.",options:["buys","will buy","would buy","bought"],answer:2},
+            {question:"Unless she apologizes, I ___ talk to her.",options:["won't","wouldn't","shan't","shouldn't"],answer:0},
+            {question:"I wish I ___ a bird.",options:["am","was","were","be"],answer:2},
+            {question:"If they hurry, they ___ the train.",options:["catch","will catch","would catch","caught"],answer:1},
+            {question:"He behaves as though he ___ the boss.",options:["is","was","were","be"],answer:2},
+            {question:"If you had called me, I ___ you.",options:["help","would help","would have helped","helped"],answer:2},
+            {question:"If the sun rises, the birds ___.",options:["sing","sang","will sing","would sing"],answer:0}
+],
+"Mood & Conditional(Hard)":[
+            {question:"If I ___ enough money, I would travel abroad.",options:["have","had","will have","having"],answer:1},
+            {question:"If she studies regularly, she ___ succeed.",options:["would","will","should","might"],answer:1},
+            {question:"Had they informed us earlier, we ___ prepared.",options:["will","would","would have","would have been"],answer:3},
+            {question:"If water freezes, it ___ ice.",options:["became","becomes","will become","would become"],answer:1},
+            {question:"I wish I ___ speak French fluently.",options:["can","could","shall","may"],answer:1},
+            {question:"If he had invited me, I ___ attended the party.",options:["will have","would","would have","shall"],answer:2},
+            {question:"Unless you leave now, you ___ the bus.",options:["miss","will miss","would miss","missed"],answer:1},
+            {question:"If I were the principal, I ___ new rules.",options:["make","will make","would make","made"],answer:2},
+            {question:"She acts as if she ___ the owner.",options:["is","was","were","be"],answer:2},
+            {question:"If they practice daily, they ___ improve.",options:["would","will","should","might"],answer:1},
+            {question:"I wish I ___ more time.",options:["have","had","having","has"],answer:1},
+            {question:"Had we reached earlier, we ___ the show.",options:["see","would see","would have seen","saw"],answer:2},
+            {question:"If you press this button, the machine ___.",options:["start","starts","started","will started"],answer:1},
+            {question:"If she were rich, she ___ a mansion.",options:["buy","would buy","will buy","bought"],answer:1},
+            {question:"Unless he apologizes, they ___ him.",options:["forgive","won't forgive","wouldn't forgive","forgave"],answer:1},
+            {question:"I wish I ___ younger.",options:["am","was","were","be"],answer:2},
+            {question:"If he runs fast, he ___ the race.",options:["wins","will win","would win","won"],answer:1},
+            {question:"He talks as though he ___ everything.",options:["knows","knew","know","known"],answer:1},
+            {question:"If they had listened to me, they ___ the mistake.",options:["avoid","would avoid","would have avoided","avoided"],answer:2},
+            {question:"If winter comes, people ___ warm clothes.",options:["wear","wore","will wear","would wear"],answer:0}
+],
+"Mood & Conditional(Super Hard-1)":[
+            {question:"Were I the president, I ___ strict laws.",options:["make","will make","would make","made"],answer:2},
+            {question:"Had she worked harder, she ___ succeeded.",options:["will have","would have","would","shall have"],answer:1},
+            {question:"If I ___ you, I would not trust him.",options:["am","was","were","be"],answer:2},
+            {question:"Unless the weather improves, we ___ the trip.",options:["cancel","will cancel","would cancel","cancelled"],answer:1},
+            {question:"He spends money as though he ___ a millionaire.",options:["is","was","were","be"],answer:2},
+            {question:"If they had taken the map, they ___ lost.",options:["won't get","wouldn't get","wouldn't have got","didn't get"],answer:2},
+            {question:"I wish I ___ the opportunity.",options:["had","have","having","has"],answer:0},
+            {question:"If the alarm rings, everyone ___.",options:["wake","wakes","woke","will woke"],answer:1},
+            {question:"Had you informed me, I ___ helped you.",options:["will","would","would have","shall"],answer:2},
+            {question:"If she were honest, she ___ the truth.",options:["tell","would tell","will tell","told"],answer:1}
+],
+"Mood & Conditional(Super Hard-2)":[
+            {question:"Had I known the truth, I ___ differently.",options:["act","would act","would have acted","acted"],answer:2},
+            {question:"If he ___ regularly, he would be fit.",options:["exercise","exercised","had exercised","exercising"],answer:1},
+            {question:"Unless they apologize, we ___ them again.",options:["meet","won't meet","wouldn't meet","met"],answer:1},
+            {question:"She behaves as though she ___ the queen.",options:["is","was","were","be"],answer:2},
+            {question:"If you had followed my advice, you ___ successful.",options:["are","would be","would have been","were"],answer:2},
+            {question:"I wish I ___ more intelligent.",options:["am","was","were","be"],answer:2},
+            {question:"If they hurry, they ___ the flight.",options:["catch","will catch","would catch","caught"],answer:1},
+            {question:"Had the police arrived earlier, the thief ___.",options:["caught","would catch","would have been caught","will catch"],answer:2},
+            {question:"If the earth stopped rotating, everything ___ chaotic.",options:["became","becomes","would become","will become"],answer:2},
+            {question:"He talks as if he ___ the principal.",options:["is","was","were","be"],answer:2}
 ]
-}
+    }
+};
+
+let hindiQuestions = {
+vyakaran:{
+'वर्णमाला(EASY)': [
+            {question:"हिंदी वर्णमाला में कुल कितने वर्ण होते हैं?",options:["44","45","46","47"],answer:1},
+            {question:"हिंदी में स्वर कितने होते हैं?",options:["10","11","12","13"],answer:1},
+            {question:"हिंदी में व्यंजन कितने होते हैं?",options:["33","34","35","36"],answer:0},
+            {question:"स्वर कितने प्रकार के होते हैं?",options:["2","3","4","5"],answer:1},
+            {question:"ह्रस्व स्वर कौन सा है?",options:["आ","ई","उ","ए"],answer:2},
+            {question:"दीर्घ स्वर कौन सा है?",options:["अ","इ","उ","ई"],answer:3},
+            {question:"संयुक्त स्वर कौन सा है?",options:["ए","ओ","ऐ","अ"],answer:2},
+            {question:"अनुनासिक स्वर का उदाहरण कौन सा है?",options:["अ","अं","अः","आ"],answer:1},
+            {question:"व्यंजन कितने प्रकार के होते हैं?",options:["2","3","4","5"],answer:2},
+            {question:"कंठ्य वर्ण कौन सा है?",options:["क","च","ट","त"],answer:0},
+            {question:"तालव्य वर्ण कौन सा है?",options:["क","च","ट","प"],answer:1},
+            {question:"मूर्धन्य वर्ण कौन सा है?",options:["ट","त","प","क"],answer:0},
+            {question:"दन्त्य वर्ण कौन सा है?",options:["क","च","त","ट"],answer:2},
+            {question:"ओष्ठ्य वर्ण कौन सा है?",options:["क","प","त","च"],answer:1},
+            {question:"अन्तःस्थ व्यंजन कौन से हैं?",options:["क,ख,ग","च,छ,ज","य,र,ल,व","श,ष,स"],answer:2},
+            {question:"उष्म व्यंजन कौन से हैं?",options:["य,र,ल,व","श,ष,स,ह","क,ख,ग","ट,ठ,ड"],answer:1},
+            {question:"अयोगवाह में कौन शामिल हैं?",options:["अं,अः","क,ख","य,र","च,छ"],answer:0},
+            {question:"हिंदी वर्णमाला का पहला वर्ण कौन सा है?",options:["आ","इ","अ","उ"],answer:2},
+            {question:"हिंदी वर्णमाला का अंतिम वर्ण कौन सा है?",options:["ह","क्ष","ज्ञ","श्र"],answer:0},
+            {question:"संयुक्त व्यंजन कौन सा है?",options:["क","ख","क्ष","ग"],answer:2},
+            {question:"कवर्ग में कितने वर्ण होते हैं?",options:["4","5","6","7"],answer:1},
+            {question:"चवर्ग में कौन सा वर्ण है?",options:["ट","च","त","प"],answer:1},
+            {question:"टवर्ग में कौन सा वर्ण है?",options:["ट","च","क","त"],answer:0},
+            {question:"तवर्ग में कौन सा वर्ण है?",options:["प","त","च","क"],answer:1},
+            {question:"पवर्ग में कौन सा वर्ण है?",options:["प","त","क","च"],answer:0},
+            {question:"कौन सा वर्ण घोष है?",options:["क","ख","ग","च"],answer:2},
+            {question:"अघोष वर्ण कौन सा है?",options:["ग","घ","क","ज"],answer:2},
+            {question:"महाप्राण वर्ण कौन सा है?",options:["क","ग","ख","ज"],answer:2},
+            {question:"अल्पप्राण वर्ण कौन सा है?",options:["ख","घ","क","छ"],answer:2},
+            {question:"'ज्ञ' किस प्रकार का वर्ण है?",options:["स्वर","व्यंजन","संयुक्त व्यंजन","अयोगवाह"],answer:2}
+],
+'वर्णमाला(Hard)':[
+            {question:"निम्न में से कौन सा वर्ण अयोगवाह नहीं है?",options:["अं","अः","ँ","अ"],answer:3},
+            {question:"निम्न में से कौन सा वर्ण तालव्य नहीं है?",options:["च","छ","ज","ट"],answer:3},
+            {question:"'ऋ' स्वर का उच्चारण स्थान क्या है?",options:["कंठ","तालु","मूर्धा","दन्त"],answer:0},
+            {question:"किस वर्ण में घोष और महाप्राण दोनों गुण होते हैं?",options:["ग","घ","क","ख"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण दन्त्य है?",options:["ट","त","क","च"],answer:1},
+            {question:"'श' वर्ण किस वर्ग में आता है?",options:["अन्तःस्थ","उष्म","स्पर्श","संयुक्त"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण मूर्धन्य नहीं है?",options:["ट","ठ","ड","द"],answer:3},
+            {question:"किस वर्ण में अघोष और महाप्राण गुण होते हैं?",options:["ग","घ","ख","ज"],answer:2},
+            {question:"निम्न में से कौन सा अन्तःस्थ व्यंजन नहीं है?",options:["य","र","ल","स"],answer:3},
+            {question:"'ह' वर्ण का उच्चारण स्थान क्या है?",options:["कंठ","तालु","दन्त","ओष्ठ"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण ओष्ठ्य है?",options:["प","त","च","क"],answer:0},
+            {question:"किस वर्ग के सभी वर्ण नासिक्य होते हैं?",options:["कवर्ग","चवर्ग","पवर्ग","कोई नहीं"],answer:3},
+            {question:"निम्न में से कौन सा संयुक्त व्यंजन है?",options:["क","ख","ज्ञ","ग"],answer:2},
+            {question:"'ङ' वर्ण किस वर्ग का है?",options:["कवर्ग","चवर्ग","टवर्ग","तवर्ग"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण अल्पप्राण नहीं है?",options:["क","ग","त","ख"],answer:3},
+            {question:"'ण' वर्ण का उच्चारण स्थान क्या है?",options:["दन्त","तालु","मूर्धा","कंठ"],answer:2},
+            {question:"निम्न में से कौन सा वर्ण घोष नहीं है?",options:["ग","घ","क","ज"],answer:2},
+            {question:"'ल' वर्ण किस वर्ग में आता है?",options:["अन्तःस्थ","उष्म","स्पर्श","संयुक्त"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण कंठ्य है?",options:["क","च","ट","प"],answer:0},
+            {question:"'व' वर्ण का उच्चारण स्थान क्या है?",options:["ओष्ठ","दन्त","तालु","मूर्धा"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण उष्म नहीं है?",options:["श","ष","स","ल"],answer:3},
+            {question:"किस वर्ण में घोष और अल्पप्राण गुण होते हैं?",options:["ग","घ","ख","छ"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण दन्त्य नहीं है?",options:["त","थ","द","ड"],answer:3},
+            {question:"'र' वर्ण किस प्रकार का व्यंजन है?",options:["स्पर्श","अन्तःस्थ","उष्म","संयुक्त"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण तालव्य है?",options:["क","च","ट","प"],answer:1}
+],
+'वर्णमाला(Super Hard-1)':[
+            {question:"निम्न में से कौन सा वर्ण न तो अन्तःस्थ है और न ही उष्म?",options:["य","ल","श","क"],answer:3},
+            {question:"'क्ष' का सही वर्गीकरण क्या है?",options:["अयोगवाह","संयुक्त व्यंजन","उष्म","अन्तःस्थ"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण कंठ्य और तालव्य दोनों का संयुक्त प्रभाव दर्शाता है?",options:["ए","ऐ","ओ","औ"],answer:1},
+            {question:"किस वर्ण में घोष, महाप्राण तथा स्पर्श तीनों गुण पाए जाते हैं?",options:["घ","ध","भ","झ"],answer:0},
+            {question:"'ञ' वर्ण का उच्चारण स्थान क्या है?",options:["कंठ","तालु","मूर्धा","दन्त"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण पूर्णतः नासिक्य है?",options:["म","न","ङ","स"],answer:2},
+            {question:"'अः' किस श्रेणी में आता है?",options:["स्वर","अयोगवाह","व्यंजन","संयुक्त"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण घोष एवं अल्पप्राण दोनों है?",options:["ग","घ","ख","छ"],answer:0},
+            {question:"'ट' वर्ण किस श्रेणी में आता है?",options:["दन्त्य","तालव्य","मूर्धन्य","ओष्ठ्य"],answer:2},
+            {question:"निम्न में से कौन सा वर्ण स्पर्श व्यंजन नहीं है?",options:["क","च","त","श"],answer:3},
+            {question:"'ओ' स्वर का निर्माण किन स्वरों के मेल से होता है?",options:["अ+इ","अ+उ","इ+उ","अ+ए"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण अघोष एवं महाप्राण है?",options:["ग","ख","द","ब"],answer:1},
+            {question:"'र' वर्ण का उच्चारण स्थान क्या है?",options:["मूर्धा","दन्त","ओष्ठ","तालु"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण उष्म वर्ग में नहीं आता?",options:["श","ष","स","य"],answer:3},
+            {question:"किस वर्ण में केवल घोष गुण पाया जाता है?",options:["ग","घ","द","ब"],answer:2},
+            {question:"'ह' वर्ण का वर्गीकरण क्या है?",options:["स्पर्श","अन्तःस्थ","उष्म","संयुक्त"],answer:2},
+            {question:"निम्न में से कौन सा वर्ण तालव्य है?",options:["च","ट","त","प"],answer:0},
+            {question:"'व' वर्ण का उच्चारण किस स्थान से होता है?",options:["ओष्ठ","दन्तोष्ठ","तालु","मूर्धा"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण अयोगवाह में नहीं आता?",options:["अं","अः","ँ","ऋ"],answer:3},
+            {question:"'ज्ञ' में कौन-कौन से वर्ण शामिल हैं?",options:["ज+ञ","क+ष","त+र","द+ध"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण स्पर्श और घोष दोनों है?",options:["क","ग","ख","च"],answer:1},
+            {question:"'ई' स्वर किस प्रकार का है?",options:["ह्रस्व","दीर्घ","संयुक्त","अनुनासिक"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण मूर्धन्य नहीं है?",options:["ट","ठ","ड","द"],answer:3},
+            {question:"'स' वर्ण का वर्गीकरण क्या है?",options:["अन्तःस्थ","उष्म","स्पर्श","संयुक्त"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण अल्पप्राण है?",options:["ख","घ","क","छ"],answer:2}
+],
+'वर्णमाला(Super Hard-2)':[
+            {question:"निम्न में से कौन सा वर्ण नासिक्य नहीं है?",options:["ङ","ञ","म","य"],answer:3},
+            {question:"'औ' स्वर का निर्माण किन स्वरों के योग से होता है?",options:["अ+उ","अ+ओ","अ+इ","ओ+उ"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण अघोष और अल्पप्राण है?",options:["क","घ","ध","भ"],answer:0},
+            {question:"'ल' वर्ण का उच्चारण स्थान क्या है?",options:["दन्त","तालु","मूर्धा","ओष्ठ"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण स्पर्श व्यंजन की श्रेणी में नहीं आता?",options:["प","त","क","ह"],answer:3},
+            {question:"'ऋ' स्वर का वर्गीकरण क्या है?",options:["ह्रस्व","दीर्घ","संयुक्त","अनुनासिक"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण महाप्राण है?",options:["क","ख","ग","ड"],answer:1},
+            {question:"'ञ' वर्ण किस वर्ग में आता है?",options:["कवर्ग","चवर्ग","टवर्ग","तवर्ग"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण घोष नहीं है?",options:["ग","घ","क","द"],answer:2},
+            {question:"'श' का उच्चारण स्थान क्या है?",options:["तालु","मूर्धा","दन्त","कंठ"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण संयुक्त व्यंजन नहीं है?",options:["क्ष","त्र","ज्ञ","ग"],answer:3},
+            {question:"'ए' स्वर का निर्माण किन स्वरों से होता है?",options:["अ+इ","अ+उ","इ+उ","अ+ए"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण दन्तोष्ठ्य है?",options:["व","प","त","ल"],answer:0},
+            {question:"'ढ' वर्ण का वर्गीकरण क्या है?",options:["अल्पप्राण","महाप्राण","अघोष","उष्म"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण उष्म है?",options:["य","र","स","ल"],answer:2},
+            {question:"'ट' और 'त' में मुख्य अंतर क्या है?",options:["घोष-अघोष","स्थान","प्राण","संयुक्त"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण अन्तःस्थ है?",options:["श","ष","व","स"],answer:2},
+            {question:"'घ' वर्ण के गुण क्या हैं?",options:["अघोष महाप्राण","घोष महाप्राण","घोष अल्पप्राण","अघोष अल्पप्राण"],answer:1},
+            {question:"निम्न में से कौन सा वर्ण मूर्धन्य है?",options:["ट","त","प","च"],answer:0},
+            {question:"'अं' का सही वर्गीकरण क्या है?",options:["स्वर","व्यंजन","अयोगवाह","संयुक्त"],answer:2},
+            {question:"निम्न में से कौन सा वर्ण कंठ्य है?",options:["क","च","ट","प"],answer:0},
+            {question:"'फ' वर्ण का गुण क्या है?",options:["अघोष महाप्राण","घोष महाप्राण","घोष अल्पप्राण","अघोष अल्पप्राण"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण तालव्य नहीं है?",options:["च","छ","ज","ट"],answer:3},
+            {question:"'न' वर्ण का उच्चारण स्थान क्या है?",options:["दन्त","तालु","मूर्धा","ओष्ठ"],answer:0},
+            {question:"निम्न में से कौन सा वर्ण स्पर्श है?",options:["श","ष","स","क"],answer:3}
+],
+"संज्ञा(Easy)":[
+            {question:"'गंगा' किस प्रकार की संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'बचपन' कौन सी संज्ञा है?",options:["जातिवाचक","भाववाचक","व्यक्तिवाचक","द्रव्यवाचक"],answer:1},
+            {question:"'सेना' किस प्रकार की संज्ञा है?",options:["द्रव्यवाचक","समूहवाचक","भाववाचक","जातिवाचक"],answer:1},
+            {question:"'सोना' कौन सी संज्ञा है?",options:["द्रव्यवाचक","भाववाचक","समूहवाचक","व्यक्तिवाचक"],answer:0},
+            {question:"'मनुष्य' किस प्रकार की संज्ञा है?",options:["व्यक्तिवाचक","भाववाचक","जातिवाचक","द्रव्यवाचक"],answer:2},
+            {question:"'ईमानदारी' कौन सी संज्ञा है?",options:["जातिवाचक","भाववाचक","द्रव्यवाचक","समूहवाचक"],answer:1},
+            {question:"'हिमालय' किस प्रकार की संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","समूहवाचक","द्रव्यवाचक"],answer:0},
+            {question:"'लकड़ी' कौन सी संज्ञा है?",options:["भाववाचक","द्रव्यवाचक","जातिवाचक","व्यक्तिवाचक"],answer:1},
+            {question:"'भीड़' किस प्रकार की संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","समूहवाचक","भाववाचक"],answer:2},
+            {question:"'मिठास' कौन सी संज्ञा है?",options:["भाववाचक","द्रव्यवाचक","समूहवाचक","जातिवाचक"],answer:0},
+            {question:"'विद्यालय' किस प्रकार की संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","द्रव्यवाचक"],answer:1},
+            {question:"'रामायण' कौन सी संज्ञा है?",options:["भाववाचक","व्यक्तिवाचक","समूहवाचक","जातिवाचक"],answer:1},
+            {question:"'दल' किस प्रकार की संज्ञा है?",options:["समूहवाचक","जातिवाचक","भाववाचक","द्रव्यवाचक"],answer:0},
+            {question:"'सच्चाई' कौन सी संज्ञा है?",options:["द्रव्यवाचक","समूहवाचक","भाववाचक","जातिवाचक"],answer:2},
+            {question:"'चावल' किस प्रकार की संज्ञा है?",options:["द्रव्यवाचक","जातिवाचक","भाववाचक","व्यक्तिवाचक"],answer:0},
+            {question:"'मोहन' कौन सी संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","भाववाचक","समूहवाचक"],answer:1},
+            {question:"'गरीबी' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","व्यक्तिवाचक"],answer:0},
+            {question:"'टोली' कौन सी संज्ञा है?",options:["जातिवाचक","समूहवाचक","द्रव्यवाचक","भाववाचक"],answer:1},
+            {question:"'पानी' किस प्रकार की संज्ञा है?",options:["भाववाचक","व्यक्तिवाचक","द्रव्यवाचक","समूहवाचक"],answer:2},
+            {question:"'क्रोध' कौन सी संज्ञा है?",options:["भाववाचक","जातिवाचक","समूहवाचक","द्रव्यवाचक"],answer:0}
+],
+"संज्ञा(Hard)":[
+            {question:"'भारत' किस प्रकार की संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","द्रव्यवाचक"],answer:0},
+            {question:"'मित्रता' कौन सी संज्ञा है?",options:["समूहवाचक","भाववाचक","जातिवाचक","द्रव्यवाचक"],answer:1},
+            {question:"'गाय' किस प्रकार की संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'तेल' कौन सी संज्ञा है?",options:["द्रव्यवाचक","जातिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'सभा' किस प्रकार की संज्ञा है?",options:["भाववाचक","द्रव्यवाचक","समूहवाचक","व्यक्तिवाचक"],answer:2},
+            {question:"'सुंदरता' कौन सी संज्ञा है?",options:["भाववाचक","समूहवाचक","द्रव्यवाचक","जातिवाचक"],answer:0},
+            {question:"'किताब' किस प्रकार की संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","द्रव्यवाचक","भाववाचक"],answer:0},
+            {question:"'ताजमहल' कौन सी संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","द्रव्यवाचक"],answer:0},
+            {question:"'दूध' किस प्रकार की संज्ञा है?",options:["द्रव्यवाचक","भाववाचक","जातिवाचक","समूहवाचक"],answer:0},
+            {question:"'बुढ़ापा' कौन सी संज्ञा है?",options:["जातिवाचक","भाववाचक","समूहवाचक","द्रव्यवाचक"],answer:1},
+            {question:"'पुलिस' किस प्रकार की संज्ञा है?",options:["समूहवाचक","भाववाचक","द्रव्यवाचक","जातिवाचक"],answer:0},
+            {question:"'दिल्ली' कौन सी संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","भाववाचक","समूहवाचक"],answer:1},
+            {question:"'लोहे' का प्रकार क्या है?",options:["द्रव्यवाचक","भाववाचक","जातिवाचक","व्यक्तिवाचक"],answer:0},
+            {question:"'शत्रुता' कौन सी संज्ञा है?",options:["भाववाचक","समूहवाचक","जातिवाचक","द्रव्यवाचक"],answer:0},
+            {question:"'कक्षा' किस प्रकार की संज्ञा है?",options:["जातिवाचक","समूहवाचक","भाववाचक","द्रव्यवाचक"],answer:0},
+            {question:"'टोकरा' कौन सी संज्ञा है?",options:["द्रव्यवाचक","समूहवाचक","जातिवाचक","भाववाचक"],answer:1},
+            {question:"'भलाई' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","व्यक्तिवाचक","द्रव्यवाचक"],answer:0},
+            {question:"'आगरा' कौन सी संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'घी' किस प्रकार की संज्ञा है?",options:["जातिवाचक","भाववाचक","द्रव्यवाचक","समूहवाचक"],answer:2},
+            {question:"'ज्ञान' कौन सी संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","समूहवाचक"],answer:0}
+],
+"संज्ञा(Super Hard-1)":[
+            {question:"'मानवता' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","समूहवाचक","द्रव्यवाचक"],answer:0},
+            {question:"'कुरुक्षेत्र' कौन सी संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","समूहवाचक","भाववाचक"],answer:1},
+            {question:"'लोहा' किस प्रकार की संज्ञा है?",options:["द्रव्यवाचक","भाववाचक","जातिवाचक","व्यक्तिवाचक"],answer:0},
+            {question:"'विद्वता' कौन सी संज्ञा है?",options:["भाववाचक","जातिवाचक","समूहवाचक","द्रव्यवाचक"],answer:0},
+            {question:"'कवि' किस प्रकार की संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'बुद्धिमानी' कौन सी संज्ञा है?",options:["समूहवाचक","भाववाचक","द्रव्यवाचक","जातिवाचक"],answer:1},
+            {question:"'राजस्थान' किस प्रकार की संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'अंधकार' कौन सी संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","समूहवाचक"],answer:0},
+            {question:"'संसद' किस प्रकार की संज्ञा है?",options:["जातिवाचक","समूहवाचक","द्रव्यवाचक","भाववाचक"],answer:1},
+            {question:"'चांदी' कौन सी संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","समूहवाचक"],answer:2}
+],
+"संज्ञा(Super Hard-2)":[
+            {question:"'बाल्यावस्था' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","समूहवाचक","द्रव्यवाचक"],answer:0},
+            {question:"'अरावली' कौन सी संज्ञा है?",options:["व्यक्तिवाचक","जातिवाचक","भाववाचक","समूहवाचक"],answer:0},
+            {question:"'साहस' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","समूहवाचक"],answer:0},
+            {question:"'टोला' कौन सी संज्ञा है?",options:["द्रव्यवाचक","समूहवाचक","जातिवाचक","भाववाचक"],answer:1},
+            {question:"'तांबा' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","समूहवाचक"],answer:2},
+            {question:"'कोलकाता' कौन सी संज्ञा है?",options:["जातिवाचक","व्यक्तिवाचक","भाववाचक","समूहवाचक"],answer:1},
+            {question:"'गरीबी' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","समूहवाचक"],answer:0},
+            {question:"'सैनिक दल' कौन सी संज्ञा है?",options:["द्रव्यवाचक","समूहवाचक","भाववाचक","जातिवाचक"],answer:1},
+            {question:"'तेज' किस प्रकार की संज्ञा है?",options:["भाववाचक","जातिवाचक","द्रव्यवाचक","व्यक्तिवाचक"],answer:0},
+            {question:"'शक्कर' कौन सी संज्ञा है?",options:["द्रव्यवाचक","जातिवाचक","भाववाचक","समूहवाचक"],answer:0}
+],
+"सर्वनाम(Easy)":[
+            {question:"जो संज्ञा के स्थान पर प्रयुक्त होता है उसे क्या कहते हैं?",options:["विशेषण","सर्वनाम","क्रिया","संज्ञा"],answer:1},
+            {question:"'मैं' कौन सा सर्वनाम है?",options:["निजवाचक","पुरुषवाचक","निश्चयवाचक","संबंधवाचक"],answer:1},
+            {question:"'तुम' किस प्रकार का सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","अनिश्चयवाचक"],answer:0},
+            {question:"'जो मेहनत करता है वही सफल होता है' में सर्वनाम कौन सा है?",options:["वही","जो","मेहनत","सफल"],answer:1},
+            {question:"'कौन आया है?' में कौन सा सर्वनाम है?",options:["निश्चयवाचक","प्रश्नवाचक","पुरुषवाचक","निजवाचक"],answer:1},
+            {question:"'आप' कौन सा सर्वनाम है?",options:["पुरुषवाचक","संबंधवाचक","निजवाचक","अनिश्चयवाचक"],answer:0},
+            {question:"'जो सोता है वह खोता है' में 'वह' कौन सा सर्वनाम है?",options:["पुरुषवाचक","निश्चयवाचक","संबंधवाचक","निजवाचक"],answer:1},
+            {question:"'अपना काम स्वयं करो' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","संबंधवाचक","प्रश्नवाचक"],answer:1},
+            {question:"'कोई दरवाजे पर है' में कौन सा सर्वनाम है?",options:["प्रश्नवाचक","निश्चयवाचक","अनिश्चयवाचक","पुरुषवाचक"],answer:2},
+            {question:"'जो जैसा करेगा वैसा भरेगा' में 'जो' कौन सा सर्वनाम है?",options:["संबंधवाचक","प्रश्नवाचक","निजवाचक","निश्चयवाचक"],answer:0},
+            {question:"'यह मेरी पुस्तक है' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","निश्चयवाचक","संबंधवाचक","प्रश्नवाचक"],answer:1},
+            {question:"'तू' कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","अनिश्चयवाचक"],answer:0},
+            {question:"'जो लड़का आया था वह मेरा मित्र है' में संबंधवाचक सर्वनाम कौन है?",options:["वह","मेरा","जो","मित्र"],answer:2},
+            {question:"'स्वयं' कौन सा सर्वनाम है?",options:["निजवाचक","पुरुषवाचक","प्रश्नवाचक","संबंधवाचक"],answer:0},
+            {question:"'किसी ने मेरा बैग लिया' में कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","अनिश्चयवाचक","पुरुषवाचक"],answer:2},
+            {question:"'जो होगा देखा जाएगा' में कौन सा सर्वनाम है?",options:["संबंधवाचक","निश्चयवाचक","निजवाचक","पुरुषवाचक"],answer:0},
+            {question:"'वह मेरा घर है' में 'वह' कौन सा सर्वनाम है?",options:["निश्चयवाचक","प्रश्नवाचक","अनिश्चयवाचक","निजवाचक"],answer:0},
+            {question:"'कौन तुम्हारे साथ जाएगा?' में कौन सा सर्वनाम है?",options:["संबंधवाचक","प्रश्नवाचक","पुरुषवाचक","निजवाचक"],answer:1},
+            {question:"'हम' कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","संबंधवाचक","निश्चयवाचक"],answer:0},
+            {question:"'जो पढ़ेगा वही पास होगा' में 'वही' कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","प्रश्नवाचक","निजवाचक"],answer:0}
+],
+"सर्वनाम(Hard)":[
+            {question:"'वे खेल रहे हैं' में सर्वनाम कौन सा है?",options:["खेल","वे","रहे","हैं"],answer:1},
+            {question:"'यह कौन है?' में कौन सा सर्वनाम है?",options:["निजवाचक","प्रश्नवाचक","निश्चयवाचक","पुरुषवाचक"],answer:1},
+            {question:"'अपनी सहायता स्वयं करो' में कौन सा सर्वनाम है?",options:["निजवाचक","पुरुषवाचक","संबंधवाचक","प्रश्नवाचक"],answer:0},
+            {question:"'जिसकी लाठी उसकी भैंस' में कौन सा सर्वनाम है?",options:["निश्चयवाचक","प्रश्नवाचक","संबंधवाचक","पुरुषवाचक"],answer:2},
+            {question:"'कुछ लोग आए थे' में कौन सा सर्वनाम है?",options:["अनिश्चयवाचक","निजवाचक","पुरुषवाचक","निश्चयवाचक"],answer:0},
+            {question:"'वह विद्यालय गया' में 'वह' कौन सा सर्वनाम है?",options:["पुरुषवाचक","प्रश्नवाचक","संबंधवाचक","निजवाचक"],answer:0},
+            {question:"'जो जागता है वही पाता है' में संबंधवाचक सर्वनाम कौन है?",options:["वही","जो","जागता","पाता"],answer:1},
+            {question:"'क्या तुमने उसे देखा?' में कौन सा सर्वनाम है?",options:["प्रश्नवाचक","पुरुषवाचक","निजवाचक","अनिश्चयवाचक"],answer:1},
+            {question:"'यह वही पुस्तक है' में 'वही' कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","निजवाचक","प्रश्नवाचक"],answer:0},
+            {question:"'किसने दरवाजा खोला?' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","संबंधवाचक"],answer:2},
+            {question:"'मैं स्वयं जाऊँगा' में कौन सा सर्वनाम है?",options:["निजवाचक","पुरुषवाचक","प्रश्नवाचक","निश्चयवाचक"],answer:0},
+            {question:"'कोई बाहर खड़ा है' में कौन सा सर्वनाम है?",options:["संबंधवाचक","अनिश्चयवाचक","निश्चयवाचक","पुरुषवाचक"],answer:1},
+            {question:"'जो करेगा सो भरेगा' में 'सो' कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","प्रश्नवाचक","पुरुषवाचक"],answer:0},
+            {question:"'तुम कहाँ जा रहे हो?' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","संबंधवाचक","निश्चयवाचक"],answer:0},
+            {question:"'जिसे तुम ढूँढ रहे हो वह यहाँ है' में संबंधवाचक सर्वनाम कौन है?",options:["वह","जिसे","यहाँ","तुम"],answer:1},
+            {question:"'वे स्वयं आए' में 'स्वयं' कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","निश्चयवाचक","अनिश्चयवाचक"],answer:1},
+            {question:"'यह मेरा घर है' में 'यह' कौन सा सर्वनाम है?",options:["प्रश्नवाचक","निश्चयवाचक","निजवाचक","संबंधवाचक"],answer:1},
+            {question:"'कौन पढ़ रहा है?' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","संबंधवाचक","प्रश्नवाचक","निश्चयवाचक"],answer:2},
+            {question:"'हम सब मित्र हैं' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","प्रश्नवाचक","अनिश्चयवाचक"],answer:0},
+            {question:"'जो आया था वही लौट गया' में 'वही' कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","पुरुषवाचक","प्रश्नवाचक"],answer:0}
+],
+"सर्वनाम(Super Hard-1)":[
+            {question:"'जो परिश्रम करता है, वही सफल होता है' में 'वही' कौन सा सर्वनाम है?",options:["निश्चयवाचक","पुरुषवाचक","निजवाचक","अनिश्चयवाचक"],answer:0},
+            {question:"'आप अपना कार्य कीजिए' में 'अपना' कौन सा सर्वनाम है?",options:["संबंधवाचक","निजवाचक","प्रश्नवाचक","पुरुषवाचक"],answer:1},
+            {question:"'किसी ने सच कहा है' में कौन सा सर्वनाम है?",options:["अनिश्चयवाचक","पुरुषवाचक","निश्चयवाचक","संबंधवाचक"],answer:0},
+            {question:"'जिसका काम उसी को साजे' में संबंधवाचक सर्वनाम कौन है?",options:["उसी","काम","जिसका","साजे"],answer:2},
+            {question:"'मैंने उसे बुलाया' में 'उसे' कौन सा सर्वनाम है?",options:["पुरुषवाचक","प्रश्नवाचक","निश्चयवाचक","निजवाचक"],answer:0},
+            {question:"'क्या कोई घर पर है?' में कौन सा सर्वनाम है?",options:["निश्चयवाचक","प्रश्नवाचक","अनिश्चयवाचक","दोनों"],answer:3},
+            {question:"'वही मेरा मित्र है' में कौन सा सर्वनाम है?",options:["संबंधवाचक","निश्चयवाचक","निजवाचक","प्रश्नवाचक"],answer:1},
+            {question:"'जो सोवत है सो खोवत है' में 'सो' कौन सा सर्वनाम है?",options:["निश्चयवाचक","पुरुषवाचक","निजवाचक","संबंधवाचक"],answer:0},
+            {question:"'तू कहाँ जा रहा है?' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","संबंधवाचक","प्रश्नवाचक","निजवाचक"],answer:0},
+            {question:"'स्वयं पर विश्वास रखो' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","निजवाचक","संबंधवाचक","अनिश्चयवाचक"],answer:1}
+],
+"सर्वनाम(Super Hard-2)":[
+            {question:"'जिसे तुम खोज रहे हो, वह यहाँ नहीं है' में संबंधवाचक सर्वनाम कौन है?",options:["वह","यहाँ","जिसे","तुम"],answer:2},
+            {question:"'कोई कुछ नहीं जानता' में कौन सा सर्वनाम प्रयुक्त हुआ है?",options:["निजवाचक","अनिश्चयवाचक","पुरुषवाचक","निश्चयवाचक"],answer:1},
+            {question:"'यह वही छात्र है जिसने पुरस्कार जीता' में 'वही' कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","निजवाचक","प्रश्नवाचक"],answer:0},
+            {question:"'मैं अपना काम स्वयं करता हूँ' में 'स्वयं' कौन सा सर्वनाम है?",options:["प्रश्नवाचक","संबंधवाचक","निजवाचक","पुरुषवाचक"],answer:2},
+            {question:"'जो होगा देखा जाएगा' में कौन सा सर्वनाम है?",options:["संबंधवाचक","निश्चयवाचक","पुरुषवाचक","अनिश्चयवाचक"],answer:0},
+            {question:"'कौन बाहर खड़ा है?' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","प्रश्नवाचक","निश्चयवाचक","निजवाचक"],answer:1},
+            {question:"'वे स्वयं चले गए' में 'वे' कौन सा सर्वनाम है?",options:["निश्चयवाचक","निजवाचक","पुरुषवाचक","संबंधवाचक"],answer:2},
+            {question:"'कुछ लोग मेहनती होते हैं' में कौन सा सर्वनाम है?",options:["प्रश्नवाचक","निश्चयवाचक","अनिश्चयवाचक","संबंधवाचक"],answer:2},
+            {question:"'जो जैसा करेगा वैसा भरेगा' में 'वैसा' कौन सा सर्वनाम है?",options:["निश्चयवाचक","संबंधवाचक","पुरुषवाचक","निजवाचक"],answer:0},
+            {question:"'आप कहाँ रहते हैं?' में कौन सा सर्वनाम है?",options:["पुरुषवाचक","संबंधवाचक","निश्चयवाचक","अनिश्चयवाचक"],answer:0}
+],
+"क्रिया(Easy)":[
+            {question:"जिस शब्द से किसी कार्य के करने या होने का बोध हो उसे क्या कहते हैं?",options:["संज्ञा","विशेषण","क्रिया","सर्वनाम"],answer:2},
+            {question:"'राम दौड़ता है' में क्रिया कौन सी है?",options:["राम","दौड़ता","है","राम दौड़ता"],answer:1},
+            {question:"'सीमा खाना बना रही है' में मुख्य क्रिया क्या है?",options:["सीमा","खाना","बना","रही"],answer:2},
+            {question:"'वह सो गया' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","पूर्वकालिक","संयुक्त"],answer:1},
+            {question:"'मैं पत्र लिखता हूँ' में क्रिया का प्रकार क्या है?",options:["अकर्मक","सकर्मक","प्रेरणार्थक","द्विकर्मक"],answer:1},
+            {question:"'मोहन हँसता है' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","संयुक्त","नामधातु"],answer:1},
+            {question:"'बच्चा रो रहा है' में सहायक क्रिया कौन सी है?",options:["बच्चा","रो","रहा","है"],answer:3},
+            {question:"'मैंने उसे पुस्तक दी' में कौन सी क्रिया है?",options:["अकर्मक","द्विकर्मक","पूर्वकालिक","संयुक्त"],answer:1},
+            {question:"'राम ने भोजन किया' में क्रिया क्या है?",options:["राम","भोजन","किया","ने"],answer:2},
+            {question:"'सीमा गाना गाती है' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","संयुक्त","नामधातु"],answer:0},
+            {question:"'पक्षी उड़ते हैं' में क्रिया का प्रकार क्या है?",options:["सकर्मक","प्रेरणार्थक","अकर्मक","द्विकर्मक"],answer:2},
+            {question:"'वह पढ़ चुका है' में सहायक क्रिया कौन सी है?",options:["पढ़","चुका","है","वह"],answer:2},
+            {question:"'माँ बच्चे को सुलाती है' में कौन सी क्रिया है?",options:["प्रेरणार्थक","अकर्मक","संयुक्त","पूर्वकालिक"],answer:0},
+            {question:"'वह घर गया' में क्रिया कौन सी है?",options:["घर","वह","गया","में"],answer:2},
+            {question:"'लड़का खेल रहा है' में मुख्य क्रिया क्या है?",options:["लड़का","खेल","रहा","है"],answer:1},
+            {question:"'मैंने पानी पिया' में क्रिया का प्रकार क्या है?",options:["सकर्मक","अकर्मक","पूर्वकालिक","द्विकर्मक"],answer:0},
+            {question:"'घोड़ा दौड़ता है' में कौन सी क्रिया है?",options:["द्विकर्मक","प्रेरणार्थक","अकर्मक","संयुक्त"],answer:2},
+            {question:"'उसने मुझे कहानी सुनाई' में कौन सी क्रिया है?",options:["अकर्मक","द्विकर्मक","पूर्वकालिक","संयुक्त"],answer:1},
+            {question:"'राम पढ़ने गया' में पूर्वकालिक क्रिया कौन सी है?",options:["राम","पढ़ने","गया","राम पढ़ने"],answer:1},
+            {question:"'मैं खाना खा चुका हूँ' में सहायक क्रिया कौन सी है?",options:["खाना","खा","चुका","हूँ"],answer:3}
+],
+"क्रिया(Hard)":[
+            {question:"'वह नाच रही है' में मुख्य क्रिया क्या है?",options:["वह","नाच","रही","है"],answer:1},
+            {question:"'मैंने आम खाया' में कौन सी क्रिया है?",options:["अकर्मक","सकर्मक","संयुक्त","प्रेरणार्थक"],answer:1},
+            {question:"'बच्चा सो गया' में क्रिया का प्रकार क्या है?",options:["अकर्मक","सकर्मक","द्विकर्मक","संयुक्त"],answer:0},
+            {question:"'शिक्षक ने छात्रों को पढ़ाया' में कौन सी क्रिया है?",options:["अकर्मक","प्रेरणार्थक","द्विकर्मक","संयुक्त"],answer:2},
+            {question:"'वह पत्र लिख रहा है' में सहायक क्रिया कौन सी है?",options:["पत्र","लिख","रहा","है"],answer:3},
+            {question:"'सीमा मुस्कुराई' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","संयुक्त","द्विकर्मक"],answer:1},
+            {question:"'माँ ने बच्चे को दूध पिलाया' में कौन सी क्रिया है?",options:["पूर्वकालिक","प्रेरणार्थक","अकर्मक","संयुक्त"],answer:1},
+            {question:"'राम बाज़ार गया' में क्रिया कौन सी है?",options:["राम","बाज़ार","गया","में"],answer:2},
+            {question:"'मैं किताब पढ़ता हूँ' में मुख्य क्रिया क्या है?",options:["मैं","किताब","पढ़ता","हूँ"],answer:2},
+            {question:"'वह हँस पड़ा' में कौन सी क्रिया है?",options:["संयुक्त","सकर्मक","द्विकर्मक","प्रेरणार्थक"],answer:0},
+            {question:"'पानी बह रहा है' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","प्रेरणार्थक","संयुक्त"],answer:1},
+            {question:"'सीमा ने गीत गाया' में क्रिया का प्रकार क्या है?",options:["अकर्मक","सकर्मक","संयुक्त","द्विकर्मक"],answer:1},
+            {question:"'वह पढ़कर सो गया' में पूर्वकालिक क्रिया कौन सी है?",options:["सो","गया","पढ़कर","वह"],answer:2},
+            {question:"'मैंने उसे बुलाया' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","पूर्वकालिक","संयुक्त"],answer:0},
+            {question:"'लड़की रो रही है' में सहायक क्रिया कौन सी है?",options:["लड़की","रो","रही","है"],answer:3},
+            {question:"'मोहन ने मित्र को पत्र लिखा' में कौन सी क्रिया है?",options:["अकर्मक","द्विकर्मक","प्रेरणार्थक","संयुक्त"],answer:1},
+            {question:"'चिड़िया उड़ गई' में कौन सी क्रिया है?",options:["सकर्मक","अकर्मक","संयुक्त","द्विकर्मक"],answer:1},
+            {question:"'वह मुझे कहानी सुनाता है' में क्रिया का प्रकार क्या है?",options:["द्विकर्मक","अकर्मक","संयुक्त","पूर्वकालिक"],answer:0},
+            {question:"'राम बैठ गया' में कौन सी क्रिया है?",options:["संयुक्त","सकर्मक","प्रेरणार्थक","द्विकर्मक"],answer:0},
+            {question:"'मैंने काम कर लिया' में कौन सी क्रिया है?",options:["पूर्वकालिक","संयुक्त","अकर्मक","द्विकर्मक"],answer:1}
+],
+"क्रिया(Super Hard-1)":[
+            {question:"'वह गाना गाने लगा' में कौन सी क्रिया है?",options:["संयुक्त","अकर्मक","द्विकर्मक","प्रेरणार्थक"],answer:0},
+            {question:"'राम ने उसे बुलवाया' में कौन सी क्रिया है?",options:["अकर्मक","प्रेरणार्थक","संयुक्त","पूर्वकालिक"],answer:1},
+            {question:"'मैं पढ़ चुका हूँ' में सहायक क्रिया कौन सी है?",options:["पढ़","चुका","हूँ","मैं"],answer:2},
+            {question:"'सीमा हँस पड़ी' में कौन सी क्रिया है?",options:["द्विकर्मक","संयुक्त","अकर्मक","प्रेरणार्थक"],answer:1},
+            {question:"'उसने मुझे पानी दिया' में कौन सी क्रिया है?",options:["सकर्मक","द्विकर्मक","अकर्मक","पूर्वकालिक"],answer:1},
+            {question:"'वह रोने लगा' में मुख्य क्रिया क्या है?",options:["रोने","लगा","वह","रोने लगा"],answer:0},
+            {question:"'मैंने भोजन कर लिया' में कौन सी क्रिया है?",options:["अकर्मक","संयुक्त","द्विकर्मक","प्रेरणार्थक"],answer:1},
+            {question:"'शिक्षक ने छात्रों को समझाया' में कौन सी क्रिया है?",options:["अकर्मक","प्रेरणार्थक","द्विकर्मक","संयुक्त"],answer:2},
+            {question:"'पक्षी चहचहा रहे हैं' में सहायक क्रिया कौन सी है?",options:["पक्षी","चहचहा","रहे","हैं"],answer:3},
+            {question:"'राम पढ़ने बैठा' में पूर्वकालिक क्रिया कौन सी है?",options:["राम","पढ़ने","बैठा","पढ़ने बैठा"],answer:1}
+],
+"क्रिया(Super Hard-2)":[
+            {question:"'माँ ने बच्चे को सुलवा दिया' में कौन सी क्रिया है?",options:["संयुक्त","अकर्मक","प्रेरणार्थक","द्विकर्मक"],answer:2},
+            {question:"'वह लिख चुका था' में सहायक क्रिया कौन सी है?",options:["लिख","चुका","था","वह"],answer:2},
+            {question:"'राम हँसने लगा' में कौन सी क्रिया है?",options:["संयुक्त","अकर्मक","द्विकर्मक","पूर्वकालिक"],answer:0},
+            {question:"'मैंने मित्र को उपहार दिया' में कौन सी क्रिया है?",options:["सकर्मक","द्विकर्मक","संयुक्त","अकर्मक"],answer:1},
+            {question:"'बालक दौड़ पड़ा' में कौन सी क्रिया है?",options:["पूर्वकालिक","संयुक्त","प्रेरणार्थक","द्विकर्मक"],answer:1},
+            {question:"'वह पढ़कर चला गया' में पूर्वकालिक क्रिया कौन सी है?",options:["चला","गया","पढ़कर","वह"],answer:2},
+            {question:"'सीमा ने पत्र लिखवाया' में कौन सी क्रिया है?",options:["प्रेरणार्थक","संयुक्त","अकर्मक","द्विकर्मक"],answer:0},
+            {question:"'मैंने गीत सुन लिया' में कौन सी क्रिया है?",options:["अकर्मक","संयुक्त","द्विकर्मक","पूर्वकालिक"],answer:1},
+            {question:"'शिक्षक छात्रों को पढ़ा रहे हैं' में सहायक क्रिया कौन सी है?",options:["शिक्षक","पढ़ा","रहे","हैं"],answer:3},
+            {question:"'बच्चा खेलने गया' में पूर्वकालिक क्रिया कौन सी है?",options:["बच्चा","खेलने","गया","बच्चा खेलने"],answer:1}
+]
+    },
 };
 
 let questions=[];
+let currentSubject="";
+let currentClub="";
 let currentQuestionIndex=0;
 let answers=[];
 let skippedQuestions=0;
-let currentSubject="";
-let showAnswers=false;
+let answerRevealed = false; 
+let answeredQuestions = new Set(); // 🔥 Track answered questions
 
-/* SHOW TOPICS */
-function showTopics(){
-document.querySelector('.folder-btn').style.display='none';
-document.getElementById('topicsContainer').style.display='block';
+/* 🔥 CLUB FUNCTIONS - CLUBS HIDE + SECOND PAGE EFFECT */
+function showGSTopics(){
+    
+    pushState(1); /* baaki code same */ 
+    hideClubsAndShowTopics('topicsContainer', 'GS');
+}
 
-// 👇 ADD THIS
-history.pushState({page:"topics"},"","#topics");
+function showMathTopics(){
+    pushState(1); /* baaki code same */ 
+    hideClubsAndShowTopics('mathTopicsContainer', 'Math');
+    document.getElementById('mathChapterContainer').style.display = 'none';
+}
+
+function showEnglishTopics(){
+    pushState(1); /* baaki code same */ 
+    hideClubsAndShowTopics('englishTopicsContainer', 'English');
+    document.getElementById('englishChapterContainer').style.display = 'none';
+}
+
+function showHindiTopics(){
+    pushState(1); /* baaki code same */ 
+    hideClubsAndShowTopics('hindiTopicsContainer', 'Hindi');
+    document.getElementById('hindiChapterContainer').style.display = 'none';
+}
+function hideClubsAndShowTopics(containerId, clubName){
+    // 🔥 CHANGE 3: Hide all clubs + second page effect
+    document.getElementById('clubsGrid').classList.add('hidden');
+    
+    // Show topics with animation
+    setTimeout(()=>{
+        document.getElementById(containerId).style.display='block';
+    }, 300);
+    
+    currentClub=clubName;
+}
+
+/* 🔥 MATH/OTHER FUNCTIONS */
+function loadMathChapter(chapter){
+    resetContainers();
+    pushState(3); /* baaki code same */ 
+    questions=mathQuestions[chapter];
+    currentSubject=chapter;
+    startTest();
+}
+
+function loadEnglishChapter(chapter){
+    resetContainers();
+    pushState(3); /* baaki code same */ 
+    questions=englishQuestions[chapter];
+    currentSubject=chapter;
+    startTest();
+}
+
+function loadHindiChapter(chapter){
+    resetContainers();
+    pushState(3); /* baaki code same */ 
+    questions=hindiQuestions[chapter];
+    currentSubject=chapter;
+    startTest();
 }
 
 function loadSubject(subject){
-currentSubject=subject;
-document.getElementById('topicsContainer').style.display='none';
+    resetContainers();
+    pushState(2); /* baaki code same */ 
+    currentSubject=subject;
+    document.getElementById('topicsContainer').style.display='none';
 
-let chapters=Object.keys(allQuestions[subject]);
-let html='<div class="topics-grid">';
+    let chapters=Object.keys(allQuestions[subject]);
+    let html='<div class="topics-grid">';
 
-chapters.forEach(ch=>{
-html+=`<div class="topic-box" onclick="loadChapter('${ch}')">${ch}</div>`;
-});
+    chapters.forEach(ch=>{
+        html+=`<div class="topic-box" onclick="loadChapter('${ch}')">${ch}</div>`;
+    });
+    html+='</div>';
 
-html+='</div>';
-
-document.getElementById('chapterContainer').innerHTML=html;
-document.getElementById('chapterContainer').style.display='block';
-
-// 👇 ADD THIS
-history.pushState({page:"chapters"},"","#chapters");
+    document.getElementById('chapterContainer').innerHTML=html;
+    document.getElementById('chapterContainer').style.display='block';
 }
 
 function loadChapter(ch){
-questions=allQuestions[currentSubject][ch];
-startTest();
+    resetContainers();
+    questions=allQuestions[currentSubject][ch];
+    startTest();
 }
 
-/* START TEST */
+/* 🔥 TEST FUNCTIONS */
 function startTest(){
-document.getElementById('chapterContainer').style.display='none';
-document.getElementById('testContainer').style.display='block';
+    pushState(3); /* baaki code same */ 
+    // Hide all containers
+    // document.querySelectorAll('#topicsContainer, #mathTopicsContainer, #englishTopicsContainer, #hindiTopicsContainer, #chapterContainer').forEach(el=>el.style.display='none');
+    document.querySelectorAll('#topicsContainer, #mathTopicsContainer, #englishTopicsContainer, #hindiTopicsContainer, #chapterContainer, #mathChapterContainer, #englishChapterContainer, #hindiChapterContainer').forEach(el=>el.style.display='none');
+    document.getElementById('testContainer').style.display='block';
 
-answers=new Array(questions.length).fill(null);
-currentQuestionIndex=0;
-skippedQuestions=0;
-showAnswers=false;
+    answers=new Array(questions.length).fill(null);
+    currentQuestionIndex=0;
+    skippedQuestions=0;
+    answerRevealed=false;
+    answeredQuestions.clear(); // 🔥 Add this line
 
-// 👇 ADD THIS
-history.pushState({page:"test"},"","#test");
-showQuestion();
+    showQuestion();
 }
 
+
+// 🔥 JAWAB TOGGLE FUNCTION
+function toggleAnswer(){
+    let q = questions[currentQuestionIndex];
+    let btn = document.getElementById('answerBtn');
+    
+if(!answerRevealed){
+    // Show answer
+    for(let i=0; i<q.options.length; i++){
+        let optionEl = document.getElementById('option'+i);
+        
+        if(i === q.answer){
+            // 🔥 CORRECT ANSWER - GREEN
+            optionEl.classList.add('answer-revealed');
+            optionEl.innerHTML += ' ✅ <strong>(सही जवाब)</strong>';
+            optionEl.onclick = null;
+            optionEl.style.pointerEvents = 'none';
+        } 
+        // 🔥 USER KA GALAT ANSWER - RED
+        else if(answers[currentQuestionIndex] === i && answers[currentQuestionIndex] !== null){
+            optionEl.classList.add('wrong-answer');
+            optionEl.innerHTML += ' ❌ <strong>(गलत)</strong>';
+            optionEl.onclick = null;
+            optionEl.style.pointerEvents = 'none';
+        }
+    }
+    btn.innerHTML = '❌ जवाब छुपाएं';
+    btn.classList.add('answer-revealed');
+    answerRevealed = true;
+    
+    // 🔥 CHEAT PREVENTION
+    answeredQuestions.add(currentQuestionIndex);
+}
+    else {
+        // Hide answer - but onclick restore NHI karte
+        for(let i=0; i<q.options.length; i++){
+            let optionEl = document.getElementById('option'+i);
+            optionEl.classList.remove('answer-revealed');
+            optionEl.innerHTML = q.options[i];
+             // 🔥 Agar already answered hai to sahi option lock rakho
+            if(answeredQuestions.has(currentQuestionIndex) && i === q.answer){
+                optionEl.onclick = null;
+                optionEl.style.pointerEvents = 'none';
+                optionEl.classList.add('answer-revealed');
+                optionEl.innerHTML += ' ✅ <strong>(सही जवाब)</strong>';
+            }
+            // 🔥 Selected wala restore karo, lekin answer wale ka onclick NHI
+            if(answers[currentQuestionIndex] === i){
+                optionEl.classList.add('selected');
+            }
+        }
+        btn.innerHTML = '🔍 जवाब देखें';
+        btn.classList.remove('answer-revealed');
+        answerRevealed = false;
+    }
+}
 function showQuestion(){
-let q=questions[currentQuestionIndex];
+    let q=questions[currentQuestionIndex];
+    
+    document.getElementById('questionsContainer').innerHTML=`
+    <div class="question">
+    <h3>Q${currentQuestionIndex+1}: ${q.question}</h3>
+    ${q.options.map((opt,i)=>`
+        <div class="option" id="option${i}" onclick="selectOption(${i})">${opt}</div>
+    `).join("")}
+    </div>
+    <p style="color: #fed6e3; font-weight: bold; font-size: 16px; margin-top: 15px;">
+        सवाल ${currentQuestionIndex+1}/${questions.length} | 📚 ${currentClub} - ${currentSubject}
+    </p>
+    `;
+    // 🔥 showQuestion() ke setTimeout me ye add karo:
+setTimeout(()=>{
+    if(answers[currentQuestionIndex] !== null && answers[currentQuestionIndex] !== -1){
+        document.getElementById('option'+answers[currentQuestionIndex]).classList.add('selected');
+    }
+    
+    // 🔥 CHEAT BLOCK - Agar answer dekha hai to sahi option lock
+    if(answeredQuestions.has(currentQuestionIndex)){
+        let q = questions[currentQuestionIndex];
+        let correctOption = document.getElementById('option'+q.answer);
+        correctOption.onclick = null;
+        correctOption.style.pointerEvents = 'none';
+        correctOption.classList.add('answer-revealed');
+        correctOption.innerHTML += ' ✅ <strong>(सही जवाब)</strong>';
+    }
+}, 50);
+    // 🔥 ONLY PREVIOUS SELECTION SHOW - NO LOCKING
+    setTimeout(()=>{
+        if(answers[currentQuestionIndex] !== null && answers[currentQuestionIndex] !== -1){
+            document.getElementById('option'+answers[currentQuestionIndex]).classList.add('selected');
+        }
+        // 🔥 BAS YEHI - KOI LOCKING NHI!
+    }, 50);
 
-document.getElementById('questionsContainer').innerHTML=`
-<div class="question-container" id="questionContainer">
-<div class="question">
-<h3>Q${currentQuestionIndex+1}: ${q.question}</h3>
-${q.options.map((opt,i)=>`<div class="option ${showAnswers ? (i===q.answer ? 'correct' : (answers[currentQuestionIndex]===i ? 'wrong' : '')) : (answers[currentQuestionIndex]===i ? 'selected' : '')}" onclick="${showAnswers ? '' : `selectOption(${i})`}">
-${opt} ${showAnswers && i===q.answer ? '✅' : ''}
-</div>`).join("")}
-</div>
-<p>सवाल ${currentQuestionIndex+1}/${questions.length}</p>
-</div>
-`;
-
-document.getElementById('prevBtn').style.display = currentQuestionIndex>0?'block':'none';
-document.getElementById('showAnswerBtn').style.display = showAnswers?'none':'block';
-document.getElementById('finishBtn').style.display = currentQuestionIndex===questions.length-1?'block':'none';
+    // Buttons reset
+    document.getElementById('prevBtn').style.display = currentQuestionIndex>0?'block':'none';
+    document.getElementById('finishBtn').style.display = currentQuestionIndex===questions.length-1?'block':'none';
+    document.getElementById('answerBtn').textContent = '🔍 जवाब देखें';
+    document.getElementById('answerBtn').classList.remove('answer-revealed');
+    answerRevealed = false; // 🔥 RESET
 }
-
 function selectOption(i){
-answers[currentQuestionIndex]=i;
-showQuestion(); // Refresh to show selected
+     // 🔥 JAWAB DEKHA + ANSWERED = NO CHANGE
+    if(answerRevealed || answeredQuestions.has(currentQuestionIndex)) return;
+    answers[currentQuestionIndex] = i;
+    // Remove all selected classes first
+    document.querySelectorAll('.option').forEach(el=>el.classList.remove('selected'));
+    // Add selected to clicked option
+    document.getElementById('option'+i).classList.add('selected');
 }
 
-function showAnswer(){
-showAnswers=true;
-showQuestion();
+function revealAnswer(correctIndex){
+    answerRevealed=true;
+    document.querySelectorAll('.option').forEach((el,index)=>{
+        if(index===correctIndex){
+            el.classList.add('answer-revealed');
+            el.innerHTML += ' ✅ <strong>(सही जवाब)</strong>';
+        }
+    });
+    document.getElementById('answerBtn').innerHTML = '❌ छुपाएं';
 }
+// 🔥 ISKE BADLE YE PURA FUNCTION YE KAR DO:
+    function nextQuestion(){
+        // Har bar next dabane pe check karo - chahe answer diya ho ya na ho
+        if(answers[currentQuestionIndex] === null || answers[currentQuestionIndex] === undefined){
+            skippedQuestions++;  // 🔥 SKIP COUNT +1
+            answers[currentQuestionIndex] = -1;
+        }
 
-function nextQuestion(){
-if(answers[currentQuestionIndex]==null){
-skippedQuestions++;
-answers[currentQuestionIndex]=-1;
-}
-
-if(currentQuestionIndex<questions.length-1){
-currentQuestionIndex++;
-showAnswers=false;
-showQuestion();
-}else{
-finishTest();
-}
-}
+        if(currentQuestionIndex < questions.length-1){
+            currentQuestionIndex++;
+            showQuestion();
+        }else{
+            finishTest();
+        }
+    }
 
 function previousQuestion(){
-if(currentQuestionIndex>0){
-currentQuestionIndex--;
-showAnswers=false;
-showQuestion();
-}
+    if(currentQuestionIndex>0){
+        currentQuestionIndex--;
+        showQuestion();
+        if(answers[currentQuestionIndex]!==null && answers[currentQuestionIndex]!==-1){
+            setTimeout(()=>{
+                document.querySelectorAll('.option')[answers[currentQuestionIndex]].classList.add('selected');
+            }, 100);
+        }
+    }
 }
 
 function finishTest(){
-    // 🔥 Skip count fix - सभी unfilled questions को count करो
-    for(let i = 0; i < questions.length; i++) {
-        if(answers[i] === null) {
-            skippedQuestions++;
-            answers[i] = -1; // Mark as skipped
-        }
+        // 🔥 LAST QUESTION KA SKIP CHECK
+    if(answers[currentQuestionIndex] === null || answers[currentQuestionIndex] === undefined){
+        skippedQuestions++;
+        answers[currentQuestionIndex] = -1;
     }
     
+    // Baaki code same...
     document.getElementById('testContainer').style.display='none';
     document.getElementById('resultContainer').style.display='block';
 
-    let correct=0;
+    let correct=0, wrong=0;
     answers.forEach((a,i)=>{
         if(a===questions[i].answer) correct++;
+        else if(a!==null && a!==-1) wrong++;
     });
 
-    document.getElementById('finalScore').innerText=correct+"/"+questions.length;
+    document.getElementById('finalScore').innerText=`${correct}/${questions.length}`;
+    document.getElementById('correctCount').innerText=correct;
+    document.getElementById('wrongCount').innerText=wrong;
     document.getElementById('skippedCount').innerText=skippedQuestions;
 }
 
 function restartTest(){
-location.reload();
+    location.reload();
+}
+
+// 🔥 MATH CHAPTERS LOAD (पुराना delete, ये नया)
+function loadMathChapter(chapter){
+    document.getElementById('mathTopicsContainer').style.display='none';
+    let chapters = Object.keys(mathQuestions[chapter]);
+    let html = '<div class="topics-grid">';
+    chapters.forEach(ch => {
+        html += `<div class="topic-box" onclick="loadMathTopic('${chapter}', '${ch}')">${ch}</div>`;
+    });
+    html += '</div>';
+    document.getElementById('mathChapterContainer').innerHTML = html;
+    document.getElementById('mathChapterContainer').style.display = 'block';
+    currentSubject = chapter;
+}
+// 🔥 MATH TOPIC LOAD (ये missing था!)
+function loadMathTopic(chapter, topic){
+    resetContainers();
+    questions = mathQuestions[chapter][topic];
+    startTest();
+}
+
+// 🔥 ENGLISH CHAPTERS LOAD (पुराना delete, ये नया)
+function loadEnglishChapter(chapter){
+    resetContainers();
+    document.getElementById('englishTopicsContainer').style.display='none';
+    let chapters = Object.keys(englishQuestions[chapter]);
+    let html = '<div class="topics-grid">';
+    chapters.forEach(ch => {
+        html += `<div class="topic-box" onclick="loadEnglishTopic('${chapter}', '${ch}')">${ch}</div>`;
+    });
+    html += '</div>';
+    document.getElementById('englishChapterContainer').innerHTML = html;
+    document.getElementById('englishChapterContainer').style.display = 'block';
+    currentSubject = chapter;
+}
+// 🔥 ENGLISH TOPIC LOAD (ये missing था!)
+function loadEnglishTopic(chapter, topic){
+    resetContainers();
+    questions = englishQuestions[chapter][topic];
+    startTest();
+}
+// 🔥 HINDI FUNCTIONS
+function loadHindiChapter(chapter){
+    resetContainers();
+    document.getElementById('hindiTopicsContainer').style.display='none';
+    let chapters = Object.keys(hindiQuestions[chapter]);
+    let html = '<div class="topics-grid">';
+    chapters.forEach(ch => {
+        html += `<div class="topic-box" onclick="loadHindiTopic('${chapter}', '${ch}')">${ch}</div>`;
+    });
+    html += '</div>';
+    document.getElementById('hindiChapterContainer').innerHTML = html;
+    document.getElementById('hindiChapterContainer').style.display = 'block';
+}
+
+function loadHindiTopic(chapter, topic){
+    resetContainers();
+    questions = hindiQuestions[chapter][topic];
+    startTest();
+}
+</script>
+
+<!-- <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log("✅ SW Registered"))
+      .catch(err => console.log("❌ SW Error"));
+  });
+}
+</script> -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js")
+    .then(() => console.log("Service Worker Registered"));
 }
 </script>
 <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/yashomoolacademy/service-worker.js')
-      .then(reg => console.log("✅ SW Registered", reg))
-      .catch(err => console.log("❌ SW Error", err));
-  });
+// 🔥 1. PEHLE pushState FUNCTION DEFINE KARO
+let historyState = 0;
+
+function pushState(state) {
+    history.pushState({state: state}, '', '#');
+    historyState = state;
 }
-navigator.serviceWorker.register('/yashomoolacademy/service-worker.js', {
-  scope: '/yashomoolacademy/'
+
+// 🔥 2. BACK BUTTON LISTENER
+window.addEventListener('popstate', function(event) {
+    if(event.state?.state !== undefined) historyState = event.state.state;
+    
+    // 🔥 ALL CONTAINERS HIDE KARO PEHLE
+    document.querySelectorAll('#topicsContainer, #mathTopicsContainer, #englishTopicsContainer, #hindiTopicsContainer, #chapterContainer, #mathChapterContainer, #englishChapterContainer, #hindiChapterContainer, #testContainer, #resultContainer').forEach(el=>el.style.display='none');
+    
+    if(historyState === 0){
+        // HOME - SHOW CLUBS
+        document.getElementById('clubsGrid').classList.remove('hidden');
+    }
+    else if(historyState === 1){
+        // CLUB TOPICS PAGE
+        document.getElementById('clubsGrid').classList.add('hidden');
+        
+        // 🔥 ONLY CURRENT CLUB SHOW
+        if(currentClub === 'GS') document.getElementById('topicsContainer').style.display='block';
+        else if(currentClub === 'Math') document.getElementById('mathTopicsContainer').style.display='block';
+        else if(currentClub === 'English') document.getElementById('englishTopicsContainer').style.display='block';
+        else if(currentClub === 'Hindi') document.getElementById('hindiTopicsContainer').style.display='block';
+    }
+    else if(historyState === 2){
+        // CHAPTERS PAGE
+        document.getElementById('topicsContainer').style.display='block';
+        document.getElementById('chapterContainer').style.display='block';
+    }
 });
+// 🔥 3. PAGE LOAD PE HOME
+history.pushState({state: 0}, '', '#');
 
-window.onpopstate = function(event){
 
-// सभी hide
-document.querySelector('.folder-btn').style.display='none';
-document.getElementById('topicsContainer').style.display='none';
-document.getElementById('chapterContainer').style.display='none';
-document.getElementById('testContainer').style.display='none';
-document.getElementById('resultContainer').style.display='none';
 
-// 👇 condition
-if(!event.state){
-document.querySelector('.folder-btn').style.display='block';
+
+function hideAllContainers(){
+
+    document.getElementById("topicsContainer").style.display = "none";
+
+    document.getElementById("mathTopicsContainer").style.display = "none";
+
+    document.getElementById("englishTopicsContainer").style.display = "none";
+
+    document.getElementById("hindiTopicsContainer").style.display = "none";
+
+    document.getElementById("chapterContainer").style.display = "none";
+
+    document.getElementById("mathChapterContainer").style.display = "none";
+
+    document.getElementById("englishChapterContainer").style.display = "none";
+
+    document.getElementById("hindiChapterContainer").style.display = "none";
+
+    document.getElementById("testContainer").style.display = "none";
+
+    document.getElementById("resultContainer").style.display = "none";
 }
-else if(event.state.page==="topics"){
-document.getElementById('topicsContainer').style.display='block';
+function resetContainers(){
+
+    document.getElementById("chapterContainer").innerHTML = "";
+
+    document.getElementById("testContainer").style.display = "none";
+
+    document.getElementById("resultContainer").style.display = "none";
 }
-else if(event.state.page==="chapters"){
-document.getElementById('chapterContainer').style.display='block';
-}
-else if(event.state.page==="test"){
-document.getElementById('testContainer').style.display='block';
-}
-};
 </script>
-<!-- 🔥 Service Worker Register (body के अंत में, पहले script से पहले) -->
 <script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(reg => console.log('✅ PWA Ready'))
-      .catch(err => console.log('❌ SW Error'));
+window.addEventListener('appinstalled', () => {
+
+  console.log("App Installed");
+
+  gtag('event', 'pwa_install', {
+    event_category: 'PWA',
+    event_label: 'YashoMool App Installed'
   });
-}
+
+});
 </script>
+<footer class="footer-links">
+
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact Us</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms & Conditions</a>
+
+</footer>
 </body>
 </html>
+

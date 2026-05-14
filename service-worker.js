@@ -1,63 +1,36 @@
-const CACHE_NAME = "yashomool-v2"; // Version update
 
-const urlsToCache = [
-  "/",                          // Root
-  "/index.html",
-  "/manifest.json",
-  "/favicon.ico",
-  "/icon-192.png",
-  "/icon-512.png",
-  "/icon-72.png"
-];
+const CACHE_NAME = "yashomool-v6";
 
-// 🔥 INSTALL - Cache सब files
 self.addEventListener("install", event => {
-  self.skipWaiting(); // Immediately activate
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log("✅ Caching files");
-        return cache.addAll(urlsToCache);
-      })
-  );
-});
-
-// 🔥 FETCH - Offline support
-self.respondWith = (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-        return fetch(event.request).catch(() => {
-          // Offline fallback
-          return caches.match('/index.html');
-        });
-      })
-  );
-};
-
-// 🔥 ACTIVATE - Old caches delete
-self.addEventListener("activate", event => {
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheName !== CACHE_NAME) {
-            console.log("🗑️ Deleting old cache:", cacheName);
-            return caches.delete(cacheName);
-          }
-        })
-      );
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll([
+        "/",
+        "/index.html",
+        "/favicon.ico",
+        "/gsquestions.html",
+        "/manifest.json",
+        "/icon-192.png",
+        "/icon-512.png"
+      ]);
     })
   );
-  self.clients.claim();
+  self.skipWaiting();
 });
 
-// 🔥 Background Sync (Optional)
-self.addEventListener('sync', event => {
-  if (event.tag === 'sync-data') {
-    // Future sync logic
-  }
+self.addEventListener("activate", event => {
+  event.waitUntil(self.clients.claim());
+});
+
+self.addEventListener("fetch", event => {
+  event.respondWith(
+    fetch(event.request)
+      .then(response => {
+        return caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+      })
+      .catch(() => caches.match(event.request))
+  );
 });

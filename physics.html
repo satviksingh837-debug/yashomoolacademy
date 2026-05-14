@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Physics Club</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#eef2ff;
+}
+
+header{
+background:#4f78e9;
+color:white;
+padding:18px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+
+.main{
+padding:15px;
+}
+
+/* CLASS CONTAINER */
+
+.class-card{
+background:white;
+padding:18px;
+margin-bottom:18px;
+border-radius:15px;
+cursor:pointer;
+
+background:
+linear-gradient(
+135deg,
+#dbeafe 0%,
+#93c5fd 25%,
+#3b82f6 50%,
+#1d4ed8 75%,
+#1e3a8a 100%
+);
+
+color:white;
+
+box-shadow:
+0 0 25px rgba(59,130,246,0.5),
+0 0 55px rgba(37,99,235,0.3);
+}
+
+.class-title{
+font-size:24px;
+font-weight:bold;
+}
+
+/* CHAPTER AREA */
+
+.chapter-area{
+display:none;
+margin-top:15px;
+}
+
+/* CHAPTER */
+
+.chapter{
+background:white;
+color:black;
+padding:15px;
+border-radius:10px;
+margin-top:12px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.chapter:hover{
+transform:scale(1.02);
+background:#dbeafe;
+}
+
+/* PDF AREA */
+
+.pdf-list{
+display:none;
+padding-left:10px;
+margin-top:10px;
+}
+
+.pdf-item{
+background:#eff6ff;
+padding:12px;
+margin-top:10px;
+border-radius:8px;
+}
+
+.pdf-item a{
+text-decoration:none;
+color:#1e3a8a;
+font-weight:bold;
+display:block;
+}
+
+iframe{
+width:100%;
+height:100vh;
+border:none;
+display:none;
+}
+
+.back-btn{
+position:fixed;
+top:15px;
+right:15px;
+padding:10px 18px;
+background:red;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+display:none;
+z-index:999;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>⚡ Physics Club</header>
+
+<button class="back-btn" onclick="closePDF()">❌ Close PDF</button>
+
+<div class="main" id="mainContent">
+
+<!-- CLASS 11 -->
+
+<div class="class-card" onclick="toggleClass('class11')">
+
+<div class="class-title">📘 Class 11</div>
+
+<div class="chapter-area" id="class11">
+
+<div class="chapter" onclick="togglePDF(event,'motion')">
+Motion In One Dimension
+</div>
+
+<div class="pdf-list" id="motion">
+
+<div class="pdf-item">
+<a href="pdfs/physics/class11/Ssc.pdf" target="pdfFrame">
+📄 Open Motion PDF
+</a>
+</div>
+
+</div>
+
+
+<div class="chapter" onclick="togglePDF(event,'work')">
+Work Power Energy
+</div>
+
+<div class="pdf-list" id="work">
+
+<div class="pdf-item">
+<a href="physics/class11/work-power-energy.pdf" target="pdfFrame">
+📄 Open Work Power Energy PDF
+</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+<!-- CLASS 12 -->
+
+<div class="class-card" onclick="toggleClass('class12')">
+
+<div class="class-title">📗 Class 12</div>
+
+<div class="chapter-area" id="class12">
+
+<div class="chapter" onclick="togglePDF(event,'optics')">
+Ray Optics
+</div>
+
+<div class="pdf-list" id="optics">
+
+<div class="pdf-item">
+<a href="pdfs/physics/class12/motion.pdf" target="pdfFrame">
+📄 Open Optics PDF
+</a>
+</div>
+
+</div>
+
+
+<div class="chapter" onclick="togglePDF(event,'electricity')">
+Current Electricity
+</div>
+
+<div class="pdf-list" id="electricity">
+
+<div class="pdf-item">
+<a href="physics/class12/current-electricity.pdf" target="pdfFrame">
+📄 Open Current Electricity PDF
+</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<iframe name="pdfFrame" id="pdfFrame"></iframe>
+
+<script>
+
+function toggleClass(id){
+
+event.stopPropagation();
+
+let box=document.getElementById(id);
+
+if(box.style.display==="block"){
+box.style.display="none";
+}else{
+box.style.display="block";
+}
+
+}
+
+function togglePDF(event,id){
+
+event.stopPropagation();
+
+let pdf=document.getElementById(id);
+
+if(pdf.style.display==="block"){
+pdf.style.display="none";
+}else{
+pdf.style.display="block";
+}
+
+}
+
+document.querySelectorAll(".pdf-item a").forEach(link=>{
+
+link.addEventListener("click",function(){
+
+document.getElementById("mainContent").style.display="none";
+
+document.getElementById("pdfFrame").style.display="block";
+
+document.querySelector(".back-btn").style.display="block";
+
+});
+
+});
+
+function closePDF(){
+
+document.getElementById("pdfFrame").style.display="none";
+
+document.getElementById("mainContent").style.display="block";
+
+document.querySelector(".back-btn").style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>

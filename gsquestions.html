@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YashoMool GS Questions Club</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eef2ff;
+    color:#111827;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+    padding:22px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* PAGE */
+
+.page{
+    display:none;
+    padding:20px;
+}
+
+.active{
+    display:block;
+}
+
+/* CHAPTER & TOPIC BOX */
+
+.container-box{
+    background:
+    linear-gradient(135deg,
+    #0f172a 0%,
+    #1e3a8a 25%,
+    #2563eb 50%,
+    #06b6d4 75%,
+    #14b8a6 100%);
+    
+    color:white;
+    border-radius:22px;
+    padding:22px;
+    margin-bottom:18px;
+    cursor:pointer;
+    transition:0.3s;
+    
+    box-shadow:
+    0 0 20px rgba(37,99,235,0.4),
+    0 0 40px rgba(6,182,212,0.25);
+}
+
+.container-box:hover{
+    transform:translateY(-4px) scale(1.01);
+}
+
+/* TITLE */
+
+.title{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:0.5px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+    background:#0f172a;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:12px;
+    margin-bottom:20px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* QUESTIONS CONTAINER */
+
+.questions-container{
+    background:white;
+    border-radius:22px;
+    padding:22px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* SINGLE QUESTION LINE */
+
+.qa-line{
+    padding:12px 0;
+    border-bottom:1px solid #dbeafe;
+    line-height:1.7;
+    font-size:18px;
+}
+
+.qa-line:last-child{
+    border-bottom:none;
+}
+
+/* QUESTION */
+
+.question{
+    font-weight:600;
+    color:#111827;
+}
+
+/* ANSWER */
+
+.answer{
+    font-weight:900;
+    color:#1d4ed8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        font-size:22px;
+        padding:18px;
+    }
+
+    .title{
+        font-size:19px;
+    }
+
+    .qa-line{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+YashoMool GS Questions Club
+</header>
+
+<!-- HOME PAGE -->
+
+<section id="homePage" class="page active">
+
+    <div class="container-box" onclick="openPage('chapterPage')">
+        <div class="title">📘 GS Questions Club</div>
+    </div>
+
+</section>
+
+<!-- CHAPTER PAGE -->
+
+<section id="chapterPage" class="page">
+
+    <button class="back-btn" onclick="goBack('homePage')">
+        ⬅ Back
+    </button>
+
+    <div class="container-box" onclick="openPage('historyTopicPage')">
+        <div class="title">🏛 Ancient History</div>
+    </div>
+
+    <div class="container-box" onclick="openPage('geographyTopicPage')">
+        <div class="title">🌍 Geography</div>
+    </div>
+
+    <div class="container-box">
+        <div class="title">⚖ Polity</div>
+    </div>
+
+</section>
+
+<!-- TOPIC PAGE -->
+
+<section id="historyTopicPage" class="page">
+
+    <button class="back-btn" onclick="goBack('chapterPage')">
+        ⬅ Back
+    </button>
+
+    <div class="container-box" onclick="openPage('prachinQuestionPage')">
+        <div class="title">📜 प्राचीन भारतीय इतिहास के स्त्रोत</div>
+    </div>
+
+    <div class="container-box" onclick="openPage('kalQuestionPage')">
+        <div class="title">🪨 प्रागैतिहासिक काल</div>
+    </div>
+    <div class="container-box" onclick="openPage('sindhuQuestionPage')">
+        <div class="title">🏺 सिंधु सभ्यता</div>
+    </div>
+    <div class="container-box" onclick="openPage('vedicQuestionPage')">
+        <div class="title">🔥 वैदिक सभ्यता</div>
+    </div>
+    <div class="container-box" onclick="openPage('mahajanapadaQuestionPage')">
+        <div class="title">🏛️ महाजनपदों का उदय</div>
+    </div>
+    <div class="container-box" onclick="openPage('jainQuestionPage')">
+        <div class="title">☸️ जैन धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('baudhaQuestionPage')">
+        <div class="title">🪷 बौद्ध धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('shaivQuestionPage')">
+        <div class="title">🔱 शैव धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('vaishnavQuestionPage')">
+        <div class="title">🕉️ वैष्णव धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('islamQuestionPage')">
+        <div class="title">☪️ इस्लाम धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('isaiQuestionPage')">
+        <div class="title">✝️ इसाई धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('parsiQuestionPage')">
+        <div class="title">🔥 पारसी धर्म</div>
+    </div>
+    <div class="container-box" onclick="openPage('magadhQuestionPage')">
+        <div class="title">👑 मगध राज्य का उत्कर्ष</div>
+    </div>
+
+</section>
+
+<!-- GEOGRAPHY TOPIC PAGE -->
+
+<section id="geographyTopicPage" class="page">
+
+    <button class="back-btn" onclick="goBack('chapterPage')">
+        ⬅ Back
+    </button>
+
+    <div class="container-box" onclick="openPage('brahmandQuestionPage')">
+        <div class="title">🗺 ब्रह्माण्ड</div>
+    </div>
+    <div class="container-box" onclick="openPage('saurmandalQuestionPage')">
+        <div class="title"> 🌌सौरमंडल</div>
+    </div>
+    <!-- <div class="container-box" onclick="openPage('riverQuestionPage')">
+        <div class="title">🌊 नदियाँ</div>
+    </div> -->
+
+
+</section>
+
+<!-- QUESTIONS PAGE -->
+
+<!-- <section id="questionPage" class="page">
+
+    <button class="back-btn" onclick="goBack('topicPage')">
+        ⬅ Back
+    </button>
+
+<div class="questions-container">
+
+<div class="qa-line"> <span class="question">1. सिंधु सभ्यता का प्रमुख बंदरगाह कौन सा था?</span><br><span class="answer">➡ लोथल</span></div>
+
+<div class="qa-line"><span class="question">2. सिंधु घाटी सभ्यता किस नदी के किनारे विकसित हुई?</span><br><span class="answer">➡ सिंधु नदी</span></div>
+
+<div class="qa-line"><span class="question">4. सिंधु सभ्यता की लिपि कैसी थी?</span><br><span class="answer">➡ चित्रात्मक</span></div>
+
+<div class="qa-line">
+    <span class="question">4. सिंधु सभ्यता की लिपि कैसी थी?</span><br><span class="answer">➡ चित्रात्मक</span>
+</div>
+</div>
+
+</section> -->
+<section id="prachinQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. इतिहास जानने के साधनों को क्या कहा जाता है?</span><br><span class="answer">➡ स्रोत</span></div>
+<div class="qa-line"><span class="question">2. प्राचीन भारतीय इतिहास को मुख्यतः कितने भागों में बाँटा गया है?</span><br><span class="answer">➡ तीन भागों में</span></div>
+<div class="qa-line"><span class="question">3. प्राचीन भारतीय इतिहास का अध्ययन किन स्रोतों से किया जाता है?</span><br><span class="answer">➡ साहित्यिक एवं पुरातात्विक स्रोतों से</span></div>
+<div class="qa-line"><span class="question">4. अभिलेख किस प्रकार का स्रोत है?</span><br><span class="answer">➡ पुरातात्विक स्रोत</span></div>
+<div class="qa-line"><span class="question">5. सिक्के किस प्रकार का स्रोत माने जाते हैं?</span><br><span class="answer">➡ पुरातात्विक स्रोत</span></div>
+<div class="qa-line"><span class="question">6. वेद किस प्रकार के स्रोत हैं?</span><br><span class="answer">➡ धार्मिक साहित्यिक स्रोत</span></div>
+<div class="qa-line"><span class="question">7. भारत का सबसे प्राचीन ग्रंथ कौन सा है?</span><br><span class="answer">➡ ऋग्वेद</span></div>
+<div class="qa-line"><span class="question">8. ऋग्वेद में कितने मंडल हैं?</span><br><span class="answer">➡ 10 मंडल</span></div>
+<div class="qa-line"><span class="question">9. वेदों की संख्या कितनी है?</span><br><span class="answer">➡ चार</span></div>
+<div class="qa-line"><span class="question">10. सामवेद मुख्यतः किससे संबंधित है?</span><br><span class="answer">➡ संगीत</span></div>
+<div class="qa-line"><span class="question">11. यजुर्वेद किससे संबंधित है?</span><br><span class="answer">➡ यज्ञ विधियों से</span></div>
+<div class="qa-line"><span class="question">12. अथर्ववेद में किसका वर्णन मिलता है?</span><br><span class="answer">➡ जादू-टोना एवं चिकित्सा</span></div>
+<div class="qa-line"><span class="question">13. उपनिषदों की संख्या कितनी मानी जाती है?</span><br><span class="answer">➡ 108</span></div>
+<div class="qa-line"><span class="question">14. उपनिषद किस भाषा में लिखे गए हैं?</span><br><span class="answer">➡ संस्कृत</span></div>
+<div class="qa-line"><span class="question">15. पुराणों की संख्या कितनी है?</span><br><span class="answer">➡ 18</span></div>
+<div class="qa-line"><span class="question">16. रामायण के रचयिता कौन हैं?</span><br><span class="answer">➡ महर्षि वाल्मीकि</span></div>
+<div class="qa-line"><span class="question">17. महाभारत के रचयिता कौन माने जाते हैं?</span><br><span class="answer">➡ वेदव्यास</span></div>
+<div class="qa-line"><span class="question">18. महाभारत का प्राचीन नाम क्या था?</span><br><span class="answer">➡ जयसंहिता</span></div>
+<div class="qa-line"><span class="question">19. अर्थशास्त्र की रचना किसने की?</span><br><span class="answer">➡ कौटिल्य</span></div>
+<div class="qa-line"><span class="question">20. अर्थशास्त्र किस काल की जानकारी देता है?</span><br><span class="answer">➡ मौर्यकाल</span></div>
+<div class="qa-line"><span class="question">21. मेगस्थनीज किसका दूत था?</span><br><span class="answer">➡ सेल्युकस निकेटर का</span></div>
+<div class="qa-line"><span class="question">22. मेगस्थनीज ने कौन सी पुस्तक लिखी?</span><br><span class="answer">➡ इंडिका</span></div>
+<div class="qa-line"><span class="question">23. ह्वेनसांग किस देश से भारत आया था?</span><br><span class="answer">➡ चीन</span></div>
+<div class="qa-line"><span class="question">24. फाह्यान किसके शासनकाल में भारत आया था?</span><br><span class="answer">➡ चंद्रगुप्त द्वितीय</span></div>
+<div class="qa-line"><span class="question">25. ह्वेनसांग किस शासक के समय भारत आया था?</span><br><span class="answer">➡ हर्षवर्धन</span></div>
+<div class="qa-line"><span class="question">26. राजतरंगिणी की रचना किसने की?</span><br><span class="answer">➡ कल्हण</span></div>
+<div class="qa-line"><span class="question">27. राजतरंगिणी किस राज्य का इतिहास बताती है?</span><br><span class="answer">➡ कश्मीर</span></div>
+<div class="qa-line"><span class="question">28. अशोक के अभिलेख किस लिपि में लिखे गए थे?</span><br><span class="answer">➡ ब्राह्मी लिपि</span></div>
+<div class="qa-line"><span class="question">29. ब्राह्मी लिपि को किसने पढ़ा था?</span><br><span class="answer">➡ जेम्स प्रिंसेप</span></div>
+<div class="qa-line"><span class="question">30. अशोक के अभिलेखों को पढ़ने में सफलता कब मिली?</span><br><span class="answer">➡ 1837 ई.</span></div>
+<div class="qa-line"><span class="question">31. प्रयाग प्रशस्ति किससे संबंधित है?</span><br><span class="answer">➡ समुद्रगुप्त</span></div>
+<div class="qa-line"><span class="question">32. प्रयाग प्रशस्ति की रचना किसने की?</span><br><span class="answer">➡ हरिषेण</span></div>
+<div class="qa-line"><span class="question">33. हाथीगुंफा अभिलेख किस शासक से संबंधित है?</span><br><span class="answer">➡ खारवेल</span></div>
+<div class="qa-line"><span class="question">34. अभिलेखों का अध्ययन क्या कहलाता है?</span><br><span class="answer">➡ एपिग्राफी</span></div>
+<div class="qa-line"><span class="question">35. सिक्कों के अध्ययन को क्या कहा जाता है?</span><br><span class="answer">➡ न्यूमिस्मेटिक्स</span></div>
+<div class="qa-line"><span class="question">36. ताम्रपत्र किस प्रकार का स्रोत है?</span><br><span class="answer">➡ पुरातात्विक स्रोत</span></div>
+<div class="qa-line"><span class="question">37. बौद्ध साहित्य की भाषा मुख्यतः क्या थी?</span><br><span class="answer">➡ पाली</span></div>
+<div class="qa-line"><span class="question">38. जैन साहित्य की प्रमुख भाषा क्या थी?</span><br><span class="answer">➡ प्राकृत</span></div>
+<div class="qa-line"><span class="question">39. दीपवंश और महावंश किस धर्म से संबंधित ग्रंथ हैं?</span><br><span class="answer">➡ बौद्ध धर्म</span></div>
+<div class="qa-line"><span class="question">40. मिलिंदपन्हो में किसके प्रश्नों का वर्णन है?</span><br><span class="answer">➡ मेनांडर</span></div>
+<div class="qa-line"><span class="question">41. संस्कृत व्याकरण के प्रसिद्ध विद्वान पाणिनि ने कौन सा ग्रंथ लिखा?</span><br><span class="answer">➡ अष्टाध्यायी</span></div>
+<div class="qa-line"><span class="question">42. अष्टाध्यायी किससे संबंधित ग्रंथ है?</span><br><span class="answer">➡ संस्कृत व्याकरण</span></div>
+<div class="qa-line"><span class="question">43. विदेशी यात्रियों के विवरण किस प्रकार के स्रोत हैं?</span><br><span class="answer">➡ साहित्यिक स्रोत</span></div>
+<div class="qa-line"><span class="question">44. पुरातत्व का संबंध किससे है?</span><br><span class="answer">➡ प्राचीन वस्तुओं के अध्ययन से</span></div>
+<div class="qa-line"><span class="question">45. नासिक अभिलेख किस वंश से संबंधित हैं?</span><br><span class="answer">➡ सातवाहन वंश</span></div>
+<div class="qa-line"><span class="question">46. जूनागढ़ अभिलेख किस शासक से संबंधित है?</span><br><span class="answer">➡ रुद्रदामन</span></div>
+<div class="qa-line"><span class="question">47. इलाहाबाद स्तंभ लेख मूलतः किसका था?</span><br><span class="answer">➡ अशोक का</span></div>
+<div class="qa-line"><span class="question">48. चीनी यात्री इत्सिंग भारत कब आया था?</span><br><span class="answer">➡ 7वीं शताब्दी में</span></div>
+<div class="qa-line"><span class="question">49. अलबरूनी किसके साथ भारत आया था?</span><br><span class="answer">➡ महमूद गजनवी</span></div>
+<div class="qa-line"><span class="question">50. अलबरूनी ने कौन सा ग्रंथ लिखा?</span><br><span class="answer">➡ किताब-उल-हिंद</span></div>
+</div>
+</section>
+
+<section id="kalQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. जिस काल का कोई लिखित प्रमाण नहीं मिलता उसे क्या कहते हैं?</span><br><span class="answer">➡ प्रागैतिहासिक काल</span></div>
+<div class="qa-line"><span class="question">2. मानव जीवन का प्रारंभिक काल क्या कहलाता है?</span><br><span class="answer">➡ पाषाण काल</span></div>
+<div class="qa-line"><span class="question">3. पाषाण काल को मुख्यतः कितने भागों में बाँटा गया है?</span><br><span class="answer">➡ तीन भागों में</span></div>
+<div class="qa-line"><span class="question">4. पुरापाषाण काल का मुख्य उपकरण क्या था?</span><br><span class="answer">➡ पत्थर के औजार</span></div>
+<div class="qa-line"><span class="question">5. पुरापाषाण काल का मानव मुख्यतः क्या करता था?</span><br><span class="answer">➡ शिकार और भोजन संग्रह</span></div>
+<div class="qa-line"><span class="question">6. मानव ने सबसे पहले किस धातु का प्रयोग किया?</span><br><span class="answer">➡ तांबा</span></div>
+<div class="qa-line"><span class="question">7. आग का आविष्कार किस काल में हुआ?</span><br><span class="answer">➡ पुरापाषाण काल</span></div>
+<div class="qa-line"><span class="question">8. मानव ने पहिए का आविष्कार किस काल में किया?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">9. कृषि का प्रारंभ किस काल में हुआ?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">10. मानव ने स्थायी निवास बनाना कब प्रारंभ किया?</span><br><span class="answer">➡ नवपाषाण काल में</span></div>
+<div class="qa-line"><span class="question">11. भीमबेटका की गुफाएँ किस राज्य में स्थित हैं?</span><br><span class="answer">➡ मध्य प्रदेश</span></div>
+<div class="qa-line"><span class="question">12. भीमबेटका किस लिए प्रसिद्ध है?</span><br><span class="answer">➡ शैलचित्रों के लिए</span></div>
+<div class="qa-line"><span class="question">13. मध्यपाषाण काल की प्रमुख विशेषता क्या थी?</span><br><span class="answer">➡ छोटे पत्थर के औजार</span></div>
+<div class="qa-line"><span class="question">14. नवपाषाण काल का मानव किस कार्य में निपुण था?</span><br><span class="answer">➡ कृषि एवं पशुपालन</span></div>
+<div class="qa-line"><span class="question">15. मानव ने सबसे पहले किस पशु को पालतू बनाया?</span><br><span class="answer">➡ कुत्ता</span></div>
+<div class="qa-line"><span class="question">16. प्रागैतिहासिक मानव के जीवन की जानकारी किससे मिलती है?</span><br><span class="answer">➡ पुरातात्विक अवशेषों से</span></div>
+<div class="qa-line"><span class="question">17. नवदाटोली किस काल से संबंधित स्थल है?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">18. मेहरगढ़ कहाँ स्थित है?</span><br><span class="answer">➡ बलूचिस्तान</span></div>
+<div class="qa-line"><span class="question">19. मेहरगढ़ किस लिए प्रसिद्ध है?</span><br><span class="answer">➡ कृषि के प्रारंभिक प्रमाण</span></div>
+<div class="qa-line"><span class="question">20. मानव ने मिट्टी के बर्तन बनाना कब शुरू किया?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">21. प्राचीनतम मानव के अवशेष भारत में कहाँ मिले हैं?</span><br><span class="answer">➡ नर्मदा घाटी</span></div>
+<div class="qa-line"><span class="question">22. नर्मदा घाटी किस काल के मानव अवशेषों के लिए प्रसिद्ध है?</span><br><span class="answer">➡ पुरापाषाण काल</span></div>
+<div class="qa-line"><span class="question">23. ताम्रपाषाण काल में किन धातुओं का प्रयोग हुआ?</span><br><span class="answer">➡ तांबा एवं पत्थर</span></div>
+<div class="qa-line"><span class="question">24. ताम्रपाषाण काल की प्रमुख विशेषता क्या थी?</span><br><span class="answer">➡ धातु एवं पत्थर दोनों का प्रयोग</span></div>
+<div class="qa-line"><span class="question">25. इनामगाँव किस काल का प्रमुख स्थल है?</span><br><span class="answer">➡ ताम्रपाषाण काल</span></div>
+<div class="qa-line"><span class="question">26. आदिमानव का मुख्य भोजन क्या था?</span><br><span class="answer">➡ फल एवं शिकार</span></div>
+<div class="qa-line"><span class="question">27. मानव ने वस्त्र पहनना कब शुरू किया?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">28. किस काल में पशुपालन प्रारंभ हुआ?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">29. पुरापाषाण काल का मानव कहाँ रहता था?</span><br><span class="answer">➡ गुफाओं में</span></div>
+<div class="qa-line"><span class="question">30. किस काल में मानव ने भोजन उत्पादन शुरू किया?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">31. चिरांद किस राज्य में स्थित है?</span><br><span class="answer">➡ बिहार</span></div>
+<div class="qa-line"><span class="question">32. बुर्जहोम किस राज्य में स्थित है?</span><br><span class="answer">➡ जम्मू-कश्मीर</span></div>
+<div class="qa-line"><span class="question">33. बुर्जहोम किस लिए प्रसिद्ध है?</span><br><span class="answer">➡ गड्ढे वाले घर</span></div>
+<div class="qa-line"><span class="question">34. नवपाषाण काल में मानव का मुख्य व्यवसाय क्या था?</span><br><span class="answer">➡ कृषि</span></div>
+<div class="qa-line"><span class="question">35. मानव ने आग जलाना किस काल में सीखा?</span><br><span class="answer">➡ पुरापाषाण काल</span></div>
+<div class="qa-line"><span class="question">36. शैलचित्रों का सबसे प्रसिद्ध स्थल कौन सा है?</span><br><span class="answer">➡ भीमबेटका</span></div>
+<div class="qa-line"><span class="question">37. किस काल में मानव ने पहिए का उपयोग परिवहन में किया?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">38. किस काल में मानव ने धातुओं का उपयोग शुरू किया?</span><br><span class="answer">➡ ताम्रपाषाण काल</span></div>
+<div class="qa-line"><span class="question">39. मध्यपाषाण काल की प्रमुख पहचान क्या है?</span><br><span class="answer">➡ सूक्ष्म पत्थर उपकरण</span></div>
+<div class="qa-line"><span class="question">40. प्रागैतिहासिक काल के अध्ययन का मुख्य आधार क्या है?</span><br><span class="answer">➡ पुरातात्विक साक्ष्य</span></div>
+<div class="qa-line"><span class="question">41. गुफाचित्रों में मुख्यतः किसका चित्रण मिलता है?</span><br><span class="answer">➡ शिकार के दृश्य</span></div>
+<div class="qa-line"><span class="question">42. मानव ने सबसे पहले किस कार्य हेतु पत्थर का उपयोग किया?</span><br><span class="answer">➡ औजार बनाने हेतु</span></div>
+<div class="qa-line"><span class="question">43. नवपाषाण काल का सबसे बड़ा परिवर्तन क्या था?</span><br><span class="answer">➡ कृषि का विकास</span></div>
+<div class="qa-line"><span class="question">44. ताम्रपाषाण काल के लोग मृतकों को कहाँ दफनाते थे?</span><br><span class="answer">➡ घरों के पास</span></div>
+<div class="qa-line"><span class="question">45. किस काल में मानव ने समुदाय बनाकर रहना शुरू किया?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">46. आदिमानव का मुख्य हथियार क्या था?</span><br><span class="answer">➡ पत्थर के औजार</span></div>
+<div class="qa-line"><span class="question">47. नवपाषाण काल में किस प्रकार के औजारों का उपयोग हुआ?</span><br><span class="answer">➡ चिकने पत्थर के औजार</span></div>
+<div class="qa-line"><span class="question">48. किस काल को खाद्य उत्पादक काल कहा जाता है?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+<div class="qa-line"><span class="question">49. प्रागैतिहासिक काल का मानव किससे डरता था?</span><br><span class="answer">➡ प्राकृतिक शक्तियों से</span></div>
+<div class="qa-line"><span class="question">50. किस काल में मानव सभ्यता के विकास की नींव पड़ी?</span><br><span class="answer">➡ नवपाषाण काल</span></div>
+</div>
+</section>
+
+<section id="sindhuQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. सिंधु सभ्यता की खोज किसने की थी?</span><br><span class="answer">➡ दयाराम साहनी</span></div>
+<div class="qa-line"><span class="question">2. सिंधु सभ्यता की खोज कब हुई थी?</span><br><span class="answer">➡ 1921 ई.</span></div>
+<div class="qa-line"><span class="question">3. हड़प्पा सभ्यता का सबसे पहला खोजा गया स्थल कौन सा था?</span><br><span class="answer">➡ हड़प्पा</span></div>
+<div class="qa-line"><span class="question">4. हड़प्पा वर्तमान में किस देश में स्थित है?</span><br><span class="answer">➡ पाकिस्तान</span></div>
+<div class="qa-line"><span class="question">5. मोहनजोदड़ो का अर्थ क्या है?</span><br><span class="answer">➡ मृतकों का टीला</span></div>
+<div class="qa-line"><span class="question">6. मोहनजोदड़ो की खोज किसने की थी?</span><br><span class="answer">➡ राखालदास बनर्जी</span></div>
+<div class="qa-line"><span class="question">7. सिंधु सभ्यता किस नदी के किनारे विकसित हुई?</span><br><span class="answer">➡ सिंधु नदी</span></div>
+<div class="qa-line"><span class="question">8. सिंधु सभ्यता का काल लगभग क्या माना जाता है?</span><br><span class="answer">➡ 2500 ई.पू. से 1750 ई.पू.</span></div>
+<div class="qa-line"><span class="question">9. हड़प्पा सभ्यता किस युग की सभ्यता थी?</span><br><span class="answer">➡ कांस्य युग</span></div>
+<div class="qa-line"><span class="question">10. सिंधु सभ्यता की लिपि कैसी थी?</span><br><span class="answer">➡ चित्रात्मक</span></div>
+<div class="qa-line"><span class="question">11. सिंधु लिपि को अब तक क्यों नहीं पढ़ा जा सका?</span><br><span class="answer">➡ लिपि अपठित है</span></div>
+<div class="qa-line"><span class="question">12. सिंधु सभ्यता के लोग किस धातु से परिचित नहीं थे?</span><br><span class="answer">➡ लोहा</span></div>
+<div class="qa-line"><span class="question">13. सिंधु सभ्यता में सबसे बड़ा भवन कौन सा था?</span><br><span class="answer">➡ अन्नागार</span></div>
+<div class="qa-line"><span class="question">14. महान स्नानागार कहाँ मिला है?</span><br><span class="answer">➡ मोहनजोदड़ो</span></div>
+<div class="qa-line"><span class="question">15. लोथल किस राज्य में स्थित है?</span><br><span class="answer">➡ गुजरात</span></div>
+<div class="qa-line"><span class="question">16. लोथल किस लिए प्रसिद्ध है?</span><br><span class="answer">➡ गोदीबाड़ा</span></div>
+<div class="qa-line"><span class="question">17. कालीबंगा किस राज्य में स्थित है?</span><br><span class="answer">➡ राजस्थान</span></div>
+<div class="qa-line"><span class="question">18. कालीबंगा से किसके प्रमाण मिले हैं?</span><br><span class="answer">➡ जुते हुए खेत</span></div>
+<div class="qa-line"><span class="question">19. धौलावीरा किस राज्य में स्थित है?</span><br><span class="answer">➡ गुजरात</span></div>
+<div class="qa-line"><span class="question">20. धौलावीरा किस नदी के किनारे स्थित था?</span><br><span class="answer">➡ लूणी नदी</span></div>
+<div class="qa-line"><span class="question">21. सिंधु सभ्यता का समाज कैसा था?</span><br><span class="answer">➡ नगर आधारित</span></div>
+<div class="qa-line"><span class="question">22. सिंधु सभ्यता के घर किससे बने होते थे?</span><br><span class="answer">➡ पक्की ईंटों से</span></div>
+<div class="qa-line"><span class="question">23. सिंधु सभ्यता में सड़कों की व्यवस्था कैसी थी?</span><br><span class="answer">➡ जालीनुमा</span></div>
+<div class="qa-line"><span class="question">24. सिंधु सभ्यता में जल निकासी व्यवस्था कैसी थी?</span><br><span class="answer">➡ उन्नत</span></div>
+<div class="qa-line"><span class="question">25. हड़प्पा सभ्यता के लोग मुख्यतः क्या करते थे?</span><br><span class="answer">➡ व्यापार और कृषि</span></div>
+<div class="qa-line"><span class="question">26. सिंधु सभ्यता के लोग किस पशु को पवित्र मानते थे?</span><br><span class="answer">➡ बैल</span></div>
+<div class="qa-line"><span class="question">27. सिंधु सभ्यता से किस पशु के प्रमाण नहीं मिले हैं?</span><br><span class="answer">➡ घोड़ा</span></div>
+<div class="qa-line"><span class="question">28. सिंधु सभ्यता में सबसे अधिक किस मुहर का प्रयोग हुआ?</span><br><span class="answer">➡ पशु मुहर</span></div>
+<div class="qa-line"><span class="question">29. सिंधु सभ्यता की प्रमुख फसल कौन सी थी?</span><br><span class="answer">➡ गेहूँ</span></div>
+<div class="qa-line"><span class="question">30. चावल के प्रमाण कहाँ से मिले हैं?</span><br><span class="answer">➡ लोथल</span></div>
+<div class="qa-line"><span class="question">31. सिंधु सभ्यता के लोग किस देवता की पूजा करते थे?</span><br><span class="answer">➡ मातृदेवी</span></div>
+<div class="qa-line"><span class="question">32. पशुपति महादेव की मुहर कहाँ से मिली है?</span><br><span class="answer">➡ मोहनजोदड़ो</span></div>
+<div class="qa-line"><span class="question">33. हड़प्पावासी किस खेल से परिचित थे?</span><br><span class="answer">➡ शतरंज</span></div>
+<div class="qa-line"><span class="question">34. सिंधु सभ्यता के लोग किस धातु का अधिक उपयोग करते थे?</span><br><span class="answer">➡ कांसा</span></div>
+<div class="qa-line"><span class="question">35. सिंधु सभ्यता के लोग किस देश के साथ व्यापार करते थे?</span><br><span class="answer">➡ मेसोपोटामिया</span></div>
+<div class="qa-line"><span class="question">36. चन्हूदड़ो किस लिए प्रसिद्ध है?</span><br><span class="answer">➡ मनका निर्माण</span></div>
+<div class="qa-line"><span class="question">37. बनावली कहाँ स्थित है?</span><br><span class="answer">➡ हरियाणा</span></div>
+<div class="qa-line"><span class="question">38. रोपड़ किस राज्य में स्थित है?</span><br><span class="answer">➡ पंजाब</span></div>
+<div class="qa-line"><span class="question">39. आलमगीरपुर किस राज्य में स्थित है?</span><br><span class="answer">➡ उत्तर प्रदेश</span></div>
+<div class="qa-line"><span class="question">40. हड़प्पा सभ्यता का सबसे बड़ा स्थल कौन सा है?</span><br><span class="answer">➡ धौलावीरा</span></div>
+<div class="qa-line"><span class="question">41. सिंधु सभ्यता का बंदरगाह नगर कौन सा था?</span><br><span class="answer">➡ लोथल</span></div>
+<div class="qa-line"><span class="question">42. हड़प्पा सभ्यता के पतन का मुख्य कारण क्या माना जाता है?</span><br><span class="answer">➡ प्राकृतिक आपदाएँ</span></div>
+<div class="qa-line"><span class="question">43. सिंधु सभ्यता में अग्निकुंड के प्रमाण कहाँ मिले हैं?</span><br><span class="answer">➡ कालीबंगा</span></div>
+<div class="qa-line"><span class="question">44. सिंधु सभ्यता की ईंटों का अनुपात क्या था?</span><br><span class="answer">➡ 1:2:4</span></div>
+<div class="qa-line"><span class="question">45. हड़प्पा सभ्यता में किस प्रकार की शासन व्यवस्था थी?</span><br><span class="answer">➡ नगर प्रशासन</span></div>
+<div class="qa-line"><span class="question">46. सिंधु सभ्यता में किस जानवर की मूर्ति सबसे अधिक मिली है?</span><br><span class="answer">➡ बैल</span></div>
+<div class="qa-line"><span class="question">47. मोहनजोदड़ो किस नदी के किनारे स्थित था?</span><br><span class="answer">➡ सिंधु नदी</span></div>
+<div class="qa-line"><span class="question">48. हड़प्पा किस नदी के किनारे स्थित था?</span><br><span class="answer">➡ रावी नदी</span></div>
+<div class="qa-line"><span class="question">49. लोथल किस नदी के किनारे स्थित था?</span><br><span class="answer">➡ भोगवा नदी</span></div>
+<div class="qa-line"><span class="question">50. सिंधु सभ्यता की खोज का श्रेय किसे दिया जाता है?</span><br><span class="answer">➡ जॉन मार्शल</span></div>
+</div>
+</section>
+
+<section id="vedicQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. वैदिक सभ्यता का प्रमुख स्रोत कौन सा है?</span><br><span class="answer">➡ वेद</span></div>
+<div class="qa-line"><span class="question">2. आर्यों का सबसे प्राचीन ग्रंथ कौन सा है?</span><br><span class="answer">➡ ऋग्वेद</span></div>
+<div class="qa-line"><span class="question">3. वैदिक सभ्यता को कितने भागों में बाँटा गया है?</span><br><span class="answer">➡ दो भागों में</span></div>
+<div class="qa-line"><span class="question">4. ऋग्वैदिक काल का समय क्या माना जाता है?</span><br><span class="answer">➡ 1500 ई.पू. से 1000 ई.पू.</span></div>
+<div class="qa-line"><span class="question">5. उत्तर वैदिक काल का समय क्या माना जाता है?</span><br><span class="answer">➡ 1000 ई.पू. से 600 ई.पू.</span></div>
+<div class="qa-line"><span class="question">6. आर्य सबसे पहले भारत में कहाँ बसे थे?</span><br><span class="answer">➡ सप्तसिंधु क्षेत्र</span></div>
+<div class="qa-line"><span class="question">7. आर्यों का मुख्य व्यवसाय क्या था?</span><br><span class="answer">➡ पशुपालन</span></div>
+<div class="qa-line"><span class="question">8. ऋग्वेद में सबसे प्रमुख देवता कौन थे?</span><br><span class="answer">➡ इंद्र</span></div>
+<div class="qa-line"><span class="question">9. अग्नि देवता का संबंध किससे था?</span><br><span class="answer">➡ अग्नि से</span></div>
+<div class="qa-line"><span class="question">10. वरुण देवता किससे संबंधित थे?</span><br><span class="answer">➡ जल से</span></div>
+<div class="qa-line"><span class="question">11. गाय को ऋग्वेद में क्या कहा गया है?</span><br><span class="answer">➡ अघन्या</span></div>
+<div class="qa-line"><span class="question">12. आर्यों की भाषा क्या थी?</span><br><span class="answer">➡ संस्कृत</span></div>
+<div class="qa-line"><span class="question">13. ऋग्वेद में कितने मंडल हैं?</span><br><span class="answer">➡ 10 मंडल</span></div>
+<div class="qa-line"><span class="question">14. वैदिक सभ्यता में परिवार का मुखिया कौन होता था?</span><br><span class="answer">➡ पिता</span></div>
+<div class="qa-line"><span class="question">15. आर्यों का राजनीतिक संगठन किस पर आधारित था?</span><br><span class="answer">➡ जन</span></div>
+<div class="qa-line"><span class="question">16. सभा और समिति क्या थीं?</span><br><span class="answer">➡ जनसभाएँ</span></div>
+<div class="qa-line"><span class="question">17. वैदिक काल में राजा को क्या कहा जाता था?</span><br><span class="answer">➡ राजन</span></div>
+<div class="qa-line"><span class="question">18. वैदिक काल में कर को क्या कहा जाता था?</span><br><span class="answer">➡ बलि</span></div>
+<div class="qa-line"><span class="question">19. वैदिक काल का प्रमुख पेय पदार्थ क्या था?</span><br><span class="answer">➡ सोमरस</span></div>
+<div class="qa-line"><span class="question">20. ऋग्वेद में वर्णित नदी कौन सी है?</span><br><span class="answer">➡ सरस्वती</span></div>
+<div class="qa-line"><span class="question">21. उत्तर वैदिक काल में मुख्य व्यवसाय क्या बन गया था?</span><br><span class="answer">➡ कृषि</span></div>
+<div class="qa-line"><span class="question">22. वैदिक काल में लोहे को क्या कहा जाता था?</span><br><span class="answer">➡ श्याम अयस</span></div>
+<div class="qa-line"><span class="question">23. वैदिक काल में समाज कितने वर्णों में विभाजित था?</span><br><span class="answer">➡ चार वर्णों में</span></div>
+<div class="qa-line"><span class="question">24. चार वर्ण कौन-कौन से थे?</span><br><span class="answer">➡ ब्राह्मण, क्षत्रिय, वैश्य, शूद्र</span></div>
+<div class="qa-line"><span class="question">25. गायत्री मंत्र किस वेद में मिलता है?</span><br><span class="answer">➡ ऋग्वेद</span></div>
+<div class="qa-line"><span class="question">26. गायत्री मंत्र के रचयिता कौन थे?</span><br><span class="answer">➡ विश्वामित्र</span></div>
+<div class="qa-line"><span class="question">27. उपनिषद किससे संबंधित हैं?</span><br><span class="answer">➡ दर्शन से</span></div>
+<div class="qa-line"><span class="question">28. सामवेद किससे संबंधित है?</span><br><span class="answer">➡ संगीत</span></div>
+<div class="qa-line"><span class="question">29. यजुर्वेद किससे संबंधित है?</span><br><span class="answer">➡ यज्ञ विधियों से</span></div>
+<div class="qa-line"><span class="question">30. अथर्ववेद किससे संबंधित है?</span><br><span class="answer">➡ जादू-टोना एवं चिकित्सा</span></div>
+<div class="qa-line"><span class="question">31. वैदिक काल में शिक्षा कहाँ दी जाती थी?</span><br><span class="answer">➡ गुरुकुलों में</span></div>
+<div class="qa-line"><span class="question">32. वैदिक काल में विवाह की प्रथा कैसी थी?</span><br><span class="answer">➡ एकपत्नी प्रथा</span></div>
+<div class="qa-line"><span class="question">33. ऋग्वेद में सबसे पवित्र नदी किसे माना गया है?</span><br><span class="answer">➡ सरस्वती</span></div>
+<div class="qa-line"><span class="question">34. वैदिक काल में मुद्रा का प्रचलन था या नहीं?</span><br><span class="answer">➡ नहीं</span></div>
+<div class="qa-line"><span class="question">35. निष्क क्या था?</span><br><span class="answer">➡ आभूषण</span></div>
+<div class="qa-line"><span class="question">36. आर्य किस युद्ध के लिए प्रसिद्ध थे?</span><br><span class="answer">➡ दस राजाओं का युद्ध</span></div>
+<div class="qa-line"><span class="question">37. दस राजाओं का युद्ध किस नदी के किनारे लड़ा गया था?</span><br><span class="answer">➡ परुष्णी नदी</span></div>
+<div class="qa-line"><span class="question">38. पुरोहित वर्ग को किस वर्ण में रखा गया?</span><br><span class="answer">➡ ब्राह्मण</span></div>
+<div class="qa-line"><span class="question">39. व्यापार करने वाले किस वर्ण में आते थे?</span><br><span class="answer">➡ वैश्य</span></div>
+<div class="qa-line"><span class="question">40. शूद्रों का मुख्य कार्य क्या था?</span><br><span class="answer">➡ सेवा करना</span></div>
+<div class="qa-line"><span class="question">41. उत्तर वैदिक काल में सबसे महत्वपूर्ण देवता कौन बने?</span><br><span class="answer">➡ प्रजापति</span></div>
+<div class="qa-line"><span class="question">42. वैदिक काल में राजा का चुनाव कौन करता था?</span><br><span class="answer">➡ सभा और समिति</span></div>
+<div class="qa-line"><span class="question">43. वेदों को क्या कहा जाता है?</span><br><span class="answer">➡ श्रुति</span></div>
+<div class="qa-line"><span class="question">44. रामायण और महाभारत को क्या कहा जाता है?</span><br><span class="answer">➡ स्मृति</span></div>
+<div class="qa-line"><span class="question">45. वैदिक काल में संपत्ति का मुख्य आधार क्या था?</span><br><span class="answer">➡ गाय</span></div>
+<div class="qa-line"><span class="question">46. ऋग्वैदिक आर्य किस धातु से परिचित थे?</span><br><span class="answer">➡ तांबा</span></div>
+<div class="qa-line"><span class="question">47. उत्तर वैदिक काल में किस धातु का प्रयोग बढ़ा?</span><br><span class="answer">➡ लोहा</span></div>
+<div class="qa-line"><span class="question">48. वैदिक धर्म का मुख्य आधार क्या था?</span><br><span class="answer">➡ यज्ञ</span></div>
+<div class="qa-line"><span class="question">49. ऋग्वेद में सबसे अधिक मंत्र किस देवता को समर्पित हैं?</span><br><span class="answer">➡ इंद्र</span></div>
+<div class="qa-line"><span class="question">50. वैदिक सभ्यता किस सभ्यता के बाद विकसित हुई?</span><br><span class="answer">➡ सिंधु सभ्यता</span></div>
+</div>
+</section>
+
+<section id="mahajanapadaQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. महाजनपदों का उदय किस काल में हुआ?</span><br><span class="answer">➡ छठी शताब्दी ईसा पूर्व</span></div>
+<div class="qa-line"><span class="question">2. बौद्ध ग्रंथ अंगुत्तर निकाय में कितने महाजनपदों का उल्लेख मिलता है?</span><br><span class="answer">➡ 16</span></div>
+<div class="qa-line"><span class="question">3. महाजनपद क्या थे?</span><br><span class="answer">➡ बड़े राज्य</span></div>
+<div class="qa-line"><span class="question">4. 16 महाजनपदों में सबसे शक्तिशाली कौन सा था?</span><br><span class="answer">➡ मगध</span></div>
+<div class="qa-line"><span class="question">5. मगध की पहली राजधानी कौन सी थी?</span><br><span class="answer">➡ राजगृह</span></div>
+<div class="qa-line"><span class="question">6. बाद में मगध की राजधानी कहाँ बनाई गई?</span><br><span class="answer">➡ पाटलिपुत्र</span></div>
+<div class="qa-line"><span class="question">7. वज्जि महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ वैशाली</span></div>
+<div class="qa-line"><span class="question">8. कोशल महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ श्रावस्ती</span></div>
+<div class="qa-line"><span class="question">9. अवंति महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ उज्जैन</span></div>
+<div class="qa-line"><span class="question">10. वत्स महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ कौशांबी</span></div>
+<div class="qa-line"><span class="question">11. कुरु महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ इंद्रप्रस्थ</span></div>
+<div class="qa-line"><span class="question">12. पांचाल महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ अहिच्छत्र</span></div>
+<div class="qa-line"><span class="question">13. गांधार महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ तक्षशिला</span></div>
+<div class="qa-line"><span class="question">14. कम्बोज महाजनपद किस क्षेत्र में स्थित था?</span><br><span class="answer">➡ उत्तर-पश्चिम क्षेत्र</span></div>
+<div class="qa-line"><span class="question">15. अंग महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ चंपा</span></div>
+<div class="qa-line"><span class="question">16. काशी महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ वाराणसी</span></div>
+<div class="qa-line"><span class="question">17. मल्ल महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ कुशीनगर</span></div>
+<div class="qa-line"><span class="question">18. चेदि महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ शुक्तिमती</span></div>
+<div class="qa-line"><span class="question">19. मत्स्य महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ विराटनगर</span></div>
+<div class="qa-line"><span class="question">20. शूरसेन महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ मथुरा</span></div>
+<div class="qa-line"><span class="question">21. अश्मक महाजनपद किस नदी के किनारे स्थित था?</span><br><span class="answer">➡ गोदावरी नदी</span></div>
+<div class="qa-line"><span class="question">22. अश्मक महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ पोतन</span></div>
+<div class="qa-line"><span class="question">23. किस महाजनपद में गणतंत्रात्मक शासन था?</span><br><span class="answer">➡ वज्जि</span></div>
+<div class="qa-line"><span class="question">24. लिच्छवि किस महाजनपद का प्रमुख गण था?</span><br><span class="answer">➡ वज्जि</span></div>
+<div class="qa-line"><span class="question">25. बिम्बिसार किस वंश का शासक था?</span><br><span class="answer">➡ हर्यक वंश</span></div>
+<div class="qa-line"><span class="question">26. बिम्बिसार किस महाजनपद का शासक था?</span><br><span class="answer">➡ मगध</span></div>
+<div class="qa-line"><span class="question">27. अजातशत्रु किसका पुत्र था?</span><br><span class="answer">➡ बिम्बिसार</span></div>
+<div class="qa-line"><span class="question">28. अजातशत्रु ने किस गणराज्य को पराजित किया था?</span><br><span class="answer">➡ वज्जि संघ</span></div>
+<div class="qa-line"><span class="question">29. उदायिन ने किस नगर की स्थापना की थी?</span><br><span class="answer">➡ पाटलिपुत्र</span></div>
+<div class="qa-line"><span class="question">30. तक्षशिला किस लिए प्रसिद्ध था?</span><br><span class="answer">➡ शिक्षा केंद्र</span></div>
+<div class="qa-line"><span class="question">31. महाजनपद काल में मुख्य आर्थिक गतिविधि क्या थी?</span><br><span class="answer">➡ कृषि</span></div>
+<div class="qa-line"><span class="question">32. महाजनपद काल में व्यापार के लिए किसका प्रयोग होता था?</span><br><span class="answer">➡ सिक्कों का</span></div>
+<div class="qa-line"><span class="question">33. उस समय प्रचलित सिक्कों को क्या कहा जाता था?</span><br><span class="answer">➡ पंचमार्क सिक्के</span></div>
+<div class="qa-line"><span class="question">34. महाजनपद काल में लोहे का उपयोग किस लिए बढ़ा?</span><br><span class="answer">➡ कृषि औजारों हेतु</span></div>
+<div class="qa-line"><span class="question">35. मगध की शक्ति बढ़ने का मुख्य कारण क्या था?</span><br><span class="answer">➡ लौह भंडार</span></div>
+<div class="qa-line"><span class="question">36. मगध के पास कौन सी नदी बहती थी?</span><br><span class="answer">➡ गंगा</span></div>
+<div class="qa-line"><span class="question">37. किस महाजनपद ने सबसे पहले साम्राज्य विस्तार किया?</span><br><span class="answer">➡ मगध</span></div>
+<div class="qa-line"><span class="question">38. बुद्ध के समय कौन सा महाजनपद शक्तिशाली था?</span><br><span class="answer">➡ कोशल</span></div>
+<div class="qa-line"><span class="question">39. प्रसेनजित किस महाजनपद का शासक था?</span><br><span class="answer">➡ कोशल</span></div>
+<div class="qa-line"><span class="question">40. उदयन किस महाजनपद का शासक था?</span><br><span class="answer">➡ वत्स</span></div>
+<div class="qa-line"><span class="question">41. चंद्रप्रद्योत किस महाजनपद का शासक था?</span><br><span class="answer">➡ अवंति</span></div>
+<div class="qa-line"><span class="question">42. गणराज्य व्यवस्था में शासन कौन चलाता था?</span><br><span class="answer">➡ सभा</span></div>
+<div class="qa-line"><span class="question">43. महाजनपद काल में नगरों का विकास क्यों हुआ?</span><br><span class="answer">➡ व्यापार के कारण</span></div>
+<div class="qa-line"><span class="question">44. बुद्ध का जन्म किस महाजनपद में हुआ था?</span><br><span class="answer">➡ शाक्य गण</span></div>
+<div class="qa-line"><span class="question">45. शाक्य गण की राजधानी क्या थी?</span><br><span class="answer">➡ कपिलवस्तु</span></div>
+<div class="qa-line"><span class="question">46. महावीर का संबंध किस गणराज्य से था?</span><br><span class="answer">➡ ज्ञात्रिक गण</span></div>
+<div class="qa-line"><span class="question">47. वैशाली किस लिए प्रसिद्ध था?</span><br><span class="answer">➡ गणराज्य व्यवस्था</span></div>
+<div class="qa-line"><span class="question">48. महाजनपद काल में समाज किस व्यवस्था पर आधारित था?</span><br><span class="answer">➡ वर्ण व्यवस्था</span></div>
+<div class="qa-line"><span class="question">49. महाजनपद काल में शिक्षा का प्रमुख केंद्र कौन था?</span><br><span class="answer">➡ तक्षशिला</span></div>
+<div class="qa-line"><span class="question">50. महाजनपद काल के बाद कौन सा साम्राज्य उभरा?</span><br><span class="answer">➡ मौर्य साम्राज्य</span></div>
+</div>
+</section>
+
+<section id="jainQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. जैन धर्म के संस्थापक कौन माने जाते हैं?</span><br><span class="answer">➡ ऋषभदेव</span></div>
+<div class="qa-line"><span class="question">2. जैन धर्म के 24वें तीर्थंकर कौन थे?</span><br><span class="answer">➡ महावीर स्वामी</span></div>
+<div class="qa-line"><span class="question">3. महावीर स्वामी का जन्म कब हुआ था?</span><br><span class="answer">➡ 540 ईसा पूर्व</span></div>
+<div class="qa-line"><span class="question">4. महावीर स्वामी का जन्म कहाँ हुआ था?</span><br><span class="answer">➡ कुंडग्राम</span></div>
+<div class="qa-line"><span class="question">5. महावीर स्वामी के पिता का नाम क्या था?</span><br><span class="answer">➡ सिद्धार्थ</span></div>
+<div class="qa-line"><span class="question">6. महावीर स्वामी की माता का नाम क्या था?</span><br><span class="answer">➡ त्रिशला</span></div>
+<div class="qa-line"><span class="question">7. महावीर स्वामी किस गणराज्य से संबंधित थे?</span><br><span class="answer">➡ ज्ञात्रिक गण</span></div>
+<div class="qa-line"><span class="question">8. महावीर स्वामी ने कितनी आयु में गृह त्याग किया था?</span><br><span class="answer">➡ 30 वर्ष</span></div>
+<div class="qa-line"><span class="question">9. महावीर स्वामी को ज्ञान की प्राप्ति कहाँ हुई?</span><br><span class="answer">➡ जृम्भिक ग्राम</span></div>
+<div class="qa-line"><span class="question">10. महावीर स्वामी को कितने वर्षों की तपस्या के बाद ज्ञान प्राप्त हुआ?</span><br><span class="answer">➡ 12 वर्ष</span></div>
+<div class="qa-line"><span class="question">11. जैन धर्म में ज्ञान प्राप्ति को क्या कहा जाता है?</span><br><span class="answer">➡ कैवल्य</span></div>
+<div class="qa-line"><span class="question">12. महावीर स्वामी की मृत्यु कहाँ हुई थी?</span><br><span class="answer">➡ पावापुरी</span></div>
+<div class="qa-line"><span class="question">13. महावीर स्वामी की मृत्यु कब हुई थी?</span><br><span class="answer">➡ 468 ईसा पूर्व</span></div>
+<div class="qa-line"><span class="question">14. महावीर स्वामी के अनुयायी क्या कहलाते थे?</span><br><span class="answer">➡ निर्ग्रंथ</span></div>
+<div class="qa-line"><span class="question">15. जैन धर्म में कुल कितने तीर्थंकर हुए?</span><br><span class="answer">➡ 24</span></div>
+<div class="qa-line"><span class="question">16. प्रथम जैन तीर्थंकर कौन थे?</span><br><span class="answer">➡ ऋषभदेव</span></div>
+<div class="qa-line"><span class="question">17. 23वें जैन तीर्थंकर कौन थे?</span><br><span class="answer">➡ पार्श्वनाथ</span></div>
+<div class="qa-line"><span class="question">18. पार्श्वनाथ का प्रतीक चिन्ह क्या था?</span><br><span class="answer">➡ सर्प</span></div>
+<div class="qa-line"><span class="question">19. महावीर स्वामी का प्रतीक चिन्ह क्या था?</span><br><span class="answer">➡ सिंह</span></div>
+<div class="qa-line"><span class="question">20. जैन धर्म का प्रमुख सिद्धांत क्या है?</span><br><span class="answer">➡ अहिंसा</span></div>
+<div class="qa-line"><span class="question">21. जैन धर्म के पाँच महाव्रत कौन से हैं?</span><br><span class="answer">➡ अहिंसा, सत्य, अस्तेय, अपरिग्रह, ब्रह्मचर्य</span></div>
+<div class="qa-line"><span class="question">22. जैन धर्म में आत्मा की शुद्धि के लिए क्या आवश्यक माना गया है?</span><br><span class="answer">➡ तपस्या</span></div>
+<div class="qa-line"><span class="question">23. जैन धर्म किस भाषा में प्रचारित हुआ?</span><br><span class="answer">➡ प्राकृत</span></div>
+<div class="qa-line"><span class="question">24. जैन धर्म के दो प्रमुख संप्रदाय कौन से हैं?</span><br><span class="answer">➡ दिगंबर और श्वेतांबर</span></div>
+<div class="qa-line"><span class="question">25. दिगंबर संप्रदाय के साधु कैसे रहते हैं?</span><br><span class="answer">➡ निर्वस्त्र</span></div>
+<div class="qa-line"><span class="question">26. श्वेतांबर संप्रदाय के साधु क्या पहनते हैं?</span><br><span class="answer">➡ सफेद वस्त्र</span></div>
+<div class="qa-line"><span class="question">27. जैन धर्म में कर्म सिद्धांत पर विशेष बल किसने दिया?</span><br><span class="answer">➡ महावीर स्वामी</span></div>
+<div class="qa-line"><span class="question">28. जैन धर्म में मोक्ष प्राप्ति का मार्ग क्या है?</span><br><span class="answer">➡ त्रिरत्न</span></div>
+<div class="qa-line"><span class="question">29. जैन धर्म के त्रिरत्न कौन-कौन से हैं?</span><br><span class="answer">➡ सम्यक दर्शन, सम्यक ज्ञान, सम्यक चरित्र</span></div>
+<div class="qa-line"><span class="question">30. जैन धर्म ईश्वर के अस्तित्व को मानता है या नहीं?</span><br><span class="answer">➡ नहीं</span></div>
+<div class="qa-line"><span class="question">31. जैन धर्म में सृष्टि का निर्माण किसने किया माना गया है?</span><br><span class="answer">➡ किसी ने नहीं</span></div>
+<div class="qa-line"><span class="question">32. जैन धर्म के अनुसार मोक्ष प्राप्त आत्मा कहाँ जाती है?</span><br><span class="answer">➡ सिद्धशिला</span></div>
+<div class="qa-line"><span class="question">33. जैन धर्म का प्रसिद्ध तीर्थ स्थल पावापुरी किस राज्य में है?</span><br><span class="answer">➡ बिहार</span></div>
+<div class="qa-line"><span class="question">34. चंद्रगुप्त मौर्य ने जीवन के अंत में कौन सा धर्म अपनाया था?</span><br><span class="answer">➡ जैन धर्म</span></div>
+<div class="qa-line"><span class="question">35. चंद्रगुप्त मौर्य ने किस जैन संत से दीक्षा ली थी?</span><br><span class="answer">➡ भद्रबाहु</span></div>
+<div class="qa-line"><span class="question">36. जैन धर्म का प्रमुख धार्मिक ग्रंथ क्या है?</span><br><span class="answer">➡ आगम</span></div>
+<div class="qa-line"><span class="question">37. जैन धर्म में जीव और अजीव का सिद्धांत किससे संबंधित है?</span><br><span class="answer">➡ दर्शन</span></div>
+<div class="qa-line"><span class="question">38. जैन धर्म के अनुसार संसार दुखों से क्यों भरा है?</span><br><span class="answer">➡ कर्म बंधन के कारण</span></div>
+<div class="qa-line"><span class="question">39. जैन धर्म का सबसे बड़ा उत्सव कौन सा है?</span><br><span class="answer">➡ पर्युषण</span></div>
+<div class="qa-line"><span class="question">40. महावीर स्वामी को किस नाम से भी जाना जाता है?</span><br><span class="answer">➡ वर्धमान</span></div>
+</div>
+</section>
+
+<section id="baudhaQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. बौद्ध धर्म के संस्थापक कौन थे?</span><br><span class="answer">➡ गौतम बुद्ध</span></div>
+<div class="qa-line"><span class="question">2. गौतम बुद्ध का जन्म कब हुआ था?</span><br><span class="answer">➡ 563 ईसा पूर्व</span></div>
+<div class="qa-line"><span class="question">3. गौतम बुद्ध का जन्म कहाँ हुआ था?</span><br><span class="answer">➡ लुंबिनी</span></div>
+<div class="qa-line"><span class="question">4. गौतम बुद्ध के पिता का नाम क्या था?</span><br><span class="answer">➡ शुद्धोधन</span></div>
+<div class="qa-line"><span class="question">5. गौतम बुद्ध की माता का नाम क्या था?</span><br><span class="answer">➡ महामाया</span></div>
+<div class="qa-line"><span class="question">6. गौतम बुद्ध किस गणराज्य से संबंधित थे?</span><br><span class="answer">➡ शाक्य गण</span></div>
+<div class="qa-line"><span class="question">7. गौतम बुद्ध का बचपन का नाम क्या था?</span><br><span class="answer">➡ सिद्धार्थ</span></div>
+<div class="qa-line"><span class="question">8. गौतम बुद्ध की पत्नी का नाम क्या था?</span><br><span class="answer">➡ यशोधरा</span></div>
+<div class="qa-line"><span class="question">9. गौतम बुद्ध के पुत्र का नाम क्या था?</span><br><span class="answer">➡ राहुल</span></div>
+<div class="qa-line"><span class="question">10. गौतम बुद्ध ने कितनी आयु में गृह त्याग किया?</span><br><span class="answer">➡ 29 वर्ष</span></div>
+<div class="qa-line"><span class="question">11. बुद्ध के गृह त्याग की घटना क्या कहलाती है?</span><br><span class="answer">➡ महाभिनिष्क्रमण</span></div>
+<div class="qa-line"><span class="question">12. गौतम बुद्ध को ज्ञान की प्राप्ति कहाँ हुई थी?</span><br><span class="answer">➡ बोधगया</span></div>
+<div class="qa-line"><span class="question">13. बुद्ध को ज्ञान किस वृक्ष के नीचे प्राप्त हुआ?</span><br><span class="answer">➡ पीपल वृक्ष</span></div>
+<div class="qa-line"><span class="question">14. ज्ञान प्राप्ति के बाद सिद्धार्थ क्या कहलाए?</span><br><span class="answer">➡ बुद्ध</span></div>
+<div class="qa-line"><span class="question">15. गौतम बुद्ध ने पहला उपदेश कहाँ दिया था?</span><br><span class="answer">➡ सारनाथ</span></div>
+<div class="qa-line"><span class="question">16. बुद्ध के प्रथम उपदेश को क्या कहा जाता है?</span><br><span class="answer">➡ धर्मचक्र प्रवर्तन</span></div>
+<div class="qa-line"><span class="question">17. गौतम बुद्ध की मृत्यु कहाँ हुई थी?</span><br><span class="answer">➡ कुशीनगर</span></div>
+<div class="qa-line"><span class="question">18. गौतम बुद्ध की मृत्यु की घटना क्या कहलाती है?</span><br><span class="answer">➡ महापरिनिर्वाण</span></div>
+<div class="qa-line"><span class="question">19. गौतम बुद्ध की मृत्यु कब हुई थी?</span><br><span class="answer">➡ 483 ईसा पूर्व</span></div>
+<div class="qa-line"><span class="question">20. बौद्ध धर्म का प्रमुख सिद्धांत क्या है?</span><br><span class="answer">➡ मध्यम मार्ग</span></div>
+<div class="qa-line"><span class="question">21. बौद्ध धर्म के चार आर्य सत्य कौन से हैं?</span><br><span class="answer">➡ दुख, दुख का कारण, दुख निरोध, दुख निरोधगामिनी प्रतिपदा</span></div>
+<div class="qa-line"><span class="question">22. दुखों से मुक्ति के मार्ग को क्या कहा जाता है?</span><br><span class="answer">➡ अष्टांगिक मार्ग</span></div>
+<div class="qa-line"><span class="question">23. बौद्ध धर्म का पवित्र ग्रंथ क्या है?</span><br><span class="answer">➡ त्रिपिटक</span></div>
+<div class="qa-line"><span class="question">24. त्रिपिटक किस भाषा में लिखे गए?</span><br><span class="answer">➡ पाली</span></div>
+<div class="qa-line"><span class="question">25. बौद्ध धर्म ईश्वर के अस्तित्व को मानता है या नहीं?</span><br><span class="answer">➡ नहीं</span></div>
+<div class="qa-line"><span class="question">26. बुद्ध ने अपने उपदेश किस भाषा में दिए?</span><br><span class="answer">➡ पाली</span></div>
+<div class="qa-line"><span class="question">27. बौद्ध संघ में महिलाओं के प्रवेश की अनुमति किसने दिलाई?</span><br><span class="answer">➡ आनंद</span></div>
+<div class="qa-line"><span class="question">28. बौद्ध धर्म के प्रचार में सबसे अधिक योगदान किस शासक का था?</span><br><span class="answer">➡ अशोक</span></div>
+<div class="qa-line"><span class="question">29. तृतीय बौद्ध संगीति किसके शासनकाल में हुई थी?</span><br><span class="answer">➡ अशोक</span></div>
+<div class="qa-line"><span class="question">30. प्रथम बौद्ध संगीति कहाँ हुई थी?</span><br><span class="answer">➡ राजगृह</span></div>
+<div class="qa-line"><span class="question">31. द्वितीय बौद्ध संगीति कहाँ हुई थी?</span><br><span class="answer">➡ वैशाली</span></div>
+<div class="qa-line"><span class="question">32. चतुर्थ बौद्ध संगीति किसके शासनकाल में हुई थी?</span><br><span class="answer">➡ कनिष्क</span></div>
+<div class="qa-line"><span class="question">33. बौद्ध धर्म के दो प्रमुख संप्रदाय कौन से हैं?</span><br><span class="answer">➡ हीनयान और महायान</span></div>
+<div class="qa-line"><span class="question">34. महायान संप्रदाय में बुद्ध को क्या माना गया?</span><br><span class="answer">➡ ईश्वर</span></div>
+<div class="qa-line"><span class="question">35. हीनयान संप्रदाय किस पर बल देता है?</span><br><span class="answer">➡ व्यक्तिगत मोक्ष</span></div>
+<div class="qa-line"><span class="question">36. बौद्ध धर्म का प्रतीक चिन्ह क्या है?</span><br><span class="answer">➡ धर्मचक्र</span></div>
+<div class="qa-line"><span class="question">37. बुद्ध के प्रिय शिष्य कौन थे?</span><br><span class="answer">➡ आनंद</span></div>
+<div class="qa-line"><span class="question">38. गौतम बुद्ध ने कितने वर्षों तक उपदेश दिए?</span><br><span class="answer">➡ 45 वर्ष</span></div>
+<div class="qa-line"><span class="question">39. बौद्ध धर्म में निर्वाण का अर्थ क्या है?</span><br><span class="answer">➡ जन्म-मरण के चक्र से मुक्ति</span></div>
+<div class="qa-line"><span class="question">40. सारनाथ किस राज्य में स्थित है?</span><br><span class="answer">➡ उत्तर प्रदेश</span></div>
+<div class="qa-line"><span class="question">41. बोधगया किस राज्य में स्थित है?</span><br><span class="answer">➡ बिहार</span></div>
+<div class="qa-line"><span class="question">42. बौद्ध धर्म का प्रसिद्ध स्तूप साँची कहाँ स्थित है?</span><br><span class="answer">➡ मध्य प्रदेश</span></div>
+<div class="qa-line"><span class="question">43. बुद्ध के अनुयायी क्या कहलाते थे?</span><br><span class="answer">➡ भिक्षु</span></div>
+<div class="qa-line"><span class="question">44. बौद्ध धर्म का सबसे बड़ा उत्सव कौन सा है?</span><br><span class="answer">➡ बुद्ध पूर्णिमा</span></div>
+<div class="qa-line"><span class="question">45. अशोक ने बौद्ध धर्म के प्रचार के लिए किसे श्रीलंका भेजा था?</span><br><span class="answer">➡ महेंद्र और संघमित्रा</span></div>
+</div>
+</section>
+
+<section id="shaivQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. शैव धर्म में किस देवता की पूजा की जाती है?</span><br><span class="answer">➡ भगवान शिव</span></div>
+<div class="qa-line"><span class="question">2. भगवान शिव को वेदों में किस नाम से संबोधित किया गया है?</span><br><span class="answer">➡ रुद्र</span></div>
+<div class="qa-line"><span class="question">3. शैव धर्म का प्रमुख प्रतीक क्या है?</span><br><span class="answer">➡ शिवलिंग</span></div>
+<div class="qa-line"><span class="question">4. शिव के निवास स्थान को क्या कहा जाता है?</span><br><span class="answer">➡ कैलाश पर्वत</span></div>
+<div class="qa-line"><span class="question">5. शिव की पत्नी का नाम क्या है?</span><br><span class="answer">➡ पार्वती</span></div>
+<div class="qa-line"><span class="question">6. शिव के पुत्र कौन-कौन हैं?</span><br><span class="answer">➡ गणेश और कार्तिकेय</span></div>
+<div class="qa-line"><span class="question">7. शिव के वाहन का नाम क्या है?</span><br><span class="answer">➡ नंदी</span></div>
+<div class="qa-line"><span class="question">8. शिव के गले में क्या धारण किया गया है?</span><br><span class="answer">➡ सर्प</span></div>
+<div class="qa-line"><span class="question">9. शिव के मस्तक पर कौन सी नदी विराजमान है?</span><br><span class="answer">➡ गंगा</span></div>
+<div class="qa-line"><span class="question">10. शिव के मस्तक पर क्या सुशोभित रहता है?</span><br><span class="answer">➡ चंद्रमा</span></div>
+<div class="qa-line"><span class="question">11. शिव के तीसरे नेत्र का क्या प्रतीक है?</span><br><span class="answer">➡ विनाश</span></div>
+<div class="qa-line"><span class="question">12. शिव का प्रसिद्ध नृत्य क्या कहलाता है?</span><br><span class="answer">➡ तांडव</span></div>
+<div class="qa-line"><span class="question">13. शिव को नटराज क्यों कहा जाता है?</span><br><span class="answer">➡ नृत्य के देवता होने के कारण</span></div>
+<div class="qa-line"><span class="question">14. शिव का प्रमुख अस्त्र क्या है?</span><br><span class="answer">➡ त्रिशूल</span></div>
+<div class="qa-line"><span class="question">15. शिव के हाथ में बजने वाला वाद्य क्या है?</span><br><span class="answer">➡ डमरू</span></div>
+<div class="qa-line"><span class="question">16. शिव को महादेव क्यों कहा जाता है?</span><br><span class="answer">➡ देवों के देव होने के कारण</span></div>
+<div class="qa-line"><span class="question">17. शिव का एक अन्य नाम पशुपति क्यों है?</span><br><span class="answer">➡ जीवों के स्वामी होने के कारण</span></div>
+<div class="qa-line"><span class="question">18. सिंधु सभ्यता में किस देवता के प्रमाण शिव से जुड़े माने जाते हैं?</span><br><span class="answer">➡ पशुपति देवता</span></div>
+<div class="qa-line"><span class="question">19. बारह ज्योतिर्लिंग किससे संबंधित हैं?</span><br><span class="answer">➡ भगवान शिव</span></div>
+<div class="qa-line"><span class="question">20. सोमनाथ ज्योतिर्लिंग किस राज्य में स्थित है?</span><br><span class="answer">➡ गुजरात</span></div>
+<div class="qa-line"><span class="question">21. काशी विश्वनाथ मंदिर किस शहर में स्थित है?</span><br><span class="answer">➡ वाराणसी</span></div>
+<div class="qa-line"><span class="question">22. अमरनाथ गुफा किस राज्य/केंद्र शासित प्रदेश में स्थित है?</span><br><span class="answer">➡ जम्मू-कश्मीर</span></div>
+<div class="qa-line"><span class="question">23. केदारनाथ मंदिर किस राज्य में स्थित है?</span><br><span class="answer">➡ उत्तराखंड</span></div>
+<div class="qa-line"><span class="question">24. महाशिवरात्रि किस देवता से संबंधित पर्व है?</span><br><span class="answer">➡ भगवान शिव</span></div>
+<div class="qa-line"><span class="question">25. शिव का वाहन नंदी किस पशु का रूप है?</span><br><span class="answer">➡ बैल</span></div>
+<div class="qa-line"><span class="question">26. शिव के गले का नीला रंग किस घटना से जुड़ा है?</span><br><span class="answer">➡ विषपान</span></div>
+<div class="qa-line"><span class="question">27. समुद्र मंथन में निकले विष को पीने के कारण शिव को क्या कहा गया?</span><br><span class="answer">➡ नीलकंठ</span></div>
+<div class="qa-line"><span class="question">28. शैव धर्म का प्रमुख ग्रंथ कौन सा है?</span><br><span class="answer">➡ शिव पुराण</span></div>
+<div class="qa-line"><span class="question">29. शिव को संहार का देवता किस धर्म में माना जाता है?</span><br><span class="answer">➡ हिंदू धर्म</span></div>
+<div class="qa-line"><span class="question">30. त्रिमूर्ति में शिव का क्या स्थान है?</span><br><span class="answer">➡ संहारकर्ता</span></div>
+<div class="qa-line"><span class="question">31. शिव के पुत्र गणेश को किस कार्य के लिए पूजा जाता है?</span><br><span class="answer">➡ शुभारंभ</span></div>
+<div class="qa-line"><span class="question">32. कार्तिकेय को किसका देवता माना जाता है?</span><br><span class="answer">➡ युद्ध</span></div>
+<div class="qa-line"><span class="question">33. शिव की आराधना का सबसे सामान्य रूप क्या है?</span><br><span class="answer">➡ शिवलिंग पूजा</span></div>
+<div class="qa-line"><span class="question">34. पंचाक्षरी मंत्र किससे संबंधित है?</span><br><span class="answer">➡ भगवान शिव</span></div>
+<div class="qa-line"><span class="question">35. 'ॐ नमः शिवाय' को क्या कहा जाता है?</span><br><span class="answer">➡ पंचाक्षरी मंत्र</span></div>
+<div class="qa-line"><span class="question">36. एलोरा का कैलाश मंदिर किस धर्म से संबंधित है?</span><br><span class="answer">➡ शैव धर्म</span></div>
+<div class="qa-line"><span class="question">37. कैलाश मंदिर का निर्माण किस वंश ने कराया था?</span><br><span class="answer">➡ राष्ट्रकूट वंश</span></div>
+<div class="qa-line"><span class="question">38. नटराज की प्रसिद्ध कांस्य प्रतिमा किस वंश के समय बनी?</span><br><span class="answer">➡ चोल वंश</span></div>
+<div class="qa-line"><span class="question">39. चोल शासक मुख्यतः किस धर्म के अनुयायी थे?</span><br><span class="answer">➡ शैव धर्म</span></div>
+<div class="qa-line"><span class="question">40. शिव का निवास कैलाश पर्वत किस क्षेत्र में माना जाता है?</span><br><span class="answer">➡ हिमालय</span></div>
+</div>
+</section>
+
+<section id="vaishnavQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. वैष्णव धर्म में किस देवता की पूजा की जाती है?</span><br><span class="answer">➡ भगवान विष्णु</span></div>
+<div class="qa-line"><span class="question">2. हिंदू धर्म में भगवान विष्णु को किस रूप में माना जाता है?</span><br><span class="answer">➡ पालनकर्ता</span></div>
+<div class="qa-line"><span class="question">3. त्रिमूर्ति में विष्णु का क्या स्थान है?</span><br><span class="answer">➡ पालनकर्ता</span></div>
+<div class="qa-line"><span class="question">4. भगवान विष्णु का वाहन क्या है?</span><br><span class="answer">➡ गरुड़</span></div>
+<div class="qa-line"><span class="question">5. भगवान विष्णु की पत्नी कौन हैं?</span><br><span class="answer">➡ लक्ष्मी</span></div>
+<div class="qa-line"><span class="question">6. विष्णु के हाथों में कौन-कौन से आयुध होते हैं?</span><br><span class="answer">➡ शंख, चक्र, गदा, पद्म</span></div>
+<div class="qa-line"><span class="question">7. भगवान विष्णु का प्रसिद्ध चक्र क्या कहलाता है?</span><br><span class="answer">➡ सुदर्शन चक्र</span></div>
+<div class="qa-line"><span class="question">8. विष्णु के शंख का नाम क्या है?</span><br><span class="answer">➡ पांचजन्य</span></div>
+<div class="qa-line"><span class="question">9. विष्णु का निवास स्थान क्या माना जाता है?</span><br><span class="answer">➡ वैकुंठ</span></div>
+<div class="qa-line"><span class="question">10. भगवान विष्णु किस नाग पर शयन करते हैं?</span><br><span class="answer">➡ शेषनाग</span></div>
+<div class="qa-line"><span class="question">11. विष्णु के कुल कितने प्रमुख अवतार माने जाते हैं?</span><br><span class="answer">➡ 10</span></div>
+<div class="qa-line"><span class="question">12. विष्णु के दस अवतार क्या कहलाते हैं?</span><br><span class="answer">➡ दशावतार</span></div>
+<div class="qa-line"><span class="question">13. विष्णु का प्रथम अवतार कौन सा माना जाता है?</span><br><span class="answer">➡ मत्स्य अवतार</span></div>
+<div class="qa-line"><span class="question">14. विष्णु का कच्छप अवतार किससे संबंधित है?</span><br><span class="answer">➡ समुद्र मंथन</span></div>
+<div class="qa-line"><span class="question">15. विष्णु का वराह अवतार किस उद्देश्य से लिया गया था?</span><br><span class="answer">➡ पृथ्वी की रक्षा हेतु</span></div>
+<div class="qa-line"><span class="question">16. नरसिंह अवतार में विष्णु ने किसका वध किया था?</span><br><span class="answer">➡ हिरण्यकश्यप</span></div>
+<div class="qa-line"><span class="question">17. वामन अवतार किस राजा से संबंधित है?</span><br><span class="answer">➡ बलि</span></div>
+<div class="qa-line"><span class="question">18. परशुराम किसके अवतार माने जाते हैं?</span><br><span class="answer">➡ विष्णु</span></div>
+<div class="qa-line"><span class="question">19. राम किस महाकाव्य के नायक हैं?</span><br><span class="answer">➡ रामायण</span></div>
+<div class="qa-line"><span class="question">20. श्रीराम को विष्णु का कौन सा अवतार माना जाता है?</span><br><span class="answer">➡ सातवाँ</span></div>
+<div class="qa-line"><span class="question">21. श्रीकृष्ण को विष्णु का कौन सा अवतार माना जाता है?</span><br><span class="answer">➡ आठवाँ</span></div>
+<div class="qa-line"><span class="question">22. श्रीकृष्ण ने अर्जुन को कौन सा उपदेश दिया था?</span><br><span class="answer">➡ भगवद्गीता</span></div>
+<div class="qa-line"><span class="question">23. भगवद्गीता किस ग्रंथ का भाग है?</span><br><span class="answer">➡ महाभारत</span></div>
+<div class="qa-line"><span class="question">24. विष्णु का अंतिम अवतार किसे माना जाता है?</span><br><span class="answer">➡ कल्कि</span></div>
+<div class="qa-line"><span class="question">25. वैष्णव धर्म का प्रमुख ग्रंथ कौन सा है?</span><br><span class="answer">➡ विष्णु पुराण</span></div>
+<div class="qa-line"><span class="question">26. वैष्णव धर्म में भक्ति पर विशेष बल किसके प्रति दिया गया है?</span><br><span class="answer">➡ विष्णु</span></div>
+<div class="qa-line"><span class="question">27. दक्षिण भारत में वैष्णव संत क्या कहलाते थे?</span><br><span class="answer">➡ आलवार</span></div>
+<div class="qa-line"><span class="question">28. आलवार संत किस धर्म के अनुयायी थे?</span><br><span class="answer">➡ वैष्णव धर्म</span></div>
+<div class="qa-line"><span class="question">29. रामानुजाचार्य किस संप्रदाय से संबंधित थे?</span><br><span class="answer">➡ वैष्णव संप्रदाय</span></div>
+<div class="qa-line"><span class="question">30. चैतन्य महाप्रभु किस देवता के भक्त थे?</span><br><span class="answer">➡ कृष्ण</span></div>
+<div class="qa-line"><span class="question">31. कृष्ण भक्ति आंदोलन का प्रमुख केंद्र कौन सा क्षेत्र था?</span><br><span class="answer">➡ बंगाल</span></div>
+<div class="qa-line"><span class="question">32. जगन्नाथ मंदिर किस राज्य में स्थित है?</span><br><span class="answer">➡ ओडिशा</span></div>
+<div class="qa-line"><span class="question">33. बद्रीनाथ मंदिर किस देवता को समर्पित है?</span><br><span class="answer">➡ विष्णु</span></div>
+<div class="qa-line"><span class="question">34. तिरुपति बालाजी मंदिर किस राज्य में स्थित है?</span><br><span class="answer">➡ आंध्र प्रदेश</span></div>
+<div class="qa-line"><span class="question">35. वैष्णव धर्म में मोक्ष प्राप्ति का मुख्य मार्ग क्या माना गया है?</span><br><span class="answer">➡ भक्ति</span></div>
+<div class="qa-line"><span class="question">36. श्रीराम का जन्मस्थान कहाँ माना जाता है?</span><br><span class="answer">➡ अयोध्या</span></div>
+<div class="qa-line"><span class="question">37. श्रीकृष्ण का जन्मस्थान कहाँ माना जाता है?</span><br><span class="answer">➡ मथुरा</span></div>
+<div class="qa-line"><span class="question">38. गीता का उपदेश किस युद्धभूमि में दिया गया था?</span><br><span class="answer">➡ कुरुक्षेत्र</span></div>
+<div class="qa-line"><span class="question">39. विष्णु सहस्रनाम किस ग्रंथ में मिलता है?</span><br><span class="answer">➡ महाभारत</span></div>
+<div class="qa-line"><span class="question">40. वैष्णव धर्म का मुख्य उद्देश्य क्या माना गया है?</span><br><span class="answer">➡ धर्म की रक्षा</span></div>
+</div>
+</section>
+
+<section id="islamQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. इस्लाम धर्म के संस्थापक कौन थे?</span><br><span class="answer">➡ पैगंबर मोहम्मद साहब</span></div>
+<div class="qa-line"><span class="question">2. पैगंबर मोहम्मद का जन्म कब हुआ था?</span><br><span class="answer">➡ 570 ई.</span></div>
+<div class="qa-line"><span class="question">3. पैगंबर मोहम्मद का जन्म कहाँ हुआ था?</span><br><span class="answer">➡ मक्का</span></div>
+<div class="qa-line"><span class="question">4. इस्लाम धर्म का पवित्र ग्रंथ कौन सा है?</span><br><span class="answer">➡ कुरान</span></div>
+<div class="qa-line"><span class="question">5. कुरान किस भाषा में लिखी गई है?</span><br><span class="answer">➡ अरबी</span></div>
+<div class="qa-line"><span class="question">6. इस्लाम धर्म में ईश्वर को किस नाम से पुकारा जाता है?</span><br><span class="answer">➡ अल्लाह</span></div>
+<div class="qa-line"><span class="question">7. इस्लाम धर्म का पवित्र शहर कौन सा है?</span><br><span class="answer">➡ मक्का</span></div>
+<div class="qa-line"><span class="question">8. मुसलमान किस दिशा की ओर मुख करके नमाज पढ़ते हैं?</span><br><span class="answer">➡ काबा की ओर</span></div>
+<div class="qa-line"><span class="question">9. काबा कहाँ स्थित है?</span><br><span class="answer">➡ मक्का</span></div>
+<div class="qa-line"><span class="question">10. इस्लाम धर्म की शुरुआत किस देश में हुई?</span><br><span class="answer">➡ सऊदी अरब</span></div>
+<div class="qa-line"><span class="question">11. पैगंबर मोहम्मद को ज्ञान की प्राप्ति कहाँ हुई थी?</span><br><span class="answer">➡ हिरा गुफा</span></div>
+<div class="qa-line"><span class="question">12. मोहम्मद साहब को अल्लाह का संदेश किस फरिश्ते ने दिया था?</span><br><span class="answer">➡ जिब्राइल</span></div>
+<div class="qa-line"><span class="question">13. मक्का से मदीना जाने की घटना क्या कहलाती है?</span><br><span class="answer">➡ हिजरत</span></div>
+<div class="qa-line"><span class="question">14. हिजरी संवत की शुरुआत कब से मानी जाती है?</span><br><span class="answer">➡ 622 ई.</span></div>
+<div class="qa-line"><span class="question">15. इस्लाम धर्म में कितने प्रमुख संप्रदाय हैं?</span><br><span class="answer">➡ दो</span></div>
+<div class="qa-line"><span class="question">16. इस्लाम धर्म के दो प्रमुख संप्रदाय कौन से हैं?</span><br><span class="answer">➡ सुन्नी और शिया</span></div>
+<div class="qa-line"><span class="question">17. इस्लाम धर्म का मुख्य सिद्धांत क्या है?</span><br><span class="answer">➡ एकेश्वरवाद</span></div>
+<div class="qa-line"><span class="question">18. इस्लाम धर्म में मूर्ति पूजा का क्या स्थान है?</span><br><span class="answer">➡ निषेध</span></div>
+<div class="qa-line"><span class="question">19. मुसलमानों के लिए सप्ताह का पवित्र दिन कौन सा है?</span><br><span class="answer">➡ शुक्रवार</span></div>
+<div class="qa-line"><span class="question">20. इस्लाम धर्म में प्रार्थना को क्या कहा जाता है?</span><br><span class="answer">➡ नमाज</span></div>
+<div class="qa-line"><span class="question">21. मुसलमान दिन में कितनी बार नमाज पढ़ते हैं?</span><br><span class="answer">➡ पाँच बार</span></div>
+<div class="qa-line"><span class="question">22. इस्लाम धर्म में दान को क्या कहा जाता है?</span><br><span class="answer">➡ जकात</span></div>
+<div class="qa-line"><span class="question">23. रमजान के महीने में क्या किया जाता है?</span><br><span class="answer">➡ रोजा रखा जाता है</span></div>
+<div class="qa-line"><span class="question">24. मक्का की यात्रा को क्या कहा जाता है?</span><br><span class="answer">➡ हज</span></div>
+<div class="qa-line"><span class="question">25. इस्लाम धर्म के पाँच प्रमुख कर्तव्य क्या कहलाते हैं?</span><br><span class="answer">➡ इस्लाम के पाँच स्तंभ</span></div>
+<div class="qa-line"><span class="question">26. पहला खलीफा कौन था?</span><br><span class="answer">➡ अबू बकर</span></div>
+<div class="qa-line"><span class="question">27. इस्लाम धर्म के अनुयायी क्या कहलाते हैं?</span><br><span class="answer">➡ मुसलमान</span></div>
+<div class="qa-line"><span class="question">28. पैगंबर मोहम्मद की मृत्यु कब हुई थी?</span><br><span class="answer">➡ 632 ई.</span></div>
+<div class="qa-line"><span class="question">29. पैगंबर मोहम्मद की मृत्यु कहाँ हुई थी?</span><br><span class="answer">➡ मदीना</span></div>
+<div class="qa-line"><span class="question">30. इस्लाम धर्म में धार्मिक कानून को क्या कहा जाता है?</span><br><span class="answer">➡ शरीयत</span></div>
+<div class="qa-line"><span class="question">31. सूफी आंदोलन किस धर्म से संबंधित है?</span><br><span class="answer">➡ इस्लाम धर्म</span></div>
+<div class="qa-line"><span class="question">32. भारत में प्रसिद्ध सूफी संत कौन थे?</span><br><span class="answer">➡ ख्वाजा मोइनुद्दीन चिश्ती</span></div>
+<div class="qa-line"><span class="question">33. अजमेर शरीफ किस सूफी संत से संबंधित है?</span><br><span class="answer">➡ ख्वाजा मोइनुद्दीन चिश्ती</span></div>
+<div class="qa-line"><span class="question">34. इस्लाम धर्म में ईद-उल-फितर किसके बाद मनाई जाती है?</span><br><span class="answer">➡ रमजान</span></div>
+<div class="qa-line"><span class="question">35. ईद-उल-अजहा किस घटना की याद में मनाई जाती है?</span><br><span class="answer">➡ कुर्बानी</span></div>
+<div class="qa-line"><span class="question">36. कुरान में कुल कितने अध्याय हैं?</span><br><span class="answer">➡ 114</span></div>
+<div class="qa-line"><span class="question">37. इस्लाम धर्म का धार्मिक स्थल क्या कहलाता है?</span><br><span class="answer">➡ मस्जिद</span></div>
+<div class="qa-line"><span class="question">38. भारत की सबसे प्रसिद्ध मस्जिदों में से एक जामा मस्जिद कहाँ स्थित है?</span><br><span class="answer">➡ दिल्ली</span></div>
+<div class="qa-line"><span class="question">39. इस्लाम धर्म में कब्रिस्तान को क्या कहा जाता है?</span><br><span class="answer">➡ कब्रिस्तान</span></div>
+<div class="qa-line"><span class="question">40. इस्लाम धर्म में सबसे पवित्र ग्रंथ के बाद हदीस का क्या महत्व है?</span><br><span class="answer">➡ पैगंबर के उपदेश</span></div>
+</div>
+</section>
+
+<section id="isaiQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. ईसाई धर्म के संस्थापक कौन माने जाते हैं?</span><br><span class="answer">➡ ईसा मसीह</span></div>
+<div class="qa-line"><span class="question">2. ईसा मसीह का जन्म कहाँ हुआ था?</span><br><span class="answer">➡ बेथलेहम</span></div>
+<div class="qa-line"><span class="question">3. ईसा मसीह की माता का नाम क्या था?</span><br><span class="answer">➡ मरियम</span></div>
+<div class="qa-line"><span class="question">4. ईसाई धर्म का पवित्र ग्रंथ कौन सा है?</span><br><span class="answer">➡ बाइबिल</span></div>
+<div class="qa-line"><span class="question">5. बाइबिल के दो मुख्य भाग कौन से हैं?</span><br><span class="answer">➡ पुराना नियम और नया नियम</span></div>
+<div class="qa-line"><span class="question">6. ईसा मसीह को किसने क्रूस पर चढ़ाया था?</span><br><span class="answer">➡ रोमन शासकों ने</span></div>
+<div class="qa-line"><span class="question">7. ईसा मसीह को किस स्थान पर क्रूस पर चढ़ाया गया था?</span><br><span class="answer">➡ गोलगोथा</span></div>
+<div class="qa-line"><span class="question">8. ईसा मसीह के अनुयायी क्या कहलाते हैं?</span><br><span class="answer">➡ ईसाई</span></div>
+<div class="qa-line"><span class="question">9. ईसाई धर्म का प्रमुख प्रतीक क्या है?</span><br><span class="answer">➡ क्रॉस</span></div>
+<div class="qa-line"><span class="question">10. ईसाइयों का पूजा स्थल क्या कहलाता है?</span><br><span class="answer">➡ चर्च</span></div>
+<div class="qa-line"><span class="question">11. ईसाई धर्म में ईश्वर को किस रूप में माना जाता है?</span><br><span class="answer">➡ पिता</span></div>
+<div class="qa-line"><span class="question">12. ईसाई धर्म में प्रेम और क्षमा का संदेश किसने दिया?</span><br><span class="answer">➡ ईसा मसीह</span></div>
+<div class="qa-line"><span class="question">13. ईसा मसीह का जन्मोत्सव किस रूप में मनाया जाता है?</span><br><span class="answer">➡ क्रिसमस</span></div>
+<div class="qa-line"><span class="question">14. क्रिसमस कब मनाया जाता है?</span><br><span class="answer">➡ 25 दिसंबर</span></div>
+<div class="qa-line"><span class="question">15. ईस्टर पर्व किससे संबंधित है?</span><br><span class="answer">➡ ईसा मसीह के पुनर्जीवन से</span></div>
+<div class="qa-line"><span class="question">16. ईसा मसीह ने अपने उपदेश किस भाषा में दिए थे?</span><br><span class="answer">➡ अरामाइक</span></div>
+<div class="qa-line"><span class="question">17. ईसाई धर्म का उदय किस क्षेत्र में हुआ था?</span><br><span class="answer">➡ फिलिस्तीन</span></div>
+<div class="qa-line"><span class="question">18. ईसा मसीह के पालक पिता का नाम क्या था?</span><br><span class="answer">➡ जोसेफ</span></div>
+<div class="qa-line"><span class="question">19. ईसा मसीह के 12 प्रमुख शिष्य क्या कहलाते थे?</span><br><span class="answer">➡ प्रेरित</span></div>
+<div class="qa-line"><span class="question">20. ईसाई धर्म में पाप से मुक्ति का मार्ग क्या माना जाता है?</span><br><span class="answer">➡ ईश्वर में विश्वास</span></div>
+<div class="qa-line"><span class="question">21. ईसा मसीह ने अपने जीवन का अधिकांश समय कहाँ बिताया?</span><br><span class="answer">➡ नाज़रेथ</span></div>
+<div class="qa-line"><span class="question">22. ईसाई धर्म के प्रचार में सबसे महत्वपूर्ण शिष्य कौन थे?</span><br><span class="answer">➡ सेंट पॉल</span></div>
+<div class="qa-line"><span class="question">23. रोमन सम्राट कॉन्स्टेंटाइन ने किस धर्म को संरक्षण दिया था?</span><br><span class="answer">➡ ईसाई धर्म</span></div>
+<div class="qa-line"><span class="question">24. ईसाई धर्म का मुख्य सिद्धांत क्या है?</span><br><span class="answer">➡ प्रेम और दया</span></div>
+<div class="qa-line"><span class="question">25. बाइबिल का नया नियम किससे संबंधित है?</span><br><span class="answer">➡ ईसा मसीह के जीवन से</span></div>
+<div class="qa-line"><span class="question">26. ईसाई धर्म में रविवार का क्या महत्व है?</span><br><span class="answer">➡ प्रार्थना दिवस</span></div>
+<div class="qa-line"><span class="question">27. वेटिकन सिटी किस धर्म का प्रमुख केंद्र है?</span><br><span class="answer">➡ ईसाई धर्म</span></div>
+<div class="qa-line"><span class="question">28. वेटिकन सिटी कहाँ स्थित है?</span><br><span class="answer">➡ रोम</span></div>
+<div class="qa-line"><span class="question">29. रोमन कैथोलिक चर्च का प्रमुख कौन होता है?</span><br><span class="answer">➡ पोप</span></div>
+<div class="qa-line"><span class="question">30. ईसाई धर्म का सबसे बड़ा संप्रदाय कौन सा है?</span><br><span class="answer">➡ रोमन कैथोलिक</span></div>
+<div class="qa-line"><span class="question">31. भारत में ईसाई धर्म का प्रचार सबसे पहले किसने किया था?</span><br><span class="answer">➡ सेंट थॉमस</span></div>
+<div class="qa-line"><span class="question">32. भारत में ईसाई धर्म सबसे पहले किस राज्य में पहुँचा?</span><br><span class="answer">➡ केरल</span></div>
+<div class="qa-line"><span class="question">33. ईसाई धर्म में बपतिस्मा क्या है?</span><br><span class="answer">➡ धार्मिक संस्कार</span></div>
+<div class="qa-line"><span class="question">34. ईसा मसीह ने मानवता को कौन सा संदेश दिया?</span><br><span class="answer">➡ प्रेम और भाईचारा</span></div>
+<div class="qa-line"><span class="question">35. ईसाई धर्म में प्रार्थना गीत क्या कहलाते हैं?</span><br><span class="answer">➡ भजन</span></div>
+<div class="qa-line"><span class="question">36. ईसाई धर्म में पवित्र जल का प्रयोग किस संस्कार में होता है?</span><br><span class="answer">➡ बपतिस्मा</span></div>
+<div class="qa-line"><span class="question">37. गुड फ्राइडे किस घटना की याद में मनाया जाता है?</span><br><span class="answer">➡ ईसा मसीह के क्रूसारोपण</span></div>
+<div class="qa-line"><span class="question">38. ईसाई धर्म में पुनर्जीवन का प्रतीक कौन सा पर्व है?</span><br><span class="answer">➡ ईस्टर</span></div>
+<div class="qa-line"><span class="question">39. ईसाई धर्म में चर्च के प्रमुख धर्मगुरु को क्या कहा जाता है?</span><br><span class="answer">➡ पादरी</span></div>
+<div class="qa-line"><span class="question">40. ईसाई धर्म में सेवा और दया का महत्व किसने सिखाया?</span><br><span class="answer">➡ ईसा मसीह</span></div>
+</div>
+</section>
+
+<section id="parsiQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. पारसी धर्म के संस्थापक कौन माने जाते हैं?</span><br><span class="answer">➡ जरथुस्त्र</span></div>
+<div class="qa-line"><span class="question">2. पारसी धर्म को अन्य किस नाम से जाना जाता है?</span><br><span class="answer">➡ जरथुस्त्र धर्म</span></div>
+<div class="qa-line"><span class="question">3. पारसी धर्म का पवित्र ग्रंथ कौन सा है?</span><br><span class="answer">➡ अवेस्ता</span></div>
+<div class="qa-line"><span class="question">4. अवेस्ता किस भाषा में लिखा गया है?</span><br><span class="answer">➡ अवेस्तन भाषा</span></div>
+<div class="qa-line"><span class="question">5. पारसी धर्म में ईश्वर को किस नाम से जाना जाता है?</span><br><span class="answer">➡ अहुरा मज्दा</span></div>
+<div class="qa-line"><span class="question">6. पारसी धर्म का उदय किस देश में हुआ था?</span><br><span class="answer">➡ ईरान</span></div>
+<div class="qa-line"><span class="question">7. पारसी धर्म में किसे पवित्र माना जाता है?</span><br><span class="answer">➡ अग्नि</span></div>
+<div class="qa-line"><span class="question">8. पारसियों का पूजा स्थल क्या कहलाता है?</span><br><span class="answer">➡ अग्नि मंदिर</span></div>
+<div class="qa-line"><span class="question">9. पारसी धर्म में अच्छाई और बुराई के संघर्ष को किस रूप में दर्शाया गया है?</span><br><span class="answer">➡ द्वैतवाद</span></div>
+<div class="qa-line"><span class="question">10. पारसी धर्म में बुराई की शक्ति को क्या कहा गया है?</span><br><span class="answer">➡ अहरिमन</span></div>
+<div class="qa-line"><span class="question">11. पारसी धर्म का मुख्य सिद्धांत क्या है?</span><br><span class="answer">➡ अच्छे विचार, अच्छे शब्द, अच्छे कर्म</span></div>
+<div class="qa-line"><span class="question">12. भारत में पारसी सबसे पहले कहाँ आकर बसे थे?</span><br><span class="answer">➡ गुजरात</span></div>
+<div class="qa-line"><span class="question">13. पारसियों के भारत आने का मुख्य कारण क्या था?</span><br><span class="answer">➡ धार्मिक उत्पीड़न</span></div>
+<div class="qa-line"><span class="question">14. पारसियों के भारत आगमन की कथा किस ग्रंथ में मिलती है?</span><br><span class="answer">➡ किस्सा-ए-संजान</span></div>
+<div class="qa-line"><span class="question">15. पारसी धर्म में मृत शरीर को कहाँ रखा जाता है?</span><br><span class="answer">➡ दखमा</span></div>
+<div class="qa-line"><span class="question">16. दखमा को अन्य किस नाम से जाना जाता है?</span><br><span class="answer">➡ टॉवर ऑफ साइलेंस</span></div>
+<div class="qa-line"><span class="question">17. पारसी धर्म में अग्नि का क्या महत्व है?</span><br><span class="answer">➡ पवित्रता का प्रतीक</span></div>
+<div class="qa-line"><span class="question">18. पारसी धर्म में धार्मिक गुरु को क्या कहा जाता है?</span><br><span class="answer">➡ दस्तूर</span></div>
+<div class="qa-line"><span class="question">19. पारसी धर्म में नवजोत संस्कार किससे संबंधित है?</span><br><span class="answer">➡ धर्म प्रवेश</span></div>
+<div class="qa-line"><span class="question">20. पारसी धर्म में पवित्र धागा क्या कहलाता है?</span><br><span class="answer">➡ कुस्ती</span></div>
+<div class="qa-line"><span class="question">21. पारसी धर्म में पहना जाने वाला पवित्र वस्त्र क्या कहलाता है?</span><br><span class="answer">➡ सद्रा</span></div>
+<div class="qa-line"><span class="question">22. पारसी धर्म किस प्रकार के ईश्वरवाद को मानता है?</span><br><span class="answer">➡ एकेश्वरवाद</span></div>
+<div class="qa-line"><span class="question">23. पारसी धर्म के अनुयायी क्या कहलाते हैं?</span><br><span class="answer">➡ पारसी</span></div>
+<div class="qa-line"><span class="question">24. भारत में पारसी समुदाय का प्रमुख योगदान किस क्षेत्र में रहा है?</span><br><span class="answer">➡ उद्योग और व्यापार</span></div>
+<div class="qa-line"><span class="question">25. टाटा परिवार किस समुदाय से संबंधित है?</span><br><span class="answer">➡ पारसी समुदाय</span></div>
+<div class="qa-line"><span class="question">26. जमशेदजी टाटा किस उद्योग समूह के संस्थापक थे?</span><br><span class="answer">➡ टाटा समूह</span></div>
+<div class="qa-line"><span class="question">27. भारत के प्रसिद्ध पारसी नेता दादाभाई नौरोजी किस आंदोलन से जुड़े थे?</span><br><span class="answer">➡ भारतीय राष्ट्रीय आंदोलन</span></div>
+<div class="qa-line"><span class="question">28. पारसी धर्म में सबसे महत्वपूर्ण तत्व कौन सा है?</span><br><span class="answer">➡ अग्नि</span></div>
+<div class="qa-line"><span class="question">29. पारसी धर्म में अच्छाई के देवता कौन हैं?</span><br><span class="answer">➡ अहुरा मज्दा</span></div>
+<div class="qa-line"><span class="question">30. पारसी धर्म में पाप और पुण्य का निर्णय किस आधार पर होता है?</span><br><span class="answer">➡ कर्म</span></div>
+<div class="qa-line"><span class="question">31. पारसी धर्म का प्रमुख त्योहार कौन सा है?</span><br><span class="answer">➡ नवरोज</span></div>
+<div class="qa-line"><span class="question">32. नवरोज किस अवसर पर मनाया जाता है?</span><br><span class="answer">➡ पारसी नववर्ष</span></div>
+<div class="qa-line"><span class="question">33. पारसी धर्म में अग्नि मंदिर में अग्नि को क्यों जलाए रखा जाता है?</span><br><span class="answer">➡ पवित्रता बनाए रखने हेतु</span></div>
+<div class="qa-line"><span class="question">34. पारसी धर्म में धार्मिक जीवन का मुख्य उद्देश्य क्या माना गया है?</span><br><span class="answer">➡ सत्य और अच्छाई का पालन</span></div>
+<div class="qa-line"><span class="question">35. भारत में पारसी समुदाय मुख्यतः किस शहर में अधिक पाया जाता है?</span><br><span class="answer">➡ मुंबई</span></div>
+</div>
+</section>
+
+<section id="magadhQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('historyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. मगध महाजनपद की राजधानी क्या थी?</span><br><span class="answer">➡ राजगृह</span></div>
+<div class="qa-line"><span class="question">2. बाद में मगध की राजधानी किसे बनाया गया?</span><br><span class="answer">➡ पाटलिपुत्र</span></div>
+<div class="qa-line"><span class="question">3. मगध के उत्कर्ष का प्रथम महत्वपूर्ण शासक कौन था?</span><br><span class="answer">➡ बिम्बिसार</span></div>
+<div class="qa-line"><span class="question">4. बिम्बिसार किस वंश का शासक था?</span><br><span class="answer">➡ हर्यक वंश</span></div>
+<div class="qa-line"><span class="question">5. बिम्बिसार ने किस धर्म को संरक्षण दिया था?</span><br><span class="answer">➡ बौद्ध धर्म</span></div>
+<div class="qa-line"><span class="question">6. बिम्बिसार का समकालीन कौन था?</span><br><span class="answer">➡ गौतम बुद्ध</span></div>
+<div class="qa-line"><span class="question">7. बिम्बिसार के पुत्र का नाम क्या था?</span><br><span class="answer">➡ अजातशत्रु</span></div>
+<div class="qa-line"><span class="question">8. अजातशत्रु ने अपने पिता बिम्बिसार के साथ क्या किया था?</span><br><span class="answer">➡ कारागार में बंद किया</span></div>
+<div class="qa-line"><span class="question">9. अजातशत्रु ने किस गणराज्य को पराजित किया था?</span><br><span class="answer">➡ वज्जि संघ</span></div>
+<div class="qa-line"><span class="question">10. वज्जि संघ की राजधानी क्या थी?</span><br><span class="answer">➡ वैशाली</span></div>
+<div class="qa-line"><span class="question">11. अजातशत्रु ने युद्ध में किस नए अस्त्र का प्रयोग किया था?</span><br><span class="answer">➡ रथमूसल</span></div>
+<div class="qa-line"><span class="question">12. पाटलिपुत्र नगर की स्थापना किसने की थी?</span><br><span class="answer">➡ उदायिन</span></div>
+<div class="qa-line"><span class="question">13. उदायिन किसका पुत्र था?</span><br><span class="answer">➡ अजातशत्रु</span></div>
+<div class="qa-line"><span class="question">14. हर्यक वंश के बाद मगध पर किस वंश का शासन हुआ?</span><br><span class="answer">➡ शिशुनाग वंश</span></div>
+<div class="qa-line"><span class="question">15. शिशुनाग वंश का संस्थापक कौन था?</span><br><span class="answer">➡ शिशुनाग</span></div>
+<div class="qa-line"><span class="question">16. शिशुनाग ने किस राज्य को मगध में मिलाया था?</span><br><span class="answer">➡ अवंति</span></div>
+<div class="qa-line"><span class="question">17. शिशुनाग वंश के बाद किस वंश का शासन स्थापित हुआ?</span><br><span class="answer">➡ नंद वंश</span></div>
+<div class="qa-line"><span class="question">18. नंद वंश का संस्थापक कौन था?</span><br><span class="answer">➡ महापद्मनंद</span></div>
+<div class="qa-line"><span class="question">19. महापद्मनंद को किस उपाधि से जाना जाता था?</span><br><span class="answer">➡ एकराट</span></div>
+<div class="qa-line"><span class="question">20. नंद वंश का अंतिम शासक कौन था?</span><br><span class="answer">➡ धनानंद</span></div>
+<div class="qa-line"><span class="question">21. सिकंदर के आक्रमण के समय मगध का शासक कौन था?</span><br><span class="answer">➡ धनानंद</span></div>
+<div class="qa-line"><span class="question">22. चंद्रगुप्त मौर्य ने किसे पराजित कर मौर्य वंश की स्थापना की थी?</span><br><span class="answer">➡ धनानंद</span></div>
+<div class="qa-line"><span class="question">23. चंद्रगुप्त मौर्य का मार्गदर्शक कौन था?</span><br><span class="answer">➡ चाणक्य</span></div>
+<div class="qa-line"><span class="question">24. चाणक्य को अन्य किस नाम से जाना जाता है?</span><br><span class="answer">➡ कौटिल्य</span></div>
+<div class="qa-line"><span class="question">25. कौटिल्य द्वारा रचित प्रसिद्ध ग्रंथ कौन सा है?</span><br><span class="answer">➡ अर्थशास्त्र</span></div>
+<div class="qa-line"><span class="question">26. मौर्य साम्राज्य की राजधानी क्या थी?</span><br><span class="answer">➡ पाटलिपुत्र</span></div>
+<div class="qa-line"><span class="question">27. अशोक किस वंश का शासक था?</span><br><span class="answer">➡ मौर्य वंश</span></div>
+<div class="qa-line"><span class="question">28. अशोक के पिता का नाम क्या था?</span><br><span class="answer">➡ बिंदुसार</span></div>
+<div class="qa-line"><span class="question">29. कलिंग युद्ध के बाद अशोक ने कौन सा धर्म अपनाया?</span><br><span class="answer">➡ बौद्ध धर्म</span></div>
+<div class="qa-line"><span class="question">30. कलिंग युद्ध कब हुआ था?</span><br><span class="answer">➡ 261 ईसा पूर्व</span></div>
+<div class="qa-line"><span class="question">31. अशोक के शिलालेख किस लिपि में लिखे गए थे?</span><br><span class="answer">➡ ब्राह्मी</span></div>
+<div class="qa-line"><span class="question">32. अशोक ने बौद्ध धर्म के प्रचार के लिए किसे श्रीलंका भेजा था?</span><br><span class="answer">➡ महेंद्र और संघमित्रा</span></div>
+<div class="qa-line"><span class="question">33. मगध के उत्कर्ष का मुख्य कारण क्या था?</span><br><span class="answer">➡ उपजाऊ भूमि और लौह अयस्क</span></div>
+<div class="qa-line"><span class="question">34. मगध किस नदी के तट पर स्थित था?</span><br><span class="answer">➡ गंगा</span></div>
+<div class="qa-line"><span class="question">35. प्राचीन भारत का सबसे शक्तिशाली महाजनपद कौन सा था?</span><br><span class="answer">➡ मगध</span></div>
+<div class="qa-line"><span class="question">36. बौद्ध धर्म की प्रथम संगीति कहाँ आयोजित हुई थी?</span><br><span class="answer">➡ राजगृह</span></div>
+<div class="qa-line"><span class="question">37. जैन धर्म की प्रथम संगीति कहाँ आयोजित हुई थी?</span><br><span class="answer">➡ पाटलिपुत्र</span></div>
+<div class="qa-line"><span class="question">38. यूनानी राजदूत मेगास्थनीज किसके दरबार में आया था?</span><br><span class="answer">➡ चंद्रगुप्त मौर्य</span></div>
+<div class="qa-line"><span class="question">39. मेगास्थनीज ने कौन सी पुस्तक लिखी थी?</span><br><span class="answer">➡ इंडिका</span></div>
+<div class="qa-line"><span class="question">40. मगध साम्राज्य के उत्कर्ष ने किस साम्राज्य की नींव रखी?</span><br><span class="answer">➡ मौर्य साम्राज्य</span></div>
+</div>
+</section>
+
+<!-- GEOGRAPHY QUESTIONS PAGE -->
+
+<!-- <section id="riverQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('geographyTopicPage')">
+        ⬅ Back
+    </button>
+
+<div class="questions-container">
+
+<div class="qa-line"><span class="question">1. भारत की सबसे लंबी नदी कौन सी है?</span><br><span class="answer">➡ गंगा</span></div>
+<div class="qa-line"><span class="question">2. विश्व की सबसे लंबी नदी कौन सी है?</span><br><span class="answer">➡ नील नदी</span></div>
+<div class="qa-line"><span class="question">3. ताजमहल किस नदी के किनारे स्थित है?</span><br><span class="answer">➡ यमुना नदी</span></div>
+
+</div>
+</section> -->
+
+<section id="brahmandQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('geographyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. सर्वप्रथम भूगोल शब्द का प्रयोग किसने किया?</span><br><span class="answer">➡ इरेटास्थेनीज , ग्रीक विद्वान</span></div>
+<div class="qa-line"><span class="question">2. geography किन दो शब्दों से मिलकर बना है?</span><br><span class="answer">➡ Geo(पृथ्वी),Graphos(वर्णन)</span></div>
+<div class="qa-line"><span class="question">3. हिकेटियस ने अपनी किस पुस्तक में सर्वप्रथम भोगौलिक तत्वों का क्रमबद्ध समावेश किया?</span><br><span class="answer">➡ जस पीरियोडस(पृथ्वी का वर्णन)</span></div>
+<div class="qa-line"><span class="question">4. भूगोल का जनक </span><br><span class="answer">➡ हिकेटियस</span></div>
+<div class="qa-line"><span class="question">5. वर्तमान भूगोल का जनक</span><br><span class="answer">➡ अलेक्जेंडर वाँन हम्बोल्ट </span></div>
+<div class="qa-line"><span class="question">6. व्यवस्थित भूगोल का जनक</span><br><span class="answer">➡ इरेटास्थेनीज </span></div>
+<div class="qa-line"><span class="question">7. भौतिक भूगोल का जनक</span><br><span class="answer">➡ पोलिडोनियम</span></div>
+<div class="qa-line"><span class="question">8. विश्व ग्लोब का निर्माता</span><br><span class="answer">➡ मार्टिन बैहम </span></div>
+<div class="qa-line"><span class="question">9. विश्व मानचित्र के निर्माणकर्ता</span><br><span class="answer">➡ अनेग्जी  </span></div>
+<div class="qa-line"><span class="question">10. भौगालिक विश्वकोश का रचनाकार</span><br><span class="answer">➡ स्ट्राबो </span></div>
+<div class="qa-line"><span class="question">11. भूगोल में पृथ्वी के उस भाग का अध्ययन किया जाता है,जो मानव के रहने का स्थान है| किसकी परिभाषा है? </span><br><span class="answer">➡ ऑर्थर होम्स</span></div>
+<div class="qa-line"><span class="question">12. भूगोल वह विज्ञानं है, जिसमे पृथ्वी को स्वतत्र गृह के रूप में मान्यता देते हुए उसके समस्त लक्षणों, घटनाओं एवं उसके अंत: सम्बन्ध का अध्ययन किया जाया है| </span><br><span class="answer">➡ कार्ल रिटर </span></div>
+<div class="qa-line"><span class="question">13. Big-Bang की घटना आज से कितने वर्ष पहले हुई थी|</span><br><span class="answer">➡ 13.7 अरब वर्ष</span></div>
+<div class="qa-line"><span class="question">14. महाविस्फोट सिद्धांत का प्रतिपादन किसने किया</span><br><span class="answer">➡ ऐब जार्ज लैमेंतेयर ➡ रॉबर्ट बेगोनेर</span></div>
+<div class="qa-line"><span class="question">15. Milky Way मंदाकिनी को सबसे पहले किसने देखा था?</span><br><span class="answer">➡ गैलीलियो</span></div>
+<div class="qa-line"><span class="question">16. आकाशगंगा की सबसे नजदीकी मंदाकिनी का नाम</span><br><span class="answer">➡ देवयानी(Andromeda)</span></div>
+<div class="qa-line"><span class="question">17. नवीनतम ज्ञात मंदाकिनी है</span><br><span class="answer">➡ ड्वार्फ मंदाकिनी</span></div>
+<div class="qa-line"><span class="question">18. किन तारो को मृत तारे कहा जाता है?</span><br><span class="answer">➡ न्युट्रान तारे, श्याम विवर</span></div>
+<div class="qa-line"><span class="question">19. निहारिका बनने के कारण </span><br><span class="answer">➡ ब्रह्माण्ड की उत्पत्ति, विस्फोटक तारे से बने सुपरनोवा से</span></div>
+<div class="qa-line"><span class="question">20. सुपरनोवा से जो पदार्थ उत्सर्जित होते है उससे बने निहारिका का उदा. है?</span><br><span class="answer">➡ वेल, कर्क</span></div>
+</div>
+</section>
+<section id="saurmandalQuestionPage" class="page">
+    <button class="back-btn" onclick="goBack('geographyTopicPage')">
+        ⬅ Back
+    </button>
+<div class="questions-container">
+<div class="qa-line"><span class="question">1. सौरमंडल के समस्त ऊर्जा का स्त्रोत है?</span><br><span class="answer">➡ सूर्य</span></div>
+<div class="qa-line"><span class="question">2. सौरमंडल से बाहर बिल्कुल एक जैसे दिखने वाले जुड़वाँ पिंडो का एक समूह है|</span><br><span class="answer">➡ प्लेनेमस</span></div>
+<div class="qa-line"><span class="question">3. सूर्य अपने अक्ष पर किस दिशा में घूमता है?</span><br><span class="answer">➡ पूर्व से पश्चिम</span></div>
+<div class="qa-line"><span class="question">4. सूर्य में सबसे ज्यादा पाई जाने वाली गैस है</span><br><span class="answer">➡ हाइड्रोजन-71%, हीलियम-26.5%, अन्य तत्व-2.5%</span></div>
+<div class="qa-line"><span class="question">5. सूर्य का केन्द्रीय भाग क्या कहलाता है</span><br><span class="answer">➡ क्रोड(core)- 1.5 x 10⁷ °C </span></div>
+<div class="qa-line"><span class="question">6. सूर्य की बहरी सतह का तापमान</span><br><span class="answer">➡ 6000°C </span></div>
+<div class="qa-line"><span class="question">7. सूर्य की दीप्तिमान सतह को क्या कहते है?</span><br><span class="answer">➡ प्रकाशमंडल(Photosphere) </span></div>
+<div class="qa-line"><span class="question">8. सूर्य ग्रहण के समय सूर्य के दिखाई देनेंवाले भाग को क्या कहते है?</span><br><span class="answer">➡ सूर्य-किरीट(corona) </span></div>
+<div class="qa-line"><span class="question">9. सूर्य की उम्र</span><br><span class="answer">➡ 5 मिलियन वर्ष </span></div>
+<div class="qa-line"><span class="question">10. सूर्य के प्रकाश को पृथ्वी तक पहुचने में लगा समय</span><br><span class="answer">➡ 8 मिनट 16.6 सेकंड </span></div>
+<div class="qa-line"><span class="question">11. किन ग्रहों को पार्थिव या आंतरिक ग्रह कहते है? </span><br><span class="answer">➡ बुध,शुक्र,पृथ्वी,मंगल </span></div>
+<div class="qa-line"><span class="question">12. किन ग्रहों को ब्रह्स्पतीय या बाह्य ग्रह कहते है?</span><br><span class="answer">➡ब्रहस्पति, शनि,अरुण,वरुण  </span></div>
+<div class="qa-line"><span class="question">13. आकार के अनुसार ग्रहों का क्रम(बढ़ते हुए क्रम में) </span><br><span class="answer">➡ बुध,मंगल,शुक्र,पृथ्वी,वरुण,अरुण,शनि,ब्रहस्पति </span></div>
+<div class="qa-line"><span class="question">14. घनत्व के अनुसार ग्रहों का क्रम (बढ़ते हुए क्रम में)</span><br><span class="answer">➡ शनि,अरुण,ब्रहस्पति,नेपच्यून,मंगल,शुक्र </span></div>
+<div class="qa-line"><span class="question">15. किन दो ग्रहों का घूर्णन एवं परिक्रमण की दिशा बाकि ग्रहों से विपरीत है|</span><br><span class="answer">➡ शुक्र एवं अरुण(clockwise) </span></div>
+<!-- <div class="qa-line"><span class="question">1. </span><br><span class="answer">➡  </span></div> -->
+<div class="qa-line"><span class="question">16. सूर्य का सबसे नजदीकी गृह है, जो सूर्य निकलने के दो घंटा पहले दिखाई पड़ता है|</span><br><span class="answer">➡ बुध </span></div>
+<div class="qa-line"><span class="question">17. सौरमंडल का सबसे छोटा व सबसे हल्का ग्रह कोनसा है?</span><br><span class="answer">➡ बुध </span></div>
+<div class="qa-line"><span class="question">18. किस ग्रह के पास कोई उपग्रह नहीं है?</span><br><span class="answer">➡ बुध, शुक्र </span></div>
+<div class="qa-line"><span class="question">19. बुध ग्रह का सबसे विशिष्ट गुण क्या है?</span><br><span class="answer">➡ चुम्बकीय क्षेत्र का होना </span></div>
+<div class="qa-line"><span class="question">20. पृथ्वी का निकटतम ,सबसे चमकीला एवं सबसे गर्म ग्रह कोनसा है?</span><br><span class="answer">➡ शुक्र </span></div>
+<div class="qa-line"><span class="question">21. किस ग्रह को साँझ का तारा , भोर का तारा एवं पृथ्वी का भगिनी ग्रह कहते है?</span><br><span class="answer">➡ शुक्र </span></div>
+<div class="qa-line"><span class="question">22. कोनसा ग्रह घनत्व, आकार एवं व्यास में पृथ्वी के सामान है?</span><br><span class="answer">➡ शुक्र </span></div>
+<div class="qa-line"><span class="question">23. कोनसा ग्रह सुबह पूरब दिशा में और शाम को पश्चिम दिशा में आकाश में दिखाई पड़ता है?</span><br><span class="answer">➡ शुक्र </span></div>
+<div class="qa-line"><span class="question">24. सौरमंडल का सबसे बड़ा ग्रह कोनसा है?</span><br><span class="answer">➡ ब्रहस्पति </span></div>
+<div class="qa-line"><span class="question">25. किस ग्रह को अपनी धुरी पर चक्कर लगाने में 10 घंटा (सबसे कम)और सूर्य की परिक्रमा करने में 12 वर्ष लगते है?</span><br><span class="answer">➡ ब्रहस्पति </span></div>
+<div class="qa-line"><span class="question">26. ब्रहस्पति के सभी उपग्रहों में सबसे बड़ा कोनसा है?</span><br><span class="answer">➡ ग्यानीमीड(पीले रंग का) </span></div>
+<div class="qa-line"><span class="question">27. किस ग्रह को लाल ग्रह कहा जाता है और किस कारण से </span><br><span class="answer">➡ मंगल(आयरन आक्साइड) </span></div>
+<div class="qa-line"><span class="question">28. मंगल ग्रह के कितने उपग्रह है?</span><br><span class="answer">➡ 2(फोबोस,डीमोस) </span></div>
+<div class="qa-line"><span class="question">29. किस ग्रह को सूर्य की परिक्रमा करने में 687 दिन लगते है?</span><br><span class="answer">➡ मंगल </span></div>
+<div class="qa-line"><span class="question">30. सौरमंडल का सबसे बड़ा ज्वालामुखी एवं सबसे ऊँचा पर्वत (माउन्ट एवरेस्टसे तीन गुना)  किस ग्रह पर है?</span><br><span class="answer">➡ मंगल(ओलिपस मेसी, निक्स ओलम्पिया) </span></div>
+<div class="qa-line"><span class="question">31. सौरमंडल का दूसरा सबसे बड़ा ग्रह है|</span><br><span class="answer">➡ शनि </span></div>
+<div class="qa-line"><span class="question">32. किस ग्रह को जल में रखने पर तैरने लगेगा?</span><br><span class="answer">➡ शनि </span></div>
+<div class="qa-line"><span class="question">33. शनि में वलयो की संख्या कितनी है?</span><br><span class="answer">➡ 7 </span></div>
+<div class="qa-line"><span class="question">34. शनि का सबसे बड़ा उपग्रह है जो सौरमंडल का दूसरा सबसे बड़ा उपग्रह है|</span><br><span class="answer">➡ टाइटन </span></div>
+<div class="qa-line"><span class="question">35. ऐसा कोनसा उपग्रह है जिसका पृथ्वी जैसा स्वंय का सघन वायुमंडल है|</span><br><span class="answer">➡ टाइटन </span></div>
+<div class="qa-line"><span class="question">36. आकार में तीसरा सबसे बड़ा ग्रह है</span><br><span class="answer">➡ अरुण </span></div>
+<div class="qa-line"><span class="question">37. किस ग्रह को लेटा हुआ ग्रह कहा जाता है?</span><br><span class="answer">➡ अरुण </span></div>
+<div class="qa-line"><span class="question">38. अरुण का सबसे बड़ा उपग्रह है|</span><br><span class="answer">➡ टाइटेनिया </span></div>
+<div class="qa-line"><span class="question">39. अरुण में वलयो की संख्या कितनी है?</span><br><span class="answer">➡ 9 </span></div>
+<div class="qa-line"><span class="question">40. अरुण ग्रह की खोज किस वैज्ञानिक ने की थी?</span><br><span class="answer">➡ विलियम हर्शेल(1781) </span></div>
+<div class="qa-line"><span class="question">41. वरुण ग्रह की खोज किस वैज्ञानिक ने की थी?</span><br><span class="answer">➡ जहाँन गाले(1846) </span></div>
+<div class="qa-line"><span class="question">42. सूर्य से सबसे दूर स्थित ग्रह है|</span><br><span class="answer">➡ वरुण </span></div>
+<div class="qa-line"><span class="question">43. किस ग्रह को हरे रंग का ग्रह कहते है?और क्यों?</span><br><span class="answer">➡ वरुण(अति शीतल मिथेन के बादल ) </span></div>
+<div class="qa-line"><span class="question">44. वरुण के उपग्रहों में प्रमुख है|</span><br><span class="answer">➡ ट्राइटन </span></div>
+<div class="qa-line"><span class="question">45. सौरमंडल का पाचवां सबसे बड़ा ग्रह है|</span><br><span class="answer">➡ पृथ्वी </span></div>
+<div class="qa-line"><span class="question">46. पृथ्वी का एकमात्र ग्रह ग्रह है|</span><br><span class="answer">➡ चंद्रमा </span></div>
+<div class="qa-line"><span class="question">47. पृथ्वी को सूर्य की एक परिक्रमा पूरी करने में कितना समय लगता है?</span><br><span class="answer">➡ 365 दिन 5 घंटे 48 मिनट 46 सेकंड </span></div>
+<div class="qa-line"><span class="question">48. पृथ्वी को अपनी अक्ष पर एक चक्कर लगाने में कितना समय लगता है?</span><br><span class="answer">➡ 23 घंटे 56 मिनट 4 सेकंड </span></div>
+<div class="qa-line"><span class="question">49. सूर्य के बाद पृथ्वी के सबसे निकट का तारा है|</span><br><span class="answer">➡ प्राक्सिमा सेन्चुरी </span></div>
+<div class="qa-line"><span class="question">50. चंद्रमा की सतह और उसकी आंतरिक स्थिति का अध्ययन करना वाला विज्ञानं कहलाता है|</span><br><span class="answer">➡ सेलेनोलांजी </span></div>
+<div class="qa-line"><span class="question">51. चंद्रमा पर धूल के मैदान को क्या कहते है?</span><br><span class="answer">➡ शान्ति सागर </span></div>
+<div class="qa-line"><span class="question">52. चंद्रमा का उच्चतम पर्वत है|</span><br><span class="answer">➡ लीबनिटज पर्वत </span></div>
+<div class="qa-line"><span class="question">53. चंद्रमा को किस और नाम से जाना जाता है |</span><br><span class="answer">➡ जीवाश्म ग्रह </span></div>
+<div class="qa-line"><span class="question">54. जब चंद्रमा पृथ्वी के सबसे निकट होता है उस स्थिति को क्या कहते है?</span><br><span class="answer">➡ सुपर मून या पेरिजी फुल मून(14% ज्यादा बड़ा तथा 30% अधिक चमकीला) </span></div>
+<div class="qa-line"><span class="question">55. चंद्रमा एवं पृथ्वी के बीच की औसतन दूरी कितनी है|</span><br><span class="answer">➡ 384365 किमी. </span></div>
+
+</div>
+</section>
+
+<script>
+
+function openPage(pageId){
+
+    document.querySelectorAll('.page').forEach(page=>{
+        page.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
+}
+
+function goBack(pageId){
+
+    document.querySelectorAll('.page').forEach(page=>{
+        page.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
+}
+
+</script>
+
+</body>
+</html>
